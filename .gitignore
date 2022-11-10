@@ -1,0 +1,5 @@
+# ignore LaTeX secondary files
+*.aux
+*.log
+*.out
+*.gz
