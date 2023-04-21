@@ -76,10 +76,13 @@
 ### Additional Evidence of Teaching Effectiveness
 
 <!--- YEAR 1 --->
+OLC Conference + Presentation to department
 
 <!--- YEAR 2 --->
 (Professional Development) Project NExT
 (Workshop) MAA Virtual Event: Promoting Effective Teaching Practices by Employing Cognitive Science Principles 
+Presentation to department on EV group activities.
+(Seminar) The growing importance of reproducibility and responsible workflow in the data science and statistics curriculum
 
 <!--- YEAR 3 --->
 
