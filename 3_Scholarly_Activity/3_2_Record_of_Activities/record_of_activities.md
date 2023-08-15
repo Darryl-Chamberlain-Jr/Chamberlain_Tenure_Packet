@@ -27,11 +27,11 @@
 10. **[National]** Reed, Z., Chamberlain Jr., D., & Keene, K. (2022, Feb 24). Argumentative knowledge construction in asynchronous calculus discussion boards. Proceedings of the 24th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Boston, MA.
 11. **[Regional]** Chamberlain Jr., D., Reed, Z., & Keene, K. (2021, Nov 20). Investigating social construction of knowledge during asynchronous discussions. 5th Northeastern Conference on Research in Undergraduate Mathematics Education. New Brunswick, NJ (virtual).
 
-#(3) Unfunded Research Activities
+# (3) Unfunded Research Activities
 
-#(4) Creative Works and Projects
+# (4) Creative Works and Projects
 
-#(5) Other Professional Activities, Contributions, and Achievements Indicative of Professional Growth
+# (5) Other Professional Activities, Contributions, and Achievements Indicative of Professional Growth
 1. **[Conference Session Organization]** Chamberlain Jr., D. & Barber, R. (2023, Aug 2). Session: Unspoken Research Components. 2023 MAA MathFest, Tampa, FL.
 2. **[Conference Session Organization]** Chamberlain Jr., D. & Barber, R. (2023, Aug 2). Session: Building a Research Program. 2023 MAA MathFest, Tampa, FL.
 3. **[Workshop Participant]** Developing Online Learning Experiments Using Doenet (2023, May 22-26). NSF funded project (DUE-1915294, DUE-1915363, DUE-1915438) hosted by Institute for Mathematics and its Applications, University of Minnesota.
