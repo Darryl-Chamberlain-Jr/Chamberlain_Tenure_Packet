@@ -45,6 +45,7 @@ My overarching research agenda revolves around all aspects of undergraduate stud
 2. Split all post by sentence and tag the speaker. 
 3. Deidentify all student and instructor names.
 4. Tag all sentences by term, year, course, and section. 
+
 As I led this data management, it made sense for me to also lead the group of 6 student researchers we had qualitatively coding these sentences. I also developed Excel sheets to analyze data in a flexible and generic way. We presented preliminary results at a national education conference and turned the presentation into an accepted journal publication. 
 
 **AY 22-23**: After numerous attempts to improve the accuracy of PDF scrapes, I refined our data collection and management process by obtaining the discussion post data via Canvas API. Moreover, I wrote Python scripts to perform analysis on the ever-increasing data we collected. At submission of this packet, we have about 900,000 sentences from student discussions from 17 terms of MATH 111 and PHYS 102 (note: Excel regularly crashes when working with 100,000+ rows and thus data necessarily needed to be restructured for large-scale analysis). I continued to oversee the 6 student researchers as they qualtitatively analyzed approximately 200,000 sentences from discussions.
