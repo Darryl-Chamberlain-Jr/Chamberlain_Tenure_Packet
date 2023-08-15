@@ -13,13 +13,13 @@ Summary Count:
 |          | Publications | Presentations | Funding Proposals |
 |----------|--------------|---------------|-------------------|
 | Year 1   |       1      |       5       |         1         |
-| Year 2   |       1      |       1       |         0         |
-| Year 3   |              |               |                   |
+| Year 2   |       1      |       1       |         2         |
+| Year 3   |              |               |         1         |
 | Year 4   |              |               |                   |
 | Year 5   |              |               |                   |
 |----------|--------------|---------------|-------------------|
 | Expected |       5      |       5       |         1         |
-| Actual   |       2      |       6       |         1         |            
+| Actual   |       2      |       6       |         4         |            
 
 
 <!--- CREATE FLOWCHART OF EACH MAJOR PROJECT WITH MAJOR DEVELOPMENTS (PAPER, PRESENTATION, GRANT) FLOWING DOWN CHRONOLOGICALLY --->

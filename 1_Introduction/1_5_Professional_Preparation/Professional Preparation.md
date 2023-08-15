@@ -1,0 +1,1 @@
+**Certificate in Applied Data Science with Python** (Feb '23 - Jul '23) Completed a 5-course sequence that introduces data science using the programming language Python.  

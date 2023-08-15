@@ -1,0 +1,3 @@
+<!-- 
+    Brief Statement. Should be no more than six pages from the candidate that shows how her or his record supports the change of status requested. The statement should present citations of evidence from the candidate's curriculum vitae, resume, or other sources that are specifically related to the candidate's: (a) quality and effectiveness of teaching; (b) scholarly and professional activity; (c) service; and (d) promise for sustained future development and scholarly activity.
+-->
