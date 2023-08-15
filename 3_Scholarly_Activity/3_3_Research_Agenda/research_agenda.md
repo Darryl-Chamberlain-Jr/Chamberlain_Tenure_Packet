@@ -3,10 +3,15 @@ My overarching research agenda revolves around all aspects of undergraduate stud
 
 # Funded Research Projects
 ## **PI**: *Machine Learning Afforadances in Collegiate Mathematics Education Research*
-<u>Research Team:</u> None
-<u>Funding Sources:</u> Internally through ERAU-W SEED grant, 10/1/21--6/31/22. Internal funding for professional development (Certificate in Data Science). (Pending Approval) Externally through subgrant awarded from NSF grant, 10/1/23--6/31/24. Applying for NSF CAREER grant in July 2024.
-<u>Roles:</u> All aspects of the project.
-<u>Brief Description by Year:</u> 
+
+<ins>Research Team:</ins> None
+
+Funding Sources: Internally through ERAU-W SEED grant, 10/1/21--6/31/22. Internal funding for professional development (Certificate in Data Science). (Pending Approval) Externally through subgrant awarded from NSF grant, 10/1/23--6/31/24. Applying for NSF CAREER grant in July 2024.
+
+Roles: All aspects of the project.
+
+Brief Description by Year: 
+
 **Year 1**: Initially, this project focused on developing automated feedback for traditional assignments such as homework, quizzes, and exams. After collecting data funded by the ERAU-W SEED grant, I discovered that ERAU-W students performed well (enough) on traditional assignments but exhibited elementary conceptions of key mathematical concepts such as function, variable, and vector. This lead to a re-design of the MATH 111 course to incorporate discussions that engaged students in developing more sophisticated conceptions of key mathematical concepts. 
 
 **Year 2**: While designing a study to explore the impacts of the MATH 111 discussion redesign, I explored ways to leverage technology to improve students' mathematical conceptions through non-traditional assignments. This led to engaging in two major professional development actitives: (1) taking 5 Coursera courses to earn a certificate in Data Science and (2) attending a 5-day workshop on authoring dynamic mathematical activities through a webpage. The certificate in Data Science prepared me to incorporate Machine Learning in both my work on designing automated feedback as well as enhancing my research data management and analysis skills. The 5-day workshop on authoring dynamic mathematical activities allowed me to develop dynamic, non-traditional assignments that would incorporate the automated feedback I had previously established.
