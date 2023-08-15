@@ -2,15 +2,15 @@
 My overarching research agenda revolves around all aspects of undergraduate students' mathematical learning. At the macro learning-level, I consider how different types of educational activities (e.g., discussions, quizzes, exploratory activities, digital manipulatives) may affect student understanding. At the micro learning-level, I create models that predict how students may respond to individual questions that are used to provide automated feedback. My wide range of educational research, statistics, and programming skills has also led to productive collaborations where I act as an expert in data collection and qualitative/quantitative data analysis. I have organized my various research projects below by their funding source. 
 
 # Funded Research Projects
-## **PI**: *Machine Learning Afforadances in Collegiate Mathematics Education Research*
+## **PI**: *Machine Learning Affordances in Collegiate Mathematics Education Research*
 
 <ins>Research Team:</ins> None
 
-Funding Sources: Internally through ERAU-W SEED grant, 10/1/21--6/31/22. Internal funding for professional development (Certificate in Data Science). (Pending Approval) Externally through subgrant awarded from NSF grant, 10/1/23--6/31/24. Applying for NSF CAREER grant in July 2024.
+<ins>Funding Sources:</ins> Internally through ERAU-W SEED grant, 10/1/21--6/31/22. Internal funding for professional development (Certificate in Data Science). (Pending Approval) Externally through subgrant awarded from NSF grant, 10/1/23--6/31/24. Applying for NSF CAREER grant in July 2024.
 
-Roles: All aspects of the project.
+<ins>Roles:</ins> All aspects of the project.
 
-Brief Description by Year: 
+<ins>Brief Description by Year:</ins> 
 
 **Year 1**: Initially, this project focused on developing automated feedback for traditional assignments such as homework, quizzes, and exams. After collecting data funded by the ERAU-W SEED grant, I discovered that ERAU-W students performed well (enough) on traditional assignments but exhibited elementary conceptions of key mathematical concepts such as function, variable, and vector. This lead to a re-design of the MATH 111 course to incorporate discussions that engaged students in developing more sophisticated conceptions of key mathematical concepts. 
 
