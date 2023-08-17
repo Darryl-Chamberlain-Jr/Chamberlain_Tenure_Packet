@@ -1,6 +1,3 @@
-# Summary of Research Agenda
-My overarching research agenda revolves around all aspects of undergraduate students' mathematical learning. At the macro learning-level, I consider how different types of educational activities (e.g., discussions, quizzes, exploratory activities, digital manipulatives) may affect student understanding. At the micro learning-level, I create models that predict how students may respond to individual questions that are used to provide automated feedback. My wide range of educational research, statistics, and programming skills has also led to productive collaborations where I act as an expert in data collection and qualitative/quantitative data analysis. I have organized my various research projects below by their funding source. 
-
 # Externally-Funded Research Projects
 ## **PI**: ***Machine Learning Affordances in Collegiate Mathematics Education Research***
 
@@ -26,7 +23,7 @@ My overarching research agenda revolves around all aspects of undergraduate stud
 
 <ins>Scholarly Products</ins>:
 
-- **[7 - External Grant]** (Pending Support) Principal Investigator, NSF CAREER Grant: Integrating Machine Learning into Collegiate Mathematics Education Research, 2024-2029. Award amount: $500,000.
+- **[7 - External Grant]** (Pending Support) Principal Investigator, NSF CAREER Grant: Machine Learning Affordances in Collegiate Mathematics Education Research, 2024-2029. Award amount: $500,000.
 - **[6 - National Conference Proceeding]** Chamberlain Jr., D., Faulconer, E., Wood, B. (pending acceptance, Feb 2024). Using Trees to See a Forest: Leveraging Machine Learning to Classify Student Thinking. Proceedings of the 26th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Omaha, NE. 
 - **[5 - External Grant]** (Pending Support) Principal Investigator, Doenet (NSF DUE-1915294, DUE-1915363, DUE-1915438) Mini-Grant: Asycnchronous Discovery Activity - Learning to Fly with the Wind. 2023-2024. Award amount: $500.
 - **[4 - Invited Talk]** Chamberlain Jr., D. (2023, Mar 29). Predicting Students’ Thoughts to Provide Elaborative Feedback. Invited by California State University Bakersfield Mathematics Department Seminar Series.
@@ -89,7 +86,7 @@ Project formally begins in October 2023.
 None so far.
 
 # Internally-Funded Research Projects
-## **PI/Co-PI**: Collective Knowledge Progression and Proliferation in Asynchronous Calculus Discussion Boards
+## **PI/Co-PI**: ***Collective Knowledge Progression and Proliferation in Asynchronous Calculus Discussion Boards***
 
 <ins>Research Team:</ins> Zackery Reed (PI/Co-PI) and Karen Keene (co-PI posthumous)
 
@@ -140,7 +137,7 @@ Dr. Christodoulopoulou took a primarily role in guiding Bailey with collecting d
 
 <ins>Scholarly Products</ins>
 
-5. **[Proceeding]** Bailey, T., Chamberlain Jr., D., & Christodoulopoulou, K. (2022, Feb 24-26). Undergraduate’s covariational reasoning across function representations. Proceedings of the 24th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Omaha, NE. URL: http://sigmaa.maa.org/rume/Site/Proceedings.html (to appear soon).
+5. **[National Conference Proceeding]** Bailey, T., Chamberlain Jr., D., & Christodoulopoulou, K. (2022, Feb 24-26). Undergraduate’s covariational reasoning across function representations. Proceedings of the 24th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Omaha, NE. URL: http://sigmaa.maa.org/rume/Site/Proceedings.html (to appear soon).
 
 # Scholarly Products not Associated to an Active Research Project
 
@@ -160,7 +157,7 @@ As part of the professional development fellowship Project NExT (New Experiences
 
 <ins>Brief Description</ins>
 
-Collaborators for a project I was once a part of presented **[1]** at a national conference. I act as a data analytics expert for the University of Florida graduate student, Sam Vancini, that has taken over the data analysis postition I previously provided. My involvement in this project is complete as of AY 21-22.
+Collaborators for a project I was once a part of presented **[1]** at a national conference. I acted as a data analytics expert for the University of Florida graduate student, Sam Vancini, that has taken over the data analysis postition I previously provided. My involvement in this project is complete as of AY 21-22.
 
 I have also spoken as an expert to students about non-traditional scholarly publication **[2]**, as an expert in online education **[3]**, and as the chair of the Mathematics Association of America Subcommittee on Technology in Mathematics Education **[4]**.
 

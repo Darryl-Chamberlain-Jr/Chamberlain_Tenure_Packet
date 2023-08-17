@@ -1,97 +1,26 @@
-# Scholarly Activity
+# Overview of Research Activity
+My overarching research agenda revolves around all aspects of undergraduate students' mathematical learning. At the macro learning-level, I consider how different types of educational activities (e.g., discussions, quizzes, exploratory activities, digital manipulatives) may affect student understanding. At the micro learning-level, I create models that predict how students may respond to individual questions that are used to provide automated feedback. My wide range of educational research, statistics, and programming skills has also led to productive collaborations where I act as an expert in data collection and qualitative/quantitative data analysis. I have organized my various research projects below by their funding source and summarized how they fit within my research agenda. 
 
-<!--- CHECKLIST --->
-<!---
-    - Five (5) peer-reviewed publications (or equivalent)
-    - Present at five (5) refereed regional, national, or international conferences
-    - One (1) proposal for internal or external funding
---->
+## Externally-Funded Research Projects
+- **PI**: ***Machine Learning Affordances in Collegiate Mathematics Education Research***
+This solo project focuses on the ways Machine Learning can enhance the teaching and research of college-level math. Methods to enhance teaching include developing: models for levels of understanding certain mathematical concepts, automatic targeted feedback, asynchronous discovery-based learning activity, mastery-based large-scale mastery-based grading. Methods to enhance research include: data management, machine classification of qualitative coding, and machine classification of question responses.
 
-Summary Count: 
+- **Co-PI**: ***Community of Inquiry and Cognitive Load***
+This NSF-funded project focuses on exploring the social and cognitive ways students engage in discussion posts in math and physics courses. It also explores the aspects of cognitive load students perceive as inhibiting their contribution to discussions. Seventeen terms of discussions in two courses, MATH 111 and PHYS 102, were collected for analysis using the Community of Inquiry model. My main role in this project is managing and analyzing this massive amount of data  -- approximately 900,000 sentences of discussion.
 
-|          | Peer-Reviewed|  Conference   | Internal/External |
-|          | Publications | Presentations | Funding Proposals |
-|----------|--------------|---------------|-------------------|
-| Year 1   |       1      |       5       |         1         |
-| Year 2   |       1      |       1       |         2         |
-| Year 3   |              |               |         1         |
-| Year 4   |              |               |                   |
-| Year 5   |              |               |                   |
-|----------|--------------|---------------|-------------------|
-| Expected |       5      |       5       |         1         |
-| Actual   |       2      |       6       |         4         |            
+- **Co-PI**: ***Undergraduate Research for Fully Online STEM Students: Impact of Expanded Curricular Options on STEM Attitudes, Identity, & Career Ambitions***
+This NSF-funded project is a continuation of a previous NSF project that focuses on developing resources for supporting undergraduate research in online programs. This second stage will, expand the impact to all ERAU-W students, develop an Undergraduate Research minor, expand on resources to support undergraduate research, and study the effects of these efforts. My main role in this project is to formally study the effects of efforts.
 
+## Internally-Funded Research Projects
+- **PI/Co-PI**: ***Collective Knowledge Progression and Proliferation in Asynchronous Calculus Discussion Boards***
+This project focuses on developing a theoretical framework for categorizing and analyzing how students develop and share knowledge in asynchronous online discussions. After initial development, we have tested and refined the theoretical framework with pilot data and recently collected preliminary data. I work in equal amounts with the other PI, Dr. Zack Reed, on all aspects of the project. 
 
-<!--- CREATE FLOWCHART OF EACH MAJOR PROJECT WITH MAJOR DEVELOPMENTS (PAPER, PRESENTATION, GRANT) FLOWING DOWN CHRONOLOGICALLY --->
+- **PI**: ***Undergraduate Covariational Reasoning in Calculus***
+This project was the result of mentoring an undergraduate student, Teegan Bailey, for three years. After a year of informal discussion on collegiate mathematics education theoretical frameworks and prominent topics, he chose to investigate calculus students' reasoning on how two different quantities change with respect to one another. My primarily role was as a research mentor. Bailey has graduated and thus this project is complete.
 
-## Year 1
-### Peer-Reviewed Publications
-One accepted
-Bailey, T., **Chamberlain Jr., D.**, & Christodoulopoulou, K. (2022, Feb 24-26). Undergraduate's covariational reasoning across function representations. Conference Proceeding of the 24th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME.
+## Scholarly Products not Associated to an Active Research Project
+- ***Project NExT Activities***
+Project NExT (New Experiences in Teaching) is a one-year professional development program designed for early-career faculty to learn about best practices in teaching and research. As part of this program, I organized three special sessions that brought in tenured faculty to speak to research in particular. 
 
-Two under review
-- Paolucci, C., **Chamberlain Jr., D.**, Redding, C., Vancini, S., & Reese, A. (first submission Nov 2021). Critical lessons from certification exam preparation materials for mathematics teachers' content knowledge and professional learning. Journal of Teaching and Teacher Education.
-- **Chamberlain Jr., D.** (first submission Sept 2021). How one instructor can teach a large-scale, mastery-based College Algebra course online. Problems, Resources, and Issues in Mathematics Undergraduate Studies.
-
-### Presentations
-- Faulconer, E., **Chamberlain Jr., D.**, & Woods, B. (2022, April 13). Instructional Efficiency in Asynchronous Online Discussions. Online Learning Consortium Innovate conference, Dallas, TX.
-- Paolucci, C., **Chamberlain Jr., D.**, & Vancini, S. (2022, Apr 7). Investigating alternatively-certified teachers' mathematical knowledge for teaching calculus. Joint Mathematics Meeting, Seattle, WA.
-- Bailey, T., **Chamberlain Jr., D.**, & Christodoulopoulou, K. (2022, Feb 24-26). Undergraduate's covariational reasoning across function representations. Paper at 24th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME.
-- Reed, Z., **Chamberlain Jr., D.**, & Keene, K. (2022, Feb 25). Argumentative knowledge construction in asynchronous calculus discussion boards. Poster at 24th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME.
-- **Chamberlain Jr., D.**, Reed, Z., & Keene, K. (2021, Nov 20). Investigating social construction of knowledge during asynchronous discussions. 5th Northeastern Conference on Research in Undergraduate Mathematics Education. New Brunswick, NJ (virtual).
-
-
-### Internal or External Funding Proposals
-Principal Investigator, ERAU-W Faculty Seed Grant: Developing Autonomous, Targeted Feedback in Precalculus, 2021-2022. Funded for $4,069.
-
-### Other Scholarly Activity
-Invited talk. Chamberlain Jr., D. & Faulconer, E. (2022, Apr. 21). How We Manage Large-Scale Data Collection. Invited by Embry-Riddle Aeronautical University - Worldwide College of Arts and Sciences Brown Bag Lunch & Learn Series.
-
-## Year 2
-### Peer-Reviewed Publications
-Faulconer, E., **Chamberlain Jr., D.**, & Woods, B. (2022). A Case Study of Community of Inquiry Presences and Cognitive Load in Asynchronous Online STEM Courses. Online Learning Journal. DOI: http://dx.doi.org/10.24059/olj.v26i3.3386.
-
-### Presentations
-### Internal or External Funding Proposals
-
-## Year 3
-### Peer-Reviewed Publications
-### Presentations
-### Internal or External Funding Proposals
-
-## Year 4
-### Peer-Reviewed Publications
-### Presentations
-### Internal or External Funding Proposals
-
-## Year 5
-### Peer-Reviewed Publications
-### Presentations
-### Internal or External Funding Proposals
-
-
-# Reorganize and present as a series of research projects
-
-Chamberlain Jr., D. (PI). (2021). Developing Autonomous, Targeted Feedback in Precalculus. Embry-Riddle Aeronautical University – Worldwide Faculty SEED grant. Total requested: $4,069 (October 2021 – July 2022).  
-
-Chamberlain Jr., D. (PI) (2024). Autonomous Discovery-Based Learning Activities and Diagnostic Online Assessments. NSF Faculty Early Career Development (CAREER) Program. Total Requested: $500,000 (January 2025 – December 2030). Drafting – submission 07/25/2024. 
-
-Chamberlain Jr., D. (PI) (2023). Integrating Machine Learning in Undergraduate Mathematics Education Research. NSF-EDU Core Research: Building Capacity in STEM Education Research. Total Requested: $300,000 (October 2023 – September 2026) Drafting – submission 03/29/2023. 
-
-Chamberlain Jr., D. (90%) and Jeter, R. (10%) (202X). Utilizing Theoretically-Driven Distractors to Make Diagnostic Multiple-Choice Assessments Possible. International Journal of Research in Undergraduate Mathematics Education (IJRUME). Drafting – submission 12/21/2022. 
-
-Chamberlain Jr., D. (100%) (202X). How One Instructor Can Teach a Large-Scale, Mastery-Based College Algebra Course Online. Problems, Resources, and Issues in Mathematics Undergraduate Studies (PRIMUS). Revised and Resubmitted 08/2023.  
-
-Bailey, T. (50%), Chamberlain Jr., D. (45%), Christodoulopoulou, K. (5%) (2022). Undergraduate’s Covariational Reasoning Across Function Representations. Conference Proceedings of the 24th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Boston, MA.  
-
- 
-
-Chamberlain Jr., D. (PI), Reed, Z. (Co-PI), & Keene, K. (Co-PI). Collective Knowledge Progression and Proliferation. Embry-Riddle Aeronautical University – Worldwide Faculty SEED grant. Total requested: $6,000 (February 2023 – July 2023). Drafting – submission 01/10/2023. 
-
-Reed, Z. (33%), Chamberlain Jr., D. (33%), & Keene, K. (33%) (202X). Collective Knowledge Progression and Proliferation in Asynchronous Calculus Discussion Boards. Educational Studies in Mathematics. Drafting – submission 06/01/2023. 
-
-Chamberlain Jr., D. (33%), Reed, Z. (33%), & Keene, K. (33%) (2023). Adapting the Argumentative Knowledge Construction Framework to Asynchronous Mathematical Discussions. Conference Proceedings of the 25th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Omaha, NE. 
-
-Reed, Z. (33%), Chamberlain Jr., D. (33%), & Keene, K. (33%) (2022). Argumentative Knowledge Construction in Asynchronous Calculus Discussion Boards. Poster at the 24th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Boston MA.  
-
-Chamberlain Jr., D. (33%), Reed, Z. (33%), & Keene, K. (33%) (2021). Investigating Social Construction of Knowledge During Asynchronous Discussions. Presentation at the 5th Northeastern Conference on Research in Undergraduate Mathematics Education, New Brunswick, NJ (virtual).  
+- ***Presentations as an Expert in the Field***
+As an expert in mixed-methods data analysis, collegiate mathematics education, and technology in education, I have spoke locally at ERAU, at a regional conference hosted by ERAU, and at national mathematics conferences. While this talks may mention parts of other research projects, they primarily focus on speaking to a non-research audience to impart generalized wisdom based on one of my expertise.
