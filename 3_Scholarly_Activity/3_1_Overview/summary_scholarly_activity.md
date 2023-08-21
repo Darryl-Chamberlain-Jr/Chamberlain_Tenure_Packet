@@ -11,7 +11,6 @@ My scholarly activity compared to total expectations outlined in the COAS ERAU-W
 | Year 3   |       2      |       2       |         3         |
 | Year 4   |      NA      |      NA       |        NA         |
 | Year 5   |      NA      |      NA       |        NA         |
-|----------|--------------|---------------|-------------------|
 | Expected |       5      |       5       |         1         |
 | Actual   |       8      |       8       |         5         | 
 
