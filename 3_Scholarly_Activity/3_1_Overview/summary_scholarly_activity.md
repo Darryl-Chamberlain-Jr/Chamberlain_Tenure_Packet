@@ -3,8 +3,7 @@ My overarching research agenda revolves around all aspects of undergraduate stud
 
 My scholarly activity compared to total expectations outlined in the COAS ERAU-W Academic Guidelines and Criteria for Tenure and Promotion to Associate Professor are provided in a summary chart below. 
 
-|          | Peer-Reviewed|  Conference   | Internal/External |
-|          | Publications | Presentations | Funding Proposals |
+|          | Peer-Reviewed Publications | Conference Presentations | Internal/External Funding Proposals |
 |----------|--------------|---------------|-------------------|
 | Year 1   |       3      |       5       |         1         |
 | Year 2   |       3      |       1       |         1         |
