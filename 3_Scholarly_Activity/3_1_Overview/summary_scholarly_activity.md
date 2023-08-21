@@ -1,5 +1,23 @@
 # Overview of Research Activity
-My overarching research agenda revolves around all aspects of undergraduate students' mathematical learning. At the macro learning-level, I consider how different types of educational activities (e.g., discussions, quizzes, exploratory activities, digital manipulatives) may affect student understanding. At the micro learning-level, I create models that predict how students may respond to individual questions that are used to provide automated feedback. My wide range of educational research, statistics, and programming skills has also led to productive collaborations where I act as an expert in data collection and qualitative/quantitative data analysis. I have organized my various research projects below by their funding source and summarized how they fit within my research agenda. 
+My overarching research agenda revolves around all aspects of undergraduate students' mathematical learning. At the macro learning-level, I consider how different types of educational activities (e.g., discussions, quizzes, exploratory activities, digital manipulatives) may affect student understanding. At the micro learning-level, I create models that predict how students may respond to individual questions that are used to provide automated feedback. My wide range of educational research, statistics, and programming skills has also led to productive collaborations where I act as an expert in data collection and qualitative/quantitative data analysis. 
+
+My scholarly activity compared to total expectations outlined in the COAS ERAU-W Academic Guidelines and Criteria for Tenure and Promotion to Associate Professor are provided in a summary chart below. 
+
+|          | Peer-Reviewed|  Conference   | Internal/External |
+|          | Publications | Presentations | Funding Proposals |
+|----------|--------------|---------------|-------------------|
+| Year 1   |       3      |       5       |         1         |
+| Year 2   |       3      |       1       |         1         |
+| Year 3   |       2      |       2       |         3         |
+| Year 4   |      NA      |      NA       |        NA         |
+| Year 5   |      NA      |      NA       |        NA         |
+|----------|--------------|---------------|-------------------|
+| Expected |       5      |       5       |         1         |
+| Actual   |       8      |       8       |         5         | 
+
+As the chart illustrates, I have already far outpaced the scholarly activity expectations. Peer-reviewed publications were submitted to a variety of well-respected locations: national conference proceedings (4), peer-reviewed mathematics education journals (3), and as a book chapter (1). Presentations primiarly took place at national and regional conferences (8), though I also presented at ERAU-hosted local and regional events (3) and was invited to talk about my research at another university as part of a seminar series (1). Funding proposals I was a part of were wildly successful: I was PI on internal funding (2), co-PI on accepted NSF grants (2), and will have two additional funding proposals submitted by the end of year 3. Note that while my Record of Activities lists 6 grants, I was brought in on grant **[4]** after it was submitted and am not counting it in the funding proposal list.
+
+Given the numerous successful funding proposals I have been a part of, I have organized my various research projects below by their funding source and summarized how they fit within my research agenda. 
 
 ## Externally-Funded Research Projects
 - **PI**: ***Machine Learning Affordances in Collegiate Mathematics Education Research***
