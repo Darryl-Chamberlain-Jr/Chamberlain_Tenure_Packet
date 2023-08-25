@@ -1,91 +1,11 @@
-# Teaching Effectiveness
-<!---
-    Excellence in teaching is central to the mission and vision of the College. As such, COAS embraces a philosophy of teaching effectiveness that emphasizes knowledge of subject matter, enthusiasm in the classroom, and continuous improvement through the incorporation of new teaching methods and materials. Faculty are expected to effectively communicate with students, facilitate learning in the classroom, and promote attainment of Student Learning Outcomes and General Education Competencies. These activities should be fostered through regular participation in pedagogical development opportunities and appropriate course maintenance and redevelopments. All candidates for tenure and promotion to Associate Professor must demonstrate excellence in teaching. The portfolio should include the following:--->
-<!--- Overview --->
-<!---
-    The overview should describe a teaching philosophy of how the candidate approaches teaching in a manner that engenders student learning. This should include specifics about how the candidate implements their teaching philosophy, including 
-        1) themes for teaching in multiple modalities (e.g., how teaching asynchronously online differs from teaching synchronously in the classroom face-to-face or via EagleVision); 
-        2) methods used to determine whether teaching is effective; 
-        3) ideas for using the assessment of student learning and student feedback to improve teaching effectiveness; 
-        4) management of student-facilitated self-learning versus active engagement of students in learning; and, 
-        5) reflections on the use of teaching experiences to improve future teaching performance. 
-    The candidate should include a description of how they motivate students to learn. When reflecting on their performance, the candidate should use examples to illustrate both successes in fostering student learning (what worked and why?) and challenges faced (what did not work and why?). Finally, candidates should discuss their teaching philosophy in relation to academic discipline. For example, candidates should discuss how they believe students learn in their specific discipline and what they do to support that learning in their classes.
---->
+# Teaching Philosophy - Everyone Can Excel at Mathematics
+One of the fundamental assumptions that drive my teaching is that every student, regardless of background, age, or a million other factors, can excel at mathematics. Many of the students that come into our classroom believe "they are not math people" as if people are born to do mathematics. Due to the hirearchial nature of mathematics, topics build on other topics. Students, through no fault of their own, may not have the necessary foundation to immediately jump into the topic of the course. Students preceive this as "failing" or "not being good at math", but it just means they aren't ready *yet*. My strategies to teaching rely on bridging the gap between where students are and where we want them to be in the course. 
 
-<!--- Evidence of Teaching Effectiveness --->
-<!---
-    Candidates should present evidence of their teaching effectiveness by including all available end- of-course student evaluations and Department Chair annual overall assessments conducted while in their current rank. Specifically, candidate portfolios must include artifacts from each of the following:
-        A. annual performance evaluations from Department Chair, including self-evaluations;
-        B. student course evaluations, including candidate reflections as appropriate (see also Faculty Handbook, Section 9.3.3, sub-section 3b1);
-        C. peer Observations (See Peer Observations section below);
-        D. additional evidence of teaching effectiveness as appropriate (See Additional Evidence section below).
-    It is vital that candidates compose a self-assessment and reflection that demonstrate the ability to consider personal strengths and weaknesses, leading to a plan for continued excellence and targeted improvements.
---->
+Regardless of the modality I employ, students need a great deal feedback. I commonly achieve this feedback through technology. When building skills like solving equations or practicing mathematics, I rely on online homework systems. This does not just mean paid third party software as I have previously written my own open-source homework system for College Algebra. For students who are struggling with their homework, I will use portions of this open-source homework system to fill gaps in their knowledge. For example, students commonly have difficulty with factoring trinomials. My open-source homework page for factoring can be found at: https://xronos.clas.ufl.edu/ufmac1105/coreModules/module4Activity/factoringTrinomials. Students that are struggling are sent to this page for additional help that breaks down the topic in easy-to-understand stages. A long-term goal is to create such an open-source homework system specific to math courses here at ERAU-W. Moreover, I am constantly learning about new academic technology to enhance student learning. I developed an interactive to help students visualize and check their answers for a particularly challenging discussion problem. I am currently extending that interactive to be a full discovery-based learning activity that responds as students posit how to progress in a question with multiple ways to find the answer. The key to these types of activties are that they get students to engage with the material until they respond in expected ways. With traditional textbook homework that students *may* find answers to some of their work in the back of a book, these activities allow students to re-adjust their thinking before it turns to long-term memory. My wealth of additionial learning resources lets me help students who may have a larger gap than others catch up to the expectations of the course and succeed.
 
-<!--- Peer Observations --->
-<!---
-    All candidates submitting a portfolio for tenure and promotion to Associate Professor consideration are required to have at least five peer observations, as delineated in the COAS Peer Observation of Teaching: Policies and Procedures document. Candidates should include a statement of personal reflection about the collective peer observations obtained. This reflection statement should include information about the impact of improvements in teaching practices as delineated in the peer observations, especially in ways that create impact beyond one's own classroom.
---->
+For activities where automated feedback isn't appropriate, I encourage peer feedback around *how* students think and not on getting "correct" answers. Students reviewing other students' work is an effective way for students to reflect on topics they have already seen and reinforce concepts. In these activities, students are graded on their effort to provide feedback rather than provide correct answers. For example, when I developed discussion activities for Math 111, student replies to others had purpose. Rather than just checking if a student solved an equation "correctly", students critically reviewed others' Study Guides, Concept Videos, and how students solved a question. Students have responded positively to the focus on process over product, as illustrated in my reflection on student course evaluations. Peer feedback in group work was most effective in the EagleVision October 2022 course I taught. Body language and tone of voice are far easier to convey in person, which led students to feel comfortable sharing their sometimes erroneous thoughts with their group or the class in general.
 
-<!--- Additional Evidence of Teaching Effectiveness --->
-<!---
-    Examples of teaching effectiveness may include but are not limited to the following:
-        teaching awards and/or recognitions;
-        samples of major student projects such as capstone projects, theses, or dissertations;
-        intra- and inter-department and/or college collaboration in teaching;
-        participation in course development activities;
-        teaching-related workshops and conferences conducted or attended, including level of participation and specific outcomes implemented into teaching practices;
-        development or refinement of new engagement activities for students;
-        evidence that the faculty member is willing to participate in high-impact student engagement
-        opportunities (mentoring, internships and independent studies, or activities that foster university community partnerships);
-        participation in faculty teaching development activities;
-        participation in team teaching, or interdisciplinary teaching opportunities;
-        special initiatives in teaching.
---->
+I have run two teaching experiements with Math 111 - one of the courses I am the Course Developer and Course Mentor. The first examined student Show Work, scores on midterm/final, and their understandng of fundamental concepts in the course. The Show Work illuminated new ways students thought as they approached problems specific to the ERAU-W course that I've incorporated in automated feedback I've written. The comparison of scores on midterm/final and understanding of fundamental concepts showed me students can generally do well on the high-stakes assignments that are currently in the course, but that this does not translate into learning concepts. To that end, I'm designing an activity much like a "Choose-Your-Own-Adventure" story. This activity will rely on automated feedback (based in the Show Work analysis of how ERAU-W students think) to walk students through the process of solving a typical precalculus question. Unlike assignments students might see in paid third-party sites, the focus is on how students think as they solve the problem. The activity will prompt the student to (1) consider any additional information they want to solve for, (2) approached they want to take, and (3) encourage students to extend their process to a similar question. There will be hidden trackers that save student responses throughout the process to check if students are making mathematically sound steps as they go and providing feedback if they do not. This focus on the process both aligns with my overall teaching enviornment of process of product as well as engenders high-level mathematical thinking. A follow-up study will test whether merely completing this activity is predictive of student understanding and could form the foundation of a non-traditional summative assessment to replace high-stakes exams.
 
-<!--- CHECKLIST --->
-<!---
-    Checklist: 
-        Overview 
-            - Teaching Philosophy
-        Evidence of Teaching Effectiveness
-            - Annual Performance Evaluations
-            - Student Course Evaluations (+candidate reflections)
-            - Peer Observations
-            - Additional Evidence of Teaching Effectiveness
---->
+Students have responded overwhelmingly positively to my methods of teaching courses at ERAU-W. As noted in my reflection on Student Course Evaluations, 45/46 were entirely positive and noted the extensive feedback I provide students, the numerous helpful resources I have when needed, and the accepting environment I engender with my process over product mentality. 
 
-## Overview 
-
-## Evidence of Teaching Effectiveness
-
-
-
-### Annual Performance Evaluations
-[link pdfs here by year]
-
-
-### Student Course Evaluations with Reflection
-[link pdfs here by year]
-
-
-### Peer Observations 
-[link pdfs here by year]
-
-
-### Additional Evidence of Teaching Effectiveness
-
-<!--- YEAR 1 --->
-OLC Conference + Presentation to department
-
-<!--- YEAR 2 --->
-(Professional Development) Project NExT
-(Workshop) MAA Virtual Event: Promoting Effective Teaching Practices by Employing Cognitive Science Principles 
-Presentation to department on EV group activities.
-(Seminar) The growing importance of reproducibility and responsible workflow in the data science and statistics curriculum
-
-<!--- YEAR 3 --->
-
-<!--- YEAR 4 --->
-
-<!--- YEAR 5 --->

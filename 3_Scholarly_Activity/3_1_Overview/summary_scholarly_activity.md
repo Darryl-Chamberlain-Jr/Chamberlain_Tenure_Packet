@@ -10,8 +10,8 @@ My scholarly activity, compared to total expectations outlined in the COAS ERAU-
 | **Year 3**   |       2      |       2       |         3         |
 | **Year 4**   |      NA      |      NA       |        NA         |
 | **Year 5**   |      NA      |      NA       |        NA         |
-| **Expected** |       **5**      |       **5**       |         **1**         |
-| **Actual**   |       **8**      |       **8**       |         **5**         | 
+| **Expected** |       5      |       5       |         1         |
+| **Actual**   |       8      |       8       |         5         | 
 
 As the chart illustrates, I surpased the scholarly activity expectations by the end of year 2. Peer-reviewed publications were submitted to a variety of well-respected locations: national conference proceedings (4), peer-reviewed mathematics education journals (3), and as a book chapter (1). Presentations primiarly took place at national and regional conferences (8), though I also presented at ERAU-hosted local and regional events (3) and was invited to talk about my research at another university as part of a seminar series (1). All funding proposals I was a part of were successful: I was PI on internal funding (2), PI on external funding (1), co-PI on an NSF grant (1), and will have an additional funding proposal submitted by the end of year 3. Note that while my Record of Activities lists 6 grants, I was brought in as a co-PI on grant **[4]** after it was submitted and am not counting it in the funding proposal list.
 
