@@ -38,8 +38,7 @@ I have itemized my service by category and provided a brief explanation for each
 
 *Contacted instructors at beginning of term, provided all course updates, answered any adjunct issues with courses. Course Developer for CSCI 251 and MATH 111.*
  
-- **Hiring Committee Member** for tenure-track candidate in Data Science for Department of Mathematics,
-Science, & Technology.
+- **Hiring Committee Member** for tenure-track candidate in Data Science for Department of Mathematics, Science, & Technology.
 
 *Read application packets, met with all 1st and 2nd waves of candidates, and provided evaluation for final recommendation to dean.*
 
@@ -47,6 +46,10 @@ Science, & Technology.
 - **MAA Council Member** for Mathematical Association of America Council on Teaching and Learning, 2022--present.
 
 *Provide updates and guidance for national society Mathematical Association of America. Represent interests on technology in undergraduate mathematics education.*
+
+- **MAA committee member** for Mathematical Association of America Committee for Teaching in Undergraduate Mathematics (CTUM), 2023--present.
+
+*Stimulate evidence-based effective and equitable teaching, learning, and assessment in undergraduate education in the mathematical sciences.*
 
 - **MAA Subcommittee Chair** for Mathematical Association of America Subcommittee on Technologies in
 Mathematics Education (STME), 2022--present. Member only 2021--2022.
