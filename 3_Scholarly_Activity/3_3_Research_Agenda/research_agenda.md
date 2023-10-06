@@ -48,7 +48,7 @@
 4. Tag all sentences by term, year, course, and section. 
 I shared these scripts and tips on managing large collections of data locally at a Lunch & Learn series **[3]**.
 
-As I led this data management, it made sense for me to also lead the group of 6 student researchers we had qualitatively coding these sentences. I also developed Excel sheets to analyze data in a flexible and generic way. We presented preliminary results at a national education conference **[2]** and turned the presentation into an accepted journal publication **[4]**. 
+As I led the data management, it made sense for me to have led the group of 6 student researchers we had qualitatively coding these sentences. I also developed Excel sheets to analyze data in a flexible and generic way. We presented preliminary results at a national education conference **[2]** and turned the presentation into an accepted journal publication **[4]**. 
 
 **AY 22-23**: After numerous attempts to improve the accuracy of PDF scrapes, I refined our data collection and management process by obtaining the discussion post data via Canvas API. Moreover, I wrote Python scripts to perform analysis on the ever-increasing data we collected. At submission of this packet, we have about 900,000 sentences from student discussions from 17 terms of MATH 111 and PHYS 102 (note: Excel regularly crashes when working with 100,000+ rows and thus data necessarily needed to be restructured for large-scale analysis). I continued to oversee the 6 student researchers as they qualtitatively analyzed approximately 200,000 sentences from discussions. 
 
@@ -56,10 +56,10 @@ As I led this data management, it made sense for me to also lead the group of 6 
 
 <ins>Scholarly Products:</ins>
 
-- **[5 - National Conference Proceeding]** Chamberlain Jr., D., Faulconer, E., Wood, B. (pending acceptance, Feb 2024). Using Trees to See a Forest: Leveraging Machine Learning to Classify Student Thinking. Proceedings of the 26th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Omaha, NE. 
-- **[4 - Journal Article]** Faulconer, E., Chamberlain Jr., D., & Woods, B. (2022). A Case Study of Community of Inquiry Presences and Cognitive Load in Asynchronous Online STEM Courses. Online Learning Journal. DOI: http://dx.doi.org/10.24059/olj.v26i3.3386.
+- **[5 - National Conference Proceeding]** Chamberlain Jr., D., McGuinness, P., Faulconer, E.,  & Wood, B. (pending acceptance, Feb 2024). Using Trees to See a Forest: Leveraging Machine Learning to Classify Student Thinking. Proceedings of the 26th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Omaha, NE. 
+- **[4 - Journal Article]** Faulconer, E., Chamberlain Jr., D., & Wood, B. (2022). A Case Study of Community of Inquiry Presences and Cognitive Load in Asynchronous Online STEM Courses. Online Learning Journal. DOI: http://dx.doi.org/10.24059/olj.v26i3.3386.
 - **[3 - Local Presentation]** Chamberlain Jr., D. & Faulconer, E. (2022, Apr 21). How We Manage Large-Scale Data Collection. Invited by Embry-Riddle Aeronautical University – Worldwide College of Arts and Sciences Brown Bag Lunch & Learn Series.
-- **[2 - National Conference Presentation]** Faulconer, E., Chamberlain Jr., D., & Woods, B. (2022, April 13). Instructional Efficiency in Asynchronous Online Discussions. Online Learning Consortium Innovate Conference, Dallas, TX.
+- **[2 - National Conference Presentation]** Faulconer, E., Chamberlain Jr., D., & Wood, B. (2022, April 13). Instructional Efficiency in Asynchronous Online Discussions. Online Learning Consortium Innovate Conference, Dallas, TX.
 - **[1 - External Grant]** Co-Principal Investigator, NSF IUSE: Community of Inquiry and Cognitive Load in Online STEM: Persistence, Performance, and Perspectives, with Emily Faulconer (PI) and Beverly Wood (co-PI). 2021-2024. Award amount: $233,298.
 
 ## **Co-PI**: ***Undergraduate Research for Fully Online STEM Students: Impact of Expanded Curricular Options on STEM Attitudes, Identity, & Career Ambitions***
