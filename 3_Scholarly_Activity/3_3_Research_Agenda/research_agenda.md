@@ -8,14 +8,14 @@
 - Internally through ERAU-W SEED grant, 10/1/21--6/31/22. 
 - Internal funding for professional development (Certificate in Data Science). 
 - External funding for professional development (5-day Workshop).
-- (Pending Approval) Externally through subgrant awarded from NSF grant, 10/1/23--6/31/24. 
+- Externally through subgrant awarded from NSF grant, 10/1/23--6/31/24. 
 - Applying for NSF CAREER grant in July 2024.
 
 <ins>Roles:</ins> All aspects of the project.
 
 <ins>Brief Description by Academic Year:</ins> 
 
-**AY 21-22**: Initially, this project focused on developing automated feedback for traditional assignments such as homework, quizzes, and exams. After collecting data funded by the ERAU-W SEED grant **[1]**, I discovered that ERAU-W students performed well (enough) on traditional assignments but exhibited elementary conceptions of key mathematical concepts such as function, variable, and vector. This lead to a re-design of the MATH 111 course to incorporate discussions that engaged students in developing more sophisticated conceptions of key mathematical concepts. In the interim, I resubmitted a journal article **[3]** on a previous course redesign utilizing automated feedback that covers similar content to our MATH 111 course. The article was eventually accepted and published in AY 22-23.
+**AY 21-22**: Initially, this project focused on developing automated feedback for traditional assignments such as homework, quizzes, and exams. After collecting data funded by the ERAU-W SEED grant **[1]**, I discovered that ERAU-W students performed well on traditional assignments but exhibited elementary conceptions of key mathematical concepts such as function, variable, and vector. This lead to a re-design of the MATH 111 course to incorporate discussions that engaged students in developing more sophisticated conceptions of key mathematical concepts. In the interim, I resubmitted a journal article **[3]** on a previous course redesign utilizing automated feedback that covers similar content to ERAU-W's MATH 111 course. The article was eventually accepted and published in AY 22-23.
 
 **AY 22-23**: While designing a study to explore the impacts of the MATH 111 discussion redesign, I explored ways to leverage technology to improve students' mathematical conceptions through non-traditional assignments. This led to engaging in two major professional development actitives: (1) taking 5 Coursera courses to earn a certificate in Data Science and (2) attending a 5-day workshop on authoring dynamic mathematical activities through a webpage. The certificate in Data Science prepared me to incorporate Machine Learning in both my work on designing automated feedback as well as enhancing my research data management and analysis skills. The 5-day workshop on authoring dynamic mathematical activities allowed me to develop dynamic, non-traditional assignments that would incorporate the automated feedback I had previously established. Moreover, the additional training these professional development activities provided allowed me to be a leader in technology in mathematics education and cohost a workshop **[2]** on technology at a national mathematics education research conference (RUMEC). I was also asked to speak at a mathematics department **[4]** on incorporating technology into mathematics education research, likely due to cohosting the tech workshop at the high-profile conference. 
 
@@ -41,18 +41,18 @@
 
 <ins>Brief Description by Year:</ins>
 
-**AY 21-22:** I was recruited to join this NSF grant **[1]** shortly after starting at ERAU-W to provide data management and analysis expertise. In particular, I was tasked with partially automating the manual data collection process. As part of the project, student discussion posts were copied, pasted into a Word document, manually separated by sentence, and manually deidentified. I wrote several Python scripts to:
+**AY 21-22:** I was recruited to join this NSF grant **[1]** shortly after starting at ERAU-W to provide data management and analysis expertise. In particular, I was tasked with partially automating the manual data collection process. Before my inclusion in the project, student discussion posts were copied, pasted into a Word document, manually separated by sentence, and manually deidentified. I wrote several Python scripts to:
 1. Scrape PDF files for student and instructor posts.
 2. Split all post by sentence and tag the speaker. 
 3. Deidentify all student and instructor names.
 4. Tag all sentences by term, year, course, and section. 
 I shared these scripts and tips on managing large collections of data locally at a Lunch & Learn series **[3]**.
 
-As I led the data management, it made sense for me to have led the group of 6 student researchers we had qualitatively coding these sentences. I also developed Excel sheets to analyze data in a flexible and generic way. We presented preliminary results at a national education conference **[2]** and turned the presentation into an accepted journal publication **[4]**. 
+As I led the data management, I also led the group of 6 student researchers we had qualitatively coding these sentences. I also developed Excel sheets to analyze data in a flexible and generic way. We presented preliminary results at a national education conference **[2]** and turned the presentation into an accepted journal publication **[4]**. 
 
 **AY 22-23**: After numerous attempts to improve the accuracy of PDF scrapes, I refined our data collection and management process by obtaining the discussion post data via Canvas API. Moreover, I wrote Python scripts to perform analysis on the ever-increasing data we collected. At submission of this packet, we have about 900,000 sentences from student discussions from 17 terms of MATH 111 and PHYS 102 (note: Excel regularly crashes when working with 100,000+ rows and thus data necessarily needed to be restructured for large-scale analysis). I continued to oversee the 6 student researchers as they qualtitatively analyzed approximately 200,000 sentences from discussions. 
 
-**AY 23-24**: Student coders have finished enough data analysis that we can prepare manuscripts. I am leading efforts on a presentation and paper **[5]** on the use of technology for data management as well as automating the coding process using our extensive database of sentences coded to train a machine learning model. 
+**AY 23-24**: Student coders have finished enough data analysis that we can prepare manuscripts. I am leading efforts on a presentation and paper **[5]** on the use of technology for data management as well as automating the coding process using our extensive database of sentences coded to train a machine learning model. These efforts will lead to at least two more publications (one on results of the analysis and another on the machine learning model) by the end of the academic year.
 
 <ins>Scholarly Products:</ins>
 
@@ -79,11 +79,11 @@ N/A - was not part of research team.
 Brought on to replace previous data expert on NSF project in January 2023. Participated in drafting grant before submission. Participated in responding to NSF program officer with comments. 
 
 **AY 23-24**
-Project formally begins in October 2023.
+Project formally begins in October 2023. However, I have been included as the data analyst on a paper from the previous NSF grant this project is continuing. The paper, *Virtual Mentorship for Online Undergraduate Research: Analysis of Mentors and Mentees' Perspectives*, has been submitted to the Journal of Experiential Education in October 2023. I wrote the methodology, data analysis approach, results, and part of the discussion for this paper. 
 
 <ins>Scholarly Products:</ins>
 
-None so far.
+- **[1 - Journal Article]** Faulconer, E., Terwilliger, B., Chamberlain Jr., D., Deters, R., & Kam, C. (under review Oct 2023). Virtual Mentorship for Online Undergraduate Research: Analysis of Mentors and Mentees' Perspectives. Journal of Experiential Education.
 
 # Internally-Funded Research Projects
 ## **PI/Co-PI**: ***Collective Knowledge Progression and Proliferation in Asynchronous Calculus Discussion Boards***
