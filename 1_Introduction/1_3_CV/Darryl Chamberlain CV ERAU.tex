@@ -69,11 +69,19 @@
 		#1
 	}
 }
-% Counter for Session Organizations
+% Counter for Conference Session Organizations
 \newcounter{sessionOrganizationCounter}
 \newcommand{\sessionOrganization}[1]{%
 	\stepcounter{sessionOrganizationCounter}
 	\cvitem{[\arabic{sessionOrganizationCounter}]}{%
+		#1
+	}
+}
+% Counter for Local Session Organizations
+\newcounter{localOrganizationCounter}
+\newcommand{\localOrganization}[1]{%
+	\stepcounter{localOrganizationCounter}
+	\cvitem{[\arabic{localOrganizationCounter}]}{%
 		#1
 	}
 }
@@ -235,7 +243,7 @@
 
 \underReviewArticle{%
 	Reed, Z. \& \textbf{Chamberlain Jr., D.}
-	(initial submission Mar 2023, accepted for chapter submission Jul 2023).
+	(initial submission Mar 2023, accepted for chapter submission Jul 2023, chapter draft submitted Nov 2023).
 	\emph{A Framework for Analyzing Asynchronous Discussion Activities}. 
 	Teaching and Learning Mathematics Online 2e, CRC Press, FL. 
 	CRediT Roles: Conceptualization, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Project Administration, Software, Visualization, Writing - Original Draft.
@@ -298,11 +306,12 @@
 
 \section{Peer-Reviewed Conference Proceedings {\footnotesize [asterisk denotes presenter]}}
 \peerReviewedConference{
-	\textbf{Chamberlain Jr., D.}*, McGuinness, P., Faulconer, E.,  \& Wood, B.
-	(pending acceptance, 2024, Feb 22-24). 
-	\textit{Using Trees to See a Forest: Leveraging Machine Learning to Classify Student Thinking.} 26th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Omaha, NE.  
-	CRediT Roles: Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Software, Writing - Original Draft, Writing - Review \& Editing.
+	\textbf{Chamberlain Jr., D.}*, McGuinness, P., Faulconer, E., \& Wood, B. (2023). 
+	\textit{Using Trees to See a Forest: Leveraging Machine Learning to Classify Student Thinking.}
+	Poster at 25th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Omaha, NE.
+	CRediT Roles: Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Writing - Original Draft, Writing - Review \& Editing.
 }
+
 \peerReviewedConference{
 	\textbf{Chamberlain Jr., D.}*, Reed, Z.*, \& Keene, K.
 	(2023, Feb 23-25). 
@@ -505,45 +514,8 @@
 }
 %\section{Workshops}
 %\workshops{}
-\section{Invited Talks}
-\invitedTalks{%
-	\textbf{Chamberlain Jr., D.}
-	(2023, Mar 29).
-	\textit{Predicting Students' Thoughts to Provide Elaborative Feedback}.
-	Invited by California State University Bakersfield Mathematics Department Seminar Series.
-}
-\invitedTalks{%
-	 Faulconer, E., Bourdeau, D., Kiernan, K., \& \textbf{Chamberlain Jr., D.}
-	(2023, Jan 21).
-	\textit{Non-Traditional Scholarly Publication}. 
-	Invited by Embry-Riddle Aeronautical University -- Worldwide Research Scholars Program.
-}
-\invitedTalks{%
-	\textbf{Chamberlain Jr., D.} \& Faulconer, E.
-	(2022, Apr 21).
-	\textit{How We Manage Large-Scale Data Collection}. 
-	Invited by Embry-Riddle Aeronautical University -- Worldwide College of Arts and Sciences Brown Bag Lunch \& Learn Series.
-}
-\invitedTalks{%
-	Paolucci, C. \& \textbf{Chamberlain Jr., D.}
-	(2021, Mar 25).
-	\textit{A profile of the content knowledge development needs of Florida's alternatively-certified teachers}. 
-	Invited by University of Florida Education Policy Research Center Research Brown Bag Series.
-}
-\invitedTalks{%
-	\textbf{Chamberlain Jr., D.} 
-	(2020, Nov 13).
-	\textit{Integrating Augmented Intelligence into Mathematics Education}. 
-	Invited by Florida International University Mathematics Education Seminar.
-}
-\invitedTalks{%
-	\textbf{Chamberlain Jr., D.} 
-	(2020, Sept 17).
-	\textit{Automatic and Diagnostic Item Generation}. 
-	Invited by the University of Florida Lastinger Center.
-}
 
-\section{Conference Session/Workshop Organization}
+\section{Conference Session or Workshop Organization}
 \sessionOrganization{
 	\textbf{Chamberlain Jr., D.} \& Barber, R. (2023, Aug 2). Session: \textit{Unspoken Research Components}. 
 	2023 MAA MathFest, 
@@ -581,6 +553,59 @@
 	AMS Spring 2016 Southeastern Regional Conference, 
 	Athens, GA.
 }
+
+\section{Invited Talks}
+\invitedTalks{%
+	\textbf{Chamberlain Jr., D.}
+	(2023, Mar 29).
+	\textit{Predicting Students' Thoughts to Provide Elaborative Feedback}.
+	Invited by California State University Bakersfield Mathematics Department Seminar Series.
+}
+\invitedTalks{%
+	Faulconer, E., Bourdeau, D., Kiernan, K., \& \textbf{Chamberlain Jr., D.}
+	(2023, Jan 21).
+	\textit{Non-Traditional Scholarly Publication}. 
+	Invited by Embry-Riddle Aeronautical University -- Worldwide Research Scholars Program.
+}
+\invitedTalks{%
+	\textbf{Chamberlain Jr., D.} \& Faulconer, E.
+	(2022, Apr 21).
+	\textit{How We Manage Large-Scale Data Collection}. 
+	Invited by Embry-Riddle Aeronautical University -- Worldwide College of Arts and Sciences Brown Bag Lunch \& Learn Series.
+}
+\invitedTalks{%
+	Paolucci, C. \& \textbf{Chamberlain Jr., D.}
+	(2021, Mar 25).
+	\textit{A profile of the content knowledge development needs of Florida's alternatively-certified teachers}. 
+	Invited by University of Florida Education Policy Research Center Research Brown Bag Series.
+}
+\invitedTalks{%
+	\textbf{Chamberlain Jr., D.} 
+	(2020, Nov 13).
+	\textit{Integrating Augmented Intelligence into Mathematics Education}. 
+	Invited by Florida International University Mathematics Education Seminar.
+}
+\invitedTalks{%
+	\textbf{Chamberlain Jr., D.} 
+	(2020, Sept 17).
+	\textit{Automatic and Diagnostic Item Generation}. 
+	Invited by the University of Florida Lastinger Center.
+}
+
+\section{Local Session or Workshop Organization}
+\localOrganization{%
+	\textbf{Chamberlain Jr., D.}, Faulconer, E., Terwilliger, B., \& Deters, R.,
+	(2023, November). 
+	\textit{Current Research Opportunities}. 
+	ERAU Worldwide Research Scholars Workshop Series. 
+}
+\localOrganization{%
+	Faulconer, E., Terwilliger, B., Deters, R., \& \textbf{Chamberlain Jr., D.},
+	(2023, October). 
+	\textit{Meet the Mentors}. 
+	ERAU Worldwide Research Scholars Workshop Series. 
+}
+
 
 \section{Teaching Experience} 
 \cventry{2023--present}
