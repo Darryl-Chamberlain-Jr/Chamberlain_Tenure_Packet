@@ -1,11 +1,12 @@
 \documentclass[10pt,a4paper,sans]{moderncv}       
 
-\moderncvstyle{casual}                 
+\moderncvstyle{casual}
 \moderncvcolor{blue}      
 \usepackage{changepage}     
 \usepackage[bottom]{footmisc}                                         
 % adjust the page margins
 \usepackage[left=0.75 in,right= 0.75 in,top= 0.5 in,bottom= 1 in]{geometry}
+\usepackage{ragged2e}
 \setlength{\hintscolumnwidth}{2.4cm}                % if you want to change the width of the column with the dates 
 
 % Counter for Under Review Journal Articles
@@ -86,16 +87,27 @@
 	}
 }
 
+% Counter for White Papers
+\newcounter{whitePaperCounter}
+\newcommand{\whitePaper}[1]{%
+	\stepcounter{whitePaperCounter}
+	\cvitem{[\arabic{whitePaperCounter}]}{%
+		#1
+	}
+}
+
 % personal data
 \name{Darryl}{Chamberlain Jr.}
 \title{Curriculum Vitae}                              
 %\address{600 S. Clyde Morris Blvd. Daytona Beach, FL 32114-3900}{}{}          
 \email{Darryl.Chamberlain@erau.edu}    
-\homepage{faculty.erau.edu/Darryl.Chamberlain}             
+\homepage{faculty.erau.edu/Darryl.Chamberlain}           
+
+\raggedright  
 
 \begin{document}
 \makecvtitle
-\vspace*{-2cm}
+\vspace*{-1cm}
 \section{Education}
 \cventry{2023}
 {Certificate, Applied Data Science with Python}
@@ -109,7 +121,7 @@
 	{Ph.D., Mathematics and Statistics}
 	{}{}
 	{\textit{Georgia State University}}
-	{ Research specialization in Collegiate Mathematics Education. \\ 
+	{Qualifying Exams in Collegiate Mathematics Education, Abstract Algebra, and Matrix Analysis. \\ 
 	\href{https://scholarworks.gsu.edu/math_diss/46/}{\underline{Dissertation}} investigated how students develop an understanding of proof by contradiction. 
 	%\\ Advised by Dr. Draga Vidakovic.
 	}
@@ -171,9 +183,9 @@
 %	{2024-2029.}
 %	{}{}
 \cventry{
-		\$26,962\\ pending}
+	\$26,962\\ pending}
 	{\textbf{Co-Principal Investigator}}
-	{Spencer Foundation Small Grants Program: EXCELing in STEM: The Impact of Empowering Student Engagement with the Public.}
+	{Spencer Foundation Small Grants Program: EXCELing in STEM: The Impact of Empowering Student Engagement with the Public}
 	{with Emily Faulconer (PI), Amy Gruss (supporting researcher), Effie Kartsonaki (supporting researcher), and Dong Jun Kim (supporting researcher), 2025-2026.}
 	{}{}
 \cventry{
@@ -218,6 +230,8 @@
 	{NSF IUSE: Promoting Reasoning in Undergraduate Mathematics (PRIUM)}
 	{with Draga Vidakovic (PI), Valerie Miller (Co-PI), and Guantao Chen (Co-PI). 2016-2022.}
 	{}{}
+
+\newpage 
 \section{Internal Research Funding Experience}
 \cventry{
 	\$2,000\\ funded}
@@ -228,13 +242,13 @@
 \cventry{
 	\$6,000\\ funded}
 	{\textbf{Principal Investigator}}
-	{ERAU-W Faculty Seed Grant: Collective Knowledge Progression and Proliferation in Asynchronous Calculus Discussion Boards}
+	{ERAU-WW Faculty Seed Grant: Collective Knowledge Progression and Proliferation in Asynchronous Calculus Discussion Boards}
 	{with Zackery Reed (co-PI) and Karen Keene (co-PI). 2023.}
 	{}{}
 \cventry{
 	\$4,069\\ funded}
 	{\textbf{Principal Investigator}}
-	{ERAU-W Faculty Seed Grant: Developing Autonomous, Targeted Feedback in Precalculus}
+	{ERAU-WW Faculty Seed Grant: Developing Autonomous, Targeted Feedback in Precalculus}
 	{2021-2022.}
 	{}{}
 \cventry{
@@ -245,34 +259,52 @@
 	{}{}
 
 \section{Journal Articles Under Review}
-%\underReviewArticle{%
-%	\textbf{Chamberlain Jr., D.} \& Jeter, R. 
-%	(under review Dec 2022).
-%	\emph{Utilizing theoretically driven distractors to make diagnostic multiple-choice assessments possible}. 
-%	International Journal on Research in Undergraduate Mathematics Education Special Issue: Digital Experiences in University Mathematics Education. Advanced and Expectations. 
-%}
+\underReviewArticle{%
+	\textbf{Chamberlain Jr., D.}, Faulconer, E., \& Wood, B.
+	(under review June 2024).
+	\emph{Engaging Asynchronous Discussions: Impact of an Intervention to Enhance Community and Improve Learner Outcomes}. 
+	Active Learning in Higher Education. \newline
+   \textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Methodology, Visualization, Writing - Original Draft.
+}
 
 \underReviewArticle{%
-	Faulconer, E., Terwilliger, B., \textbf{Chamberlain Jr., D.}, Deters. R., \& Kam, C. (under review Oct 2023). 
+	\textbf{Chamberlain Jr., D.}, Faulconer, E., \& Wood, B.
+	(under review June 2024).
+	\emph{Direct Measures of Social, Cognitive, and Teacher Presence in Asynchronous, Online Discussions}. 
+	International Journal of Educational Research.  \newline
+   \textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Methodology, Visualization, Writing - Original Draft.
+}
+
+\underReviewArticle{%
+   Velez, M., \textbf{Chamberlain Jr., D.}, Reed, Z., \& Aydiner, C. 
+   (abstract accepted May 2024, chapter submission Aug 2024).
+   \textit{Black Boxes Revisited: Understanding GenAI Responses to Students’ Written Work}.
+   Thresholds in Education. \newline
+  \textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Methodology, Writing - Original Draft.
+}
+
+\underReviewArticle{%
+	\textbf{Chamberlain Jr., D.}, Faulconer, E., \& Wood, B.
+	(under review May 2024).
+	\emph{Structural Framework for Interactions Between Community of Inquiry Presences, Cognitive Load, Demographics, and Grades}. 
+	Active Learning in Higher Education. \newline
+   \textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Methodology, Visualization, Writing - Original Draft.
+}
+
+\underReviewArticle{%
+	Faulconer, E., Terwilliger, B., \textbf{Chamberlain Jr., D.}, Deters. R., \& Kam, C. (under review Apr 2024). 
 	\textit{Virtual Mentorship for Online Undergraduate Research: Analysis of Mentors and Mentees' Perspectives }.
-	Journal of Experiential Education. 
-	CRediT Roles: Data Curation, Formal Analysis, Writing - Original Draft.
+	Journal of Mentoring \& Tutoring. \newline
+	\textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Writing - Original Draft.
 }
 
 \underReviewArticle{%
 	Reed, Z. \& \textbf{Chamberlain Jr., D.}
 	(initial submission Mar 2023, accepted for chapter submission Jul 2023, chapter draft submitted Nov 2023, chapter accepted pending minor revisions Feb 2024).
 	\emph{A Framework for Analyzing Asynchronous Discussion Activities}. 
-	Teaching and Learning Mathematics Online 2e, CRC Press, FL. 
-	CRediT Roles: Conceptualization, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Project Administration, Software, Visualization, Writing - Original Draft.
+	Teaching and Learning Mathematics Online 2e, CRC Press, FL.  \newline
+	\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Project Administration, Software, Visualization, Writing - Original Draft.
 }
-
-%\underReviewArticle{%
-%	Paolucci, C., \textbf{Chamberlain Jr., D.}, Redding, C., Vancini, S., \& Reese, A.
-%	(first submission Nov 2021, revised and resubmitted Aug 2022).
-%	\emph{Critical lessons from certification exam preparation materials for mathematics teachers' content knowledge and professional learning}. 
-%	Journal of Teacher Education.
-%}
 
 \section{Peer-Reviewed Journal Articles}
 \peerReviewedArticle{%
@@ -285,24 +317,24 @@
 	Faulconer, E., \textbf{Chamberlain Jr., D.}, \& Wood, B. 
 	(2022). 
 	\textit{A Case Study of Community of Inquiry Presences and Cognitive Load in Asynchronous Online STEM Courses}.
-	Online Learning Journal. DOI: http://dx.doi.org/10.24059/olj.v26i3.3386. 
-	CRediT Roles: Data Curation, Formal Analysis, Methodology, Software, Visualization, Writing - Original Draft, Writing - Review \& Editing.
+	Online Learning Journal. DOI: http://dx.doi.org/10.24059/olj.v26i3.3386. \newline
+	\textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Methodology, Software, Visualization, Writing - Original Draft, Writing - Review \& Editing.
 }
 \peerReviewedArticle{%
 	\textbf{Chamberlain Jr., D.} \& Vidakovic, D. 
 	(2021).
 	\emph{Cognitive trajectory of proof by contradiction for Transition-to-Proof students}.
 	Journal of Mathematical Behavior.
-	DOI: 10.1016/j.jmathb.2021.100849. 
-	CRediT Roles: Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Project Administration, Writing - Original Draft, Writing - Review \& Editing.
+	DOI: 10.1016/j.jmathb.2021.100849. \newline
+	\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Project Administration, Writing - Original Draft, Writing - Review \& Editing.
 }
 \peerReviewedArticle{%
 	\textbf{Chamberlain Jr., D.} \& Jeter, R.\footnotemark \hspace*{1mm} 
 	(2020). 
 	\emph{Creating diagnostic assessments: Automated distractor generation with integrity}. 
 	Journal of Assessment in Higher Education. 
-	DOI: 10.32473/jahe.v1i1.116892. 
-	CRediT Roles: Conceptualization, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Project Administration, Software, Visualization, Writing - Original Draft, Writing - Review \& Editing.
+	DOI: 10.32473/jahe.v1i1.116892. \newline
+	\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Project Administration, Software, Visualization, Writing - Original Draft, Writing - Review \& Editing.
 }
 \footnotetext{Co-first authors.}
 \peerReviewedArticle{%
@@ -310,105 +342,122 @@
 	(2020). 
 	\textit{Transitioning to an active learning environment for calculus at the University of Florida.} 
 	Problems, Resources, and Issues in Mathematics Undergraduate Studies.
-	DOI: 10.1080/10511970.2020.1769235. 
-	CRediT Roles: Conceptualization, Data Curation, Formal Analysis, Methodology, Writing - Original Draft, Writing - Review \& Editing.
+	DOI: 10.1080/10511970.2020.1769235. \newline
+	\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Methodology, Writing - Original Draft, Writing - Review \& Editing.
 }
 \peerReviewedArticle{
 	Stalvey, H., Burns, A., \textbf{Chamberlain Jr., D.}, Kemp, A., Meadows, L., \& Vidakovic, D. 
 	(2019). 
 	\emph{Students' understanding of the concepts involved in hypothesis testing for one population.} 
 	Journal of Mathematical Behavior. 
-	DOI: 10.1016/j.jmathb.2018.03.011. 
-	CRediT Roles: Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Writing - Original Draft, Writing - Review \& Editing.
+	DOI: 10.1016/j.jmathb.2018.03.011. \newline
+	\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Writing - Original Draft, Writing - Review \& Editing.
 }
 
 \section{Peer-Reviewed Conference Proceedings {\footnotesize [asterisk denotes presenter]}}
 \peerReviewedConference{
 	\textbf{Chamberlain Jr., D.}*, McGuinness, P., Faulconer, E., \& Wood, B. (2024, Feb 22-24). 
 	\textit{Using Trees to See a Forest: Leveraging Machine Learning to Classify Student Thinking.}
-	Poster at 25th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Omaha, NE.
-	CRediT Roles: Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Writing - Original Draft, Writing - Review \& Editing.
+	Poster at 26th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Omaha, NE. \newline
+	\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Writing - Original Draft, Writing - Review \& Editing.
 }
 
 \peerReviewedConference{
 	\textbf{Chamberlain Jr., D.}*, Reed, Z.*, \& Keene, K.
 	(2023, Feb 23-25). 
 	\textit{Adapting the Argumentative Knowledge Construction Framework to Asynchronous Mathematical Discussions}.
-	25th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Omaha, NE. 
-	CRediT Roles: Conceptualization, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Project Administration, Software, Visualization, Writing - Original Draft, Writing - Review \& Editing.
+	25th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Omaha, NE. \newline
+	\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Project Administration, Software, Visualization, Writing - Original Draft, Writing - Review \& Editing.
 }
 \peerReviewedConference{%
 	Bailey, T.*, \textbf{Chamberlain Jr., D.}*, \& Christodoulopoulou, K.
 	(2022, Feb 24-26). 
 	\textit{Undergraduate's covariational reasoning across function representations}.
-	24th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Boston, MA. 
-	CRediT Roles: Conceptualization, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Project Administration, Writing - Original Draft, Writing - Review \& Editing.
+	24th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Boston, MA. \newline
+	\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Project Administration, Writing - Original Draft, Writing - Review \& Editing.
 }
 \peerReviewedConference{%
 	Reed, Z.*, \textbf{Chamberlain Jr., D.*}, \& Keene, K.
 	(2022, Feb 24-26).
 	\textit{Argumentative knowledge construction in asynchronous calculus discussion boards}.
-	Poster at 24th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Boston, MA. 
-	CRediT Roles: Conceptualization, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Visualization, Writing - Original Draft.
+	Poster at 24th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Boston, MA. \newline
+	\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Visualization, Writing - Original Draft.
 }
 \peerReviewedConference{%
 	Kemp, A.*, \textbf{Chamberlain Jr., D.}, Cooley, L., Miller, V., \& Vidakovic, D. 
 	(2020, Feb 27-29). 
 	\textit{Student self- and simulated peer-evaluation of proof comprehension: Tina}. 
-	23rd Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Boston, MA. 
-	CRediT Roles: Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Writing - Original Draft, Writing - Review \& Editing.
+	23rd Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Boston, MA. \newline
+	\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Writing - Original Draft, Writing - Review \& Editing.
 }
 \peerReviewedConference{%
 	\textbf{Chamberlain Jr., D.*} \& Jeter, R. 
 	(2019, Feb 28 - Mar 2). 
 	\textit{Leveraging cognitive theory to create large-scale learning tools}.
-	22nd Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Oklahoma City, OK. 
-	CRediT Roles: Conceptualization, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Project Administration, Software, Writing - Original Draft, Writing - Review \& Editing.
+	22nd Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Oklahoma City, OK. \newline
+	\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Project Administration, Software, Writing - Original Draft, Writing - Review \& Editing.
 }
 \peerReviewedConference{%
 	\textbf{Chamberlain Jr., D.*} \& Vidakovic, D. 
 	(2018, Feb 22-24). 
 	\emph{Developing proof comprehension and proof by contradiction through logical outlines}. 
-	21st Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, San Diego, CA. 
-	CRediT Roles: Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Project Administration, Writing - Original Draft, Writing - Review \& Editing.
+	21st Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, San Diego, CA. \newline
+	\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Project Administration, Writing - Original Draft, Writing - Review \& Editing.
 }
 \peerReviewedConference{%
 	Burns, A.*, \textbf{Chamberlain Jr., D.}, Kemp, A.*, Meadows, L., Stalvey, H., \& Vidakovic, D. 
 	(2018, Feb 22-24). 
 	\emph{Reasoning about one population hypothesis testing: The case of Steve}. 
-	21st Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, San Diego, CA. 
-	CRediT Roles: Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Writing - Original Draft, Writing - Review \& Editing.
+	21st Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, San Diego, CA. \newline
+	\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Writing - Original Draft, Writing - Review \& Editing.
 }
 \peerReviewedConference{%
 	\textbf{Chamberlain Jr., D.*} \& Vidakovic, D. 
 	(2017, Feb 23-25). 
 	\emph{Developing student understanding: The case of proof by contradiction}. 
-	20th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, San Diego, CA. 
-	CRediT Roles: Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Project Administration, Writing - Original Draft, Writing - Review \& Editing.
+	20th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, San Diego, CA. \newline
+	\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Project Administration, Writing - Original Draft, Writing - Review \& Editing.
 }
 \peerReviewedConference{%
 	Burns, A.*, \textbf{Chamberlain Jr., D.}, Kemp, A.*, Meadows, L., Stalvey, H., \& Vidakovic, D. 
 	(2017, Feb 23-25). 
 	\emph{Students' understanding of test statistics in hypothesis testing}. 
-	20th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, San Diego, CA. 
-	CRediT Roles: Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Writing - Original Draft, Writing - Review \& Editing.
+	20th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, San Diego, CA. \newline
+	\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Writing - Original Draft, Writing - Review \& Editing.
 }
 \peerReviewedConference{%
 	Abel, T.*, Brazas, J.*, \textbf{Chamberlain Jr., D.}, \& Kemp, A. 
 	(2017, Feb 23-25). 
 	\emph{Characterizing mathematical digital literacy: A preliminary investigation}. 
-	20th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, San Diego, CA. 
-	CRediT Roles: Data Curation, Formal Analysis, Investigation, Writing - Original Draft, Writing - Review \& Editing.
+	20th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, San Diego, CA. \newline
+	\textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Investigation, Writing - Original Draft, Writing - Review \& Editing.
 }	
 \peerReviewedConference{%
 	\textbf{Chamberlain Jr., D.*} \& Vidakovic, D. 
 	(2016, Feb 25). 
 	\emph{Use of strategic knowledge in a transition-to-proof course: Differences between an undergraduate and graduate student}. 
 	19th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Pittsburgh, PA. %Retrived from \href{http://sigmaa.maa.org/rume/crume2016/Papers/RUME\_19\_paper\_7.pdf}{http://sigmaa.maa.org/rume/crume2016/Papers/RUME\_19\_paper\_7.pdf}
-	CRediT Roles: Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Project Administration, Writing - Original Draft, Writing - Review \& Editing.
+	\newline
+	\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Project Administration, Writing - Original Draft, Writing - Review \& Editing.
+}
+\section{White Papers}
+\whitePaper{%
+	Faulconer, E., \textbf{Chamberlain Jr., D.}, \& Wood, B.
+	(2024).
+	\textit{Community of Inquiry and Cognitive Load in online STEM: Transferability plan}.
+	Zenodo. DOI: \href{https://doi.org/10.5281/zenodo.11203344}{https://doi.org/10.5281/zenodo.11203344}
+	\newline
+	\textit{\underline{CRediT Roles:}} Data Analysis, Writing - Review \& Editing.
 }
 
-\pagebreak
+\whitePaper{%
+	Wood, B., Faulconer, E., \& \textbf{Chamberlain Jr., D.},
+	(2024).
+	\textit{Gathering Nuanced Data for Understanding Student Withdrawals}.
+	Zenodo. DOI: \href{https://doi.org/10.5281/zenodo.11094757}{10.5281/zenodo.11094757}
+	\newline
+	\textit{\underline{CRediT Roles:}} Writing - Review \& Editing.
+}
 \section{Conference Presentations {\footnotesize [asterisk denotes presenter]}}
 \presentations{
 	Faulconer, E.*, Terwilliger, B., Deters. R., \&  \textbf{Chamberlain Jr., D.}
@@ -417,7 +466,7 @@
 	Distance Learning Administration Conference, Jekyll Island, GA.
 }
 \presentations{
-	Velez, M.*, Velez, R.*, \textbf{Chamberlain Jr., D.}, \& Hoben, I.
+	Velez, M.*, \textbf{Chamberlain Jr., D.}, \& Hoben, I.
 	(2024, Jul 22-24).
 	\textit{Beyond Text Generation: Incorporating GenAI Feedback in Asynchronous Online Courses}.
 	2nd Annual Teaching and Learning with AI Conference, Orlando, FL.
@@ -432,7 +481,7 @@
 	\textbf{Chamberlain Jr., D.}*, Reed, Z.*, Rister, A.*, \& Velez, M.*
 	(2023, Feb 7). 
 	Roundtable discussion: \textit{Practical Suggestions to Improve Online Discussions Across Disciplines}.
-	2023 Academic Innovation Virtual Conference hosted by ERAU-W (virtual). 
+	2023 Academic Innovation Virtual Conference hosted by ERAU-WW (virtual). 
 }
 \presentations{
 	Faulconer, E.*, \textbf{Chamberlain Jr., D.*}, \& Wood, B.
@@ -548,6 +597,10 @@
 
 \section{Conference Session or Workshop Organization}
 \sessionOrganization{
+	\textbf{Chamberlain Jr., D.} \& Reed, Z. (2024, Feb 22). Workshop: \textit{Research on Technology in Undergraduate Mathematics Education}. 26th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME,
+	Omaha, NE. 
+}
+\sessionOrganization{
 	\textbf{Chamberlain Jr., D.} \& Barber, R. (2023, Aug 2). Session: \textit{Unspoken Research Components}. 
 	2023 MAA MathFest, 
 	Tampa, FL.
@@ -588,6 +641,18 @@
 \section{Invited Talks}
 \invitedTalks{%
 	\textbf{Chamberlain Jr., D.}
+	(2024, Mar 21).
+	\textit{Constructing Isn't Enough: Considering All Aspects of Proof}.
+	Invited by University of Florida College of Education Special Topics Seminar Course.
+}
+\invitedTalks{%
+	\textbf{Chamberlain Jr., D.}
+	(2024, Mar 18).
+	\textit{What Your Course Design Says About You: How Epistemological Lens Can Drive Course Design}.
+	Invited by University of Florida Mathematics Department Pedagogy Seminar Series.
+}
+\invitedTalks{%
+	\textbf{Chamberlain Jr., D.}
 	(2023, Mar 29).
 	\textit{Predicting Students' Thoughts to Provide Elaborative Feedback}.
 	Invited by California State University Bakersfield Mathematics Department Seminar Series.
@@ -622,8 +687,37 @@
 	\textit{Automatic and Diagnostic Item Generation}. 
 	Invited by the University of Florida Lastinger Center.
 }
-
 \section{Local Session or Workshop Organization}
+\localOrganization{%
+	Deters, R., Faulconer, E., Terwilliger, B., \& \textbf{Chamberlain Jr., D.},
+	(2024, June). 
+	\textit{Mentoring: A guided Expedition Through Research Pathways}. 
+	ERAU Worldwide Research Scholars Workshop Series. 
+}
+\localOrganization{%
+	Faulconer, E., Deters, R., Terwilliger, B., \& \textbf{Chamberlain Jr., D.},
+	(2024, May). 
+	\textit{Submitting to Beyond}. 
+	ERAU Worldwide Research Scholars Workshop Series. 
+}
+\localOrganization{%
+	Terwilliger, B., Deters, R., Faulconer, E., \& \textbf{Chamberlain Jr., D.},
+	(2024, April). 
+	\textit{Innovative Dissemination}. 
+	ERAU Worldwide Research Scholars Workshop Series. 
+}
+\localOrganization{%
+	Terwilliger, B., Deters, R., Faulconer, E., \& \textbf{Chamberlain Jr., D.},
+	(2024, March). 
+	\textit{Marketing Your Research Experience}. 
+	ERAU Worldwide Research Scholars Workshop Series. 
+}
+\localOrganization{%
+	Faulconer, E., Deters, R., Terwilliger, B., \& \textbf{Chamberlain Jr., D.},
+	(2024, February). 
+	\textit{Discovery Day 2024}. 
+	ERAU Worldwide Research Scholars Workshop Series. 
+}
 \localOrganization{%
 	Deters, R., Terwilliger, B., Faulconer, E., \& \textbf{Chamberlain Jr., D.},
 	(2024, January). 
@@ -643,7 +737,6 @@
 	ERAU Worldwide Research Scholars Workshop Series. 
 }
 
-\pagebreak
 \section{Teaching Experience} 
 \cventry{2023--present}
 {Introduction to Programming for Data Science}
@@ -669,7 +762,7 @@
 		\item Summer 2018: Special flipped classroom with $\sim$20 freshmen engineering students.
 		\item Spring 2018: Large lecture with 200+ students.
 \end{itemize}}
-\cventry{Spring 2021}{Sets and Logic}{Instructor}{}{}{\begin{itemize}
+\cventry{Spring 2021}{Sets and Logic}{Developer/Instructor}{}{}{\begin{itemize}
 		\item Modified Moore's Method with $\sim$30 students. \end{itemize}}
 \cventry{Summer 2019}{Analytic Geometry and Calculus II}{Instructor}{}{}{\begin{itemize}
 		\item Flipped class with $\sim$20 students. \end{itemize}}
@@ -780,23 +873,23 @@
 
 \section{University Service}
 \cvitem{2023--present}{
-	\textbf{Educational Experiences Member} for the ERAU-W Quality Enhancement Plan committee. 
+	\textbf{Educational Experiences Member} for the ERAU-WW Quality Enhancement Plan committee. 
 }
-\cvitem{2023}{
+\cvitem{2023--present}{
 	\textbf{Grant Reviewer} for ERAU Faculty Innovative Research in Science and Technology (FIRST) grant. 
 }
 \cvitem{2022--2023}{
-	\textbf{Grant Reviewer} for ERAU-W Faculty SEED grant. 
+	\textbf{Grant Reviewer} for ERAU-WW Faculty SEED grant. 
 }
 \cvitem{2022--2025}{
-	\textbf{Academic Technology Committee Chair} for ERAU-W Faculty Senate. 
+	\textbf{Academic Technology Committee Chair} for ERAU-WW Faculty Senate. 
 }
 \section{College Service}
 %\cvitem{2023}{
 %	\textbf{Appeal Committee Member} for ERAU College of Arts and Sciences.
 %}
 \cvitem{2022--2023}{
-	\textbf{Faculty Council Member} for ERAU-W College of Arts and Sciences.
+	\textbf{Faculty Council Member} for ERAU-WW College of Arts and Sciences.
 }
 \cvitem{2020--2021}{
 	\textbf{Steering Committee Member} for the University of Florida College of Liberal Arts and Sciences.
@@ -811,26 +904,31 @@
 
 \section{Departmental Service}
 \cvitem{2024}{
+	\textbf{Hiring Committee Member} for tenured Department Chair search for Department of Behavioral and Social Science.
+}
+\cvitem{2024}{
 	\textbf{Hiring Committee Member} for tenured Department Chair search for Department of Mathematics, Science, and Technology.
 }
 \cvitem{2022--2023}{
 	\textbf{Hiring Committee Member} for tenure-track candidate in Data Science for Department of Mathematics, Science, and Technology.
 }
 \cvitem{2022--2023}{
-	\textbf{Mathematics Minor Coordinator} for ERAU-W Department of Mathematics, Science, and Technology. 
+	\textbf{Mathematics Minor Coordinator} for ERAU-WW Department of Mathematics, Science, and Technology. 
 }
 \cvitem{2022--2023}{
-	\textbf{Applied Data Science Minor Coordinator} for ERAU-W Department of Mathematics, Science, and Technology. 
+	\textbf{Applied Data Science Minor Coordinator} for ERAU-WW Department of Mathematics, Science, and Technology. 
 }
 \cvitem{2021--present}{
-	\textbf{Course Mentor} for ERAU-W Department of Mathematics, Science, and Technology
+	\textbf{Course Mentor} for ERAU-WW Department of Mathematics, Science, and Technology
 	\begin{itemize}
-		\item CSCI 251 Intro to Programming for Data Science (2023--present)
-		\item MATH 112 Applied Calculus for Aviation (2023--present)
-		\item MATH 111 Pre-Calculus for Aviation (2022--present)
-		\item STAT 412 Probability \& Statistics (2022--present)
-		\item GNED 103 Basic Mathematics (2021--2022)
-		\item MATH 106 Basic Algebra \& Trigonometry (2021--2022)
+		\item CSCI 251 - Intro to Programming for Data Science (2023--present)
+		\item MATH 112 - Applied Calculus for Aviation (2023--present)
+		\item MATH 111 - Pre-Calculus for Aviation (2022--present)
+		\item STAT 412 - Probability \& Statistics (2022--2023)
+		\item MATH 502 - Boundary Value Problems (2021--present)
+		\item MATH 546 - Application-Based Advanced Engineering Mathematics (2021--present)
+		\item GNED 103 - Basic Mathematics (2021--2022)
+		\item MATH 106 - Basic Algebra \& Trigonometry (2021--2022)
 	\end{itemize} 
 } \vspace*{-3mm}
 \cvitem{2020--2021}{
@@ -871,7 +969,6 @@
 	%\cvitem{2016--2018}
 		%{\textbf{Proof Research Group} of SIGMAA on RUME}
 
-\pagebreak 
 \section{Awards and Fellowships}
 	\cventry{Apr 2023}
 		{Monetary Award}
@@ -902,12 +999,12 @@
 	\cventry{2023}
 		{Internal}
 		{}
-		{from ERAU-W Faculty Development Research Program for Conference on Research in Undergraduate Mathematics Education, February 23-25.}
+		{from ERAU-WW Faculty Development Research Program for Conference on Research in Undergraduate Mathematics Education, February 23-25.}
 		{}{}
 	\cventry{2022}
 		{Internal}
 		{}
-		{from ERAU-W Faculty Development Research Program for Joint Mathematics Meeting 2022, January 5-8.}
+		{from ERAU-WW Faculty Development Research Program for Joint Mathematics Meeting 2022, January 5-8.}
 		{}{}
 	\cventry{2021}
 		{Internal}
