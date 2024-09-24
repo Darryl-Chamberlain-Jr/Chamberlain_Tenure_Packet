@@ -45,6 +45,15 @@
 	}
 }
 
+% Counter for Pre-prints
+\newcounter{preprintCounter}
+\newcommand{\preprint}[1]{%
+	\stepcounter{preprintCounter}
+	\cvitem{[\arabic{preprintCounter}]}{%
+		#1
+	}
+}
+
 % Counter for Presentations
 \newcounter{presentationCounter}
 \newcommand{\presentations}[1]{%
@@ -92,6 +101,15 @@
 \newcommand{\whitePaper}[1]{%
 	\stepcounter{whitePaperCounter}
 	\cvitem{[\arabic{whitePaperCounter}]}{%
+		#1
+	}
+}
+
+% Counter for Research Summary Documents
+\newcounter{ResearchSummaryCounter}
+\newcommand{\researchSummary}[1]{%
+	\stepcounter{ResearchSummaryCounter}
+	\cvitem{[\arabic{ResearchSummaryCounter}]}{%
 		#1
 	}
 }
@@ -157,14 +175,14 @@
 	{William T. Dwyer High School, Palm Beach County, FL}
 	{} 
 \section{Administrative Experience}
-\cventry{Jan--May 2024}
-	{Acting Chair}
+\cventry{2023--present}
+	{Associate Chair}
 	{}
 	{Department of Mathematics, Science, and Technology}
 	{Embry-Riddle Aeronautical University -- Worldwide}
 	{}
-\cventry{2023--present}
-	{Associate Chair}
+\cventry{Jan--May 2024}
+	{Acting Chair}
 	{}
 	{Department of Mathematics, Science, and Technology}
 	{Embry-Riddle Aeronautical University -- Worldwide}
@@ -183,7 +201,7 @@
 %	{2024-2029.}
 %	{}{}
 \cventry{
-	\$26,962\\ pending}
+	\$26,962\\ unfunded}
 	{\textbf{Co-Principal Investigator}}
 	{Spencer Foundation Small Grants Program: EXCELing in STEM: The Impact of Empowering Student Engagement with the Public}
 	{with Emily Faulconer (PI), Amy Gruss (supporting researcher), Effie Kartsonaki (supporting researcher), and Dong Jun Kim (supporting researcher), 2025-2026.}
@@ -276,14 +294,6 @@
 }
 
 \underReviewArticle{%
-   Velez, M., \textbf{Chamberlain Jr., D.}, Reed, Z., \& Aydiner, C. 
-   (abstract accepted May 2024, chapter submission Aug 2024).
-   \textit{Black Boxes Revisited: Understanding GenAI Responses to Students’ Written Work}.
-   Thresholds in Education. \newline
-  \textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Methodology, Writing - Original Draft.
-}
-
-\underReviewArticle{%
 	\textbf{Chamberlain Jr., D.}, Faulconer, E., \& Wood, B.
 	(under review May 2024).
 	\emph{Structural Framework for Interactions Between Community of Inquiry Presences, Cognitive Load, Demographics, and Grades}. 
@@ -291,22 +301,29 @@
    \textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Methodology, Visualization, Writing - Original Draft.
 }
 
-\underReviewArticle{%
-	Faulconer, E., Terwilliger, B., \textbf{Chamberlain Jr., D.}, Deters. R., \& Kam, C. (under review Apr 2024). 
+\section{Peer-Reviewed Journal Articles}
+\peerReviewedArticle{%
+	Velez, M., Reed, Z., \textbf{Chamberlain Jr., D.}, \& Aydiner, C. 
+	(2024).
+	\textit{Black Boxes Revisited: Understanding GenAI Responses to Students’ Written Work}.
+	Thresholds in Education. \newline
+	\textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Methodology, Writing - Original Draft.
+}
+
+\peerReviewedArticle{%
+	Faulconer, E., Terwilliger, B., \textbf{Chamberlain Jr., D.}, Deters. R., \& Kam, C. (2024). 
 	\textit{Virtual Mentorship for Online Undergraduate Research: Analysis of Mentors and Mentees' Perspectives }.
 	Journal of Mentoring \& Tutoring. \newline
 	\textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Writing - Original Draft.
 }
 
-\underReviewArticle{%
+\peerReviewedArticle{%
 	Reed, Z. \& \textbf{Chamberlain Jr., D.}
-	(initial submission Mar 2023, accepted for chapter submission Jul 2023, chapter draft submitted Nov 2023, chapter accepted pending minor revisions Feb 2024).
+	(2024).
 	\emph{A Framework for Analyzing Asynchronous Discussion Activities}. 
 	Teaching and Learning Mathematics Online 2e, CRC Press, FL.  \newline
-	\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Project Administration, Software, Visualization, Writing - Original Draft.
+	\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Project Administration, Software, Visualization, Writing - Original Draft, Writing - Review \& Editing.
 }
-
-\section{Peer-Reviewed Journal Articles}
 \peerReviewedArticle{%
 	\textbf{Chamberlain Jr., D.} 
 	(2023).
@@ -355,6 +372,13 @@
 }
 
 \section{Peer-Reviewed Conference Proceedings {\footnotesize [asterisk denotes presenter]}}
+%\peerReviewedConference{
+%	\textbf{Chamberlain Jr., D.}
+%	(2024, Feb 27-Mar 1). 
+%	\textit{Choices You Make Should Matter: Asynchronous Discovery Activities}.
+%	27th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Alexandria, VA.
+%}
+
 \peerReviewedConference{
 	\textbf{Chamberlain Jr., D.}*, McGuinness, P., Faulconer, E., \& Wood, B. (2024, Feb 22-24). 
 	\textit{Using Trees to See a Forest: Leveraging Machine Learning to Classify Student Thinking.}
@@ -392,7 +416,7 @@
 }
 \peerReviewedConference{%
 	\textbf{Chamberlain Jr., D.*} \& Jeter, R. 
-	(2019, Feb 28 - Mar 2). 
+	(2019, Feb 28-Mar 2). 
 	\textit{Leveraging cognitive theory to create large-scale learning tools}.
 	22nd Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Oklahoma City, OK. \newline
 	\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Project Administration, Software, Writing - Original Draft, Writing - Review \& Editing.
@@ -458,7 +482,33 @@
 	\newline
 	\textit{\underline{CRediT Roles:}} Writing - Review \& Editing.
 }
+\section{Pre-Prints}
+\preprint{%
+	\textbf{Chamberlain Jr., D.}, \& Jeter, R. 
+	(2024, August 9). 
+	\textit{Utilizing Theoretically-Driven Distractors to Make Diagnostic Multiple-Choice Assessments Possible}. 
+	https://doi.org/10.31235/osf.io/vzhm7
+}
+
+\preprint{%
+	\textbf{Chamberlain Jr., D.}, \& Faulconer, E. 
+	(2024, July 3). 
+	\textit{Structural Framework for Interactions Between Community of Inquiry Presences, Cognitive Load, Demographics, and Grades. }
+	https://doi.org/10.31235/osf.io/7ay4t
+}
+
+\section{Research Summary Documents}
+\researchSummary{%
+	Faulconer, E., \textbf{Chamberlain Jr., D.}, \& Wood, B. (2024). \textit{Community of Inquiry and Cognitive Load: Research Summary Document.} Zenodo. \href{https://zenodo.org/doi/10.5281/zenodo.7951445}{https://doi.org/10.5281/zenodo.11398144}
+}
+
 \section{Conference Presentations {\footnotesize [asterisk denotes presenter]}}
+\presentations{
+	 \textbf{Chamberlain Jr., D.}, Faulconer, E.*, Terwilliger, B., \& Deters. R.
+	 (2024, Nov 7).
+	 \textit{Cultivating Cyber Scholars: Research Support for Online STEM Students}.
+	 AAC\&U 2024 Transforming STEM Higher Education Conference, Arlington, VA.
+}
 \presentations{
 	Faulconer, E.*, Terwilliger, B., Deters. R., \&  \textbf{Chamberlain Jr., D.}
 	(2024, Jul 30).
@@ -738,9 +788,15 @@
 }
 
 \section{Teaching Experience} 
+\cventry{2024--present}
+	{Boundary Value Problems}
+	{Instructor}{}{}
+	{\begin{itemize}
+			\item Asynchronous online with $15-20$ students.
+	\end{itemize} }
 \cventry{2023--present}
-{Introduction to Programming for Data Science}
-{Developer/Instructor}{}{}
+	{Introduction to Programming for Data Science}
+	{Developer/Instructor}{}{}
 {\begin{itemize}
 		\item Asynchronous online with $10-20$ students.
 \end{itemize} }
@@ -787,6 +843,9 @@
 \end{itemize}}
 
 \section{Mentoring}
+\cvitem{2024--present}{
+	\textbf{Graduate Research}
+}
 \cvitem{2020--present}{
 	\textbf{Undergraduate Research}
 %	\begin{itemize}
@@ -830,7 +889,7 @@
 {\textbf{Council Member} for Mathematical Association of America Council on Teaching and Learning.}
 \cvitem{
 	2022--present}
-	{\textbf{Subcommittee Chair} for Mathematical Association of America Subcommittee on Technologies in Mathematics Education (STME). Member since 2021.}
+	{\textbf{Subcommittee Chair} for Mathematical Association of America Subcommittee on Technology in Mathematics Education (STME). Member since 2021.}
 
 \cvitem{
 	2022}
@@ -849,6 +908,7 @@
 \cvitem{2017--present}{
 	\textbf{Journal Reviewer} for
 	\begin{itemize}
+		\item \textit{International Journal of Innovative Science and Modern Engineering} since 2024;
 		\item \textit{Educational Studies in Mathematics} since 2022;
 		%\item \textit{Cogent Education} since 2021;
 		\item \textit{Mathematical Thinking and Learning} since 2021;
@@ -903,6 +963,9 @@
 }
 
 \section{Departmental Service}
+\cvitem{2024}{
+	\textbf{Hiring Committee Chair} for tenure-track or tenured candidate in Environmental Science or Public Health for Department of Mathematics, Science, and Technology.
+}
 \cvitem{2024}{
 	\textbf{Hiring Committee Member} for tenured Department Chair search for Department of Behavioral and Social Science.
 }
