@@ -11,107 +11,132 @@
 \usepackage[T1]{fontenc}
 \usepackage{lmodern} 
 
+\usepackage{totcount}
+
 % Counter for Under Review Journal Articles
-\newcounter{underReviewArticleCounter}
+\newcounter{underReviewArticleCounterReverse}
+\newtotcounter{underReviewArticleCounter}
+\setcounter{underReviewArticleCounter}{1}
+
 \newcommand{\underReviewArticle}[1]{%
-	\stepcounter{underReviewArticleCounter}
-	\cvitem{[\arabic{underReviewArticleCounter}]}{%
+	\addtocounter{underReviewArticleCounterReverse}{-1}
+	\addtocounter{underReviewArticleCounter}{1}
+	\cvitem{[\arabic{underReviewArticleCounterReverse}]}{%
 		#1
 	}
 }
 
 % Counter for Peer-Reviewed Journal Articles
-\newcounter{peerReviewedArticleCounter}
+\newcounter{peerReviewedArticleCounterReverse}
+\newtotcounter{peerReviewedArticleCounter}
+\setcounter{peerReviewedArticleCounter}{1}
+
 \newcommand{\peerReviewedArticle}[1]{%
-	\stepcounter{peerReviewedArticleCounter}
-	\cvitem{[\arabic{peerReviewedArticleCounter}]}{%
+	\addtocounter{peerReviewedArticleCounterReverse}{-1}
+	\addtocounter{peerReviewedArticleCounter}{1}
+	\cvitem{[\arabic{peerReviewedArticleCounterReverse}]}{%
 		#1
 	}
 }
 
 % Counter for Peer-Reviewed Conference Articles
-\newcounter{peerReviewedConferenceCounter}
+\newcounter{peerReviewedConferenceCounterReverse}
+\newtotcounter{peerReviewedConferenceCounter}
+\setcounter{peerReviewedConferenceCounter}{1}
+
 \newcommand{\peerReviewedConference}[1]{%
-	\stepcounter{peerReviewedConferenceCounter}
-	\cvitem{[\arabic{peerReviewedConferenceCounter}]}{%
-		#1
-	}
-}
-
-% Counter for Scholarship in Preparation
-\newcounter{inPrepCounter}
-\newcommand{\inPrep}[1]{%
-	\stepcounter{inPrepCounter}
-	\cvitem{[\arabic{inPrepCounter}]}{%
-		#1
-	}
-}
-
-% Counter for Pre-prints
-\newcounter{preprintCounter}
-\newcommand{\preprint}[1]{%
-	\stepcounter{preprintCounter}
-	\cvitem{[\arabic{preprintCounter}]}{%
-		#1
-	}
-}
-
-% Counter for Presentations
-\newcounter{presentationCounter}
-\newcommand{\presentations}[1]{%
-	\stepcounter{presentationCounter}
-	\cvitem{[\arabic{presentationCounter}]}{%
-		#1
-	}
-}
-% Counter for Workshops
-\newcounter{workshopCounter}
-\newcommand{\workshops}[1]{%
-	\stepcounter{workshopCounter}
-	\cvitem{[\arabic{workshopCounter}]}{%
-		#1
-	}
-}
-
-% Counter for Invited Talks
-\newcounter{invitedTalksCounter}
-\newcommand{\invitedTalks}[1]{%
-	\stepcounter{invitedTalksCounter}
-	\cvitem{[\arabic{invitedTalksCounter}]}{%
-		#1
-	}
-}
-% Counter for Conference Session Organizations
-\newcounter{sessionOrganizationCounter}
-\newcommand{\sessionOrganization}[1]{%
-	\stepcounter{sessionOrganizationCounter}
-	\cvitem{[\arabic{sessionOrganizationCounter}]}{%
-		#1
-	}
-}
-% Counter for Local Session Organizations
-\newcounter{localOrganizationCounter}
-\newcommand{\localOrganization}[1]{%
-	\stepcounter{localOrganizationCounter}
-	\cvitem{[\arabic{localOrganizationCounter}]}{%
+	\addtocounter{peerReviewedConferenceCounterReverse}{-1}
+	\addtocounter{peerReviewedConferenceCounter}{1}
+	\cvitem{[\arabic{peerReviewedConferenceCounterReverse}]}{%
 		#1
 	}
 }
 
 % Counter for White Papers
-\newcounter{whitePaperCounter}
+\newcounter{whitePaperCounterReverse}
+\newtotcounter{whitePaperCounter}
+\setcounter{whitePaperCounter}{1}
+
 \newcommand{\whitePaper}[1]{%
-	\stepcounter{whitePaperCounter}
-	\cvitem{[\arabic{whitePaperCounter}]}{%
+	\addtocounter{whitePaperCounterReverse}{-1}
+	\addtocounter{whitePaperCounter}{1}
+	\cvitem{[\arabic{whitePaperCounterReverse}]}{%
+		#1
+	}
+}
+
+% Counter for Pre-prints
+\newcounter{preprintCounterReverse}
+\newtotcounter{preprintCounter}
+\setcounter{preprintCounter}{1}
+
+\newcommand{\preprint}[1]{%
+	\addtocounter{preprintCounterReverse}{-1}
+	\addtocounter{preprintCounter}{1}
+	\cvitem{[\arabic{preprintCounterReverse}]}{%
 		#1
 	}
 }
 
 % Counter for Research Summary Documents
-\newcounter{ResearchSummaryCounter}
+\newcounter{ResearchSummaryCounterReverse}
+\newtotcounter{ResearchSummaryCounter}
+\setcounter{ResearchSummaryCounter}{1}
+
 \newcommand{\researchSummary}[1]{%
-	\stepcounter{ResearchSummaryCounter}
-	\cvitem{[\arabic{ResearchSummaryCounter}]}{%
+	\addtocounter{ResearchSummaryCounterReverse}{-1}
+	\addtocounter{ResearchSummaryCounter}{1}
+	\cvitem{[\arabic{ResearchSummaryCounterReverse}]}{%
+		#1
+	}
+}
+
+% Counter for Presentations
+\newcounter{presentationCounterReverse}
+\newtotcounter{presentationCounter}
+\setcounter{presentationCounter}{1}
+
+\newcommand{\presentations}[1]{%
+	\addtocounter{presentationCounterReverse}{-1}
+	\addtocounter{presentationCounter}{1}
+	\cvitem{[\arabic{presentationCounterReverse}]}{%
+		#1
+	}
+}
+
+% Counter for Invited Talks
+\newcounter{invitedTalksCounterReverse}
+\newtotcounter{invitedTalksCounter}
+\setcounter{invitedTalksCounter}{1}
+
+\newcommand{\invitedTalks}[1]{%
+	\addtocounter{invitedTalksCounterReverse}{-1}
+	\addtocounter{invitedTalksCounter}{1}
+	\cvitem{[\arabic{invitedTalksCounterReverse}]}{%
+		#1
+	}
+}
+% Counter for Conference Session Organizations
+\newcounter{sessionOrganizationCounterReverse}
+\newtotcounter{sessionOrganizationCounter}
+\setcounter{sessionOrganizationCounter}{1}
+
+\newcommand{\sessionOrganization}[1]{%
+	\addtocounter{sessionOrganizationCounterReverse}{-1}
+	\addtocounter{sessionOrganizationCounter}{1}
+	\cvitem{[\arabic{sessionOrganizationCounterReverse}]}{%
+		#1
+	}
+}
+% Counter for Local Session Organizations
+\newcounter{localOrganizationCounterReverse}
+\newtotcounter{localOrganizationCounter}
+\setcounter{localOrganizationCounter}{1}
+
+\newcommand{\localOrganization}[1]{%
+	\addtocounter{localOrganizationCounterReverse}{-1}
+	\addtocounter{localOrganizationCounter}{1}
+	\cvitem{[\arabic{localOrganizationCounterReverse}]}{%
 		#1
 	}
 }
@@ -297,6 +322,7 @@
 	{}{}
 	
 	\section{Journal Articles Under Review}
+	\setcounter{underReviewArticleCounterReverse}{\totvalue{underReviewArticleCounter}}
 	%\underReviewArticle{%
 		%	\textbf{Chamberlain Jr., D.}, Faulconer, E., \& Wood, B.
 		%	(under review June 2024).
@@ -328,6 +354,7 @@
 	}
 	
 	\section{Peer-Reviewed Journal Articles and Book Chapters}
+	\setcounter{peerReviewedArticleCounterReverse}{\totvalue{peerReviewedArticleCounter}}
 	\peerReviewedArticle{%
 		\textbf{Chamberlain Jr., D.} \& Faulconer, E.
 		(accepted Feb 2025).
@@ -408,6 +435,8 @@
 	}
 	
 	\section{Peer-Reviewed Conference Proceedings {\footnotesize [asterisk denotes presenter]}}
+	\setcounter{peerReviewedConferenceCounterReverse}{\totvalue{peerReviewedConferenceCounter}}
+	
 	\peerReviewedConference{
 		Terwilliger, B.*, Deters. R., \& \textbf{Chamberlain Jr., D.}
 		(2025, Jul 30).
@@ -520,6 +549,8 @@
 		\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Project Administration, Writing - Original Draft, Writing - Review \& Editing.
 	}
 	\section{White Papers}
+	\setcounter{whitePaperCounterReverse}{\totvalue{whitePaperCounter}}
+	
 	\whitePaper{%
 		Faulconer, E., \textbf{Chamberlain Jr., D.}, \& Wood, B. (2024). \textit{Community of Inquiry and Cognitive Load: Research Summary Document.} Zenodo. \href{https://zenodo.org/doi/10.5281/zenodo.7951445}{https://doi.org/10.5281/zenodo.11398144}
 	}
@@ -541,6 +572,8 @@
 		\textit{\underline{CRediT Roles:}} Writing - Review \& Editing.
 	}
 	\section{Pre-Prints}
+	\setcounter{preprintCounterReverse}{\totvalue{preprintCounter}}
+	
 	\preprint{%
 		\textbf{Chamberlain Jr., D.}$^1$, Jeter, R.$^1$, \& Rozier, K. 
 		(2024, December 27).
@@ -563,11 +596,14 @@
 	}
 	
 	%\section{Research Summary Documents}
+	%\setcounter{researchSummaryCounterReverse}{\totvalue{researchSummaryCounter}}
 	%\researchSummary{%
 		%	Faulconer, E., \textbf{Chamberlain Jr., D.}, \& Wood, B. (2024). \textit{Community of Inquiry and Cognitive Load: Research Summary Document.} Zenodo. \href{https://zenodo.org/doi/10.5281/zenodo.7951445}{https://doi.org/10.5281/zenodo.11398144}
 		%}
 	
 	\section{Conference Presentations {\footnotesize [asterisk denotes presenter]}}
+	\setcounter{presentationCounterReverse}{\totvalue{presentationCounter}}
+	
 	\presentations{
 		\textbf{Chamberlain Jr., D.}*, Jeter, R., \& Rozier, K.
 		(2025, Apr 15-16)
@@ -725,10 +761,10 @@
 		\emph{Teaching proofs with APOS Theory}. 
 		Mathematics Graduate Student Miniconference, Atlanta, Ga.
 	}
-	%\section{Workshops}
-	%\workshops{}
 	
 	\section{Conference Session or Workshop Organization}
+	\setcounter{sessionOrganizationCounterReverse}{\totvalue{sessionOrganizationCounter}}
+	
 	\sessionOrganization{
 		\textbf{Chamberlain Jr., D.}, Reed, Z., \& Margolis, C. (2025, Feb 27). Workshop: \textit{Research on Technology in Undergraduate Mathematics Education}. 27th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME,
 		Alexandria, VA. 
@@ -776,6 +812,8 @@
 	}
 	
 	\section{Invited Talks}
+	\setcounter{invitedTalksCounterReverse}{\totvalue{invitedTalksCounter}}
+	
 	\invitedTalks{%
 		\textbf{Chamberlain Jr., D.}
 		(2025, Apr 11).
@@ -830,91 +868,93 @@
 		\textit{Automatic and Diagnostic Item Generation}. 
 		Invited by the University of Florida Lastinger Center.
 	}
-\section{Local Session or Workshop Organization}
-\localOrganization{%
-	\textbf{Chamberlain Jr., D.}, Deters, R., \& Terwilliger, B. 
-	(2025, March). 
-	\textit{Open Data \& Data Papers}. 
-	ERAU Worldwide Research Scholars Workshop Series. 
-}
-\localOrganization{%
-	\textbf{Chamberlain Jr., D.}, Deters, R., \& Terwilliger, B. 
-	(2025, February). 
-	\textit{Identifying Research Gaps \& Developing Original Ideas}. 
-	ERAU Worldwide Research Scholars Workshop Series. 
-}
-\localOrganization{%
-	Terwilliger, B., Deters, R., \& \textbf{Chamberlain Jr., D.} 
-	(2025, January). 
-	\textit{Research Networking in the Online World}. 
-	ERAU Worldwide Research Scholars Workshop Series. 
-}
-\localOrganization{%
-	\textbf{Chamberlain Jr., D.}, Deters, R., Terwilliger, B., \& Faulconer, E., 
-	(2024, October). 
-	\textit{Staying Current on Research Advancements in Your Field}. 
-	ERAU Worldwide Research Scholars Workshop Series. 
-}
-\localOrganization{%
-	Deters, R., Terwilliger, B., \textbf{Chamberlain Jr., D.}, \& Faulconer, E.
-	(2024, September). 
-	\textit{Navigating Common Student Research Challenges}. 
-	ERAU Worldwide Research Scholars Workshop Series. 
-}
-\localOrganization{%
-	Deters, R., Terwilliger, B., \textbf{Chamberlain Jr., D.}, \& Faulconer, E.,
-	(2024, August). 
-	\textit{How to Use the WW-RSP Canvas Site \& Other Resources}. 
-	ERAU Worldwide Research Scholars Workshop Series. 
-}
-\localOrganization{%
-	Deters, R., Faulconer, E., Terwilliger, B., \& \textbf{Chamberlain Jr., D.},
-	(2024, June). 
-	\textit{Mentoring: A Guided Expedition Through Research Pathways}. 
-	ERAU Worldwide Research Scholars Workshop Series. 
-}
-\localOrganization{%
-	Faulconer, E., Deters, R., Terwilliger, B., \& \textbf{Chamberlain Jr., D.},
-	(2024, May). 
-	\textit{Submitting to Beyond}. 
-	ERAU Worldwide Research Scholars Workshop Series. 
-}
-\localOrganization{%
-	Terwilliger, B., Deters, R., Faulconer, E., \& \textbf{Chamberlain Jr., D.},
-	(2024, April). 
-	\textit{Innovative Dissemination}. 
-	ERAU Worldwide Research Scholars Workshop Series. 
-}
-\localOrganization{%
-	Terwilliger, B., Deters, R., Faulconer, E., \& \textbf{Chamberlain Jr., D.},
-	(2024, March). 
-	\textit{Marketing Your Research Experience}. 
-	ERAU Worldwide Research Scholars Workshop Series. 
-}
-\localOrganization{%
-	Faulconer, E., Deters, R., Terwilliger, B., \& \textbf{Chamberlain Jr., D.},
-	(2024, February). 
-	\textit{Discovery Day 2024}. 
-	ERAU Worldwide Research Scholars Workshop Series. 
-}
-\localOrganization{%
-	Deters, R., Terwilliger, B., Faulconer, E., \& \textbf{Chamberlain Jr., D.},
-	(2024, January). 
-	\textit{Funding Your Research}. 
-	ERAU Worldwide Research Scholars Workshop Series. 
-}
-\localOrganization{%
-	\textbf{Chamberlain Jr., D.}, Faulconer, E., Terwilliger, B., \& Deters, R.,
-	(2023, November). 
-	\textit{Current Research Opportunities}. 
-	ERAU Worldwide Research Scholars Workshop Series. 
-}
-\localOrganization{%
-	Faulconer, E., Terwilliger, B., Deters, R., \& \textbf{Chamberlain Jr., D.},
-	(2023, October). 
-	\textit{Meet the Mentors}. 
-	ERAU Worldwide Research Scholars Workshop Series. 
-}
+	\section{Local Session or Workshop Organization}
+	\setcounter{localOrganizationCounterReverse}{\totvalue{localOrganizationCounter}}
+	
+	\localOrganization{%
+		\textbf{Chamberlain Jr., D.}, Deters, R., \& Terwilliger, B. 
+		(2025, March). 
+		\textit{Open Data \& Data Papers}. 
+		ERAU Worldwide Research Scholars Workshop Series. 
+	}
+	\localOrganization{%
+		\textbf{Chamberlain Jr., D.}, Deters, R., \& Terwilliger, B. 
+		(2025, February). 
+		\textit{Identifying Research Gaps \& Developing Original Ideas}. 
+		ERAU Worldwide Research Scholars Workshop Series. 
+	}
+	\localOrganization{%
+		Terwilliger, B., Deters, R., \& \textbf{Chamberlain Jr., D.} 
+		(2025, January). 
+		\textit{Research Networking in the Online World}. 
+		ERAU Worldwide Research Scholars Workshop Series. 
+	}
+	\localOrganization{%
+		\textbf{Chamberlain Jr., D.}, Deters, R., Terwilliger, B., \& Faulconer, E., 
+		(2024, October). 
+		\textit{Staying Current on Research Advancements in Your Field}. 
+		ERAU Worldwide Research Scholars Workshop Series. 
+	}
+	\localOrganization{%
+		Deters, R., Terwilliger, B., \textbf{Chamberlain Jr., D.}, \& Faulconer, E.
+		(2024, September). 
+		\textit{Navigating Common Student Research Challenges}. 
+		ERAU Worldwide Research Scholars Workshop Series. 
+	}
+	\localOrganization{%
+		Deters, R., Terwilliger, B., \textbf{Chamberlain Jr., D.}, \& Faulconer, E.,
+		(2024, August). 
+		\textit{How to Use the WW-RSP Canvas Site \& Other Resources}. 
+		ERAU Worldwide Research Scholars Workshop Series. 
+	}
+	\localOrganization{%
+		Deters, R., Faulconer, E., Terwilliger, B., \& \textbf{Chamberlain Jr., D.},
+		(2024, June). 
+		\textit{Mentoring: A Guided Expedition Through Research Pathways}. 
+		ERAU Worldwide Research Scholars Workshop Series. 
+	}
+	\localOrganization{%
+		Faulconer, E., Deters, R., Terwilliger, B., \& \textbf{Chamberlain Jr., D.},
+		(2024, May). 
+		\textit{Submitting to Beyond}. 
+		ERAU Worldwide Research Scholars Workshop Series. 
+	}
+	\localOrganization{%
+		Terwilliger, B., Deters, R., Faulconer, E., \& \textbf{Chamberlain Jr., D.},
+		(2024, April). 
+		\textit{Innovative Dissemination}. 
+		ERAU Worldwide Research Scholars Workshop Series. 
+	}
+	\localOrganization{%
+		Terwilliger, B., Deters, R., Faulconer, E., \& \textbf{Chamberlain Jr., D.},
+		(2024, March). 
+		\textit{Marketing Your Research Experience}. 
+		ERAU Worldwide Research Scholars Workshop Series. 
+	}
+	\localOrganization{%
+		Faulconer, E., Deters, R., Terwilliger, B., \& \textbf{Chamberlain Jr., D.},
+		(2024, February). 
+		\textit{Discovery Day 2024}. 
+		ERAU Worldwide Research Scholars Workshop Series. 
+	}
+	\localOrganization{%
+		Deters, R., Terwilliger, B., Faulconer, E., \& \textbf{Chamberlain Jr., D.},
+		(2024, January). 
+		\textit{Funding Your Research}. 
+		ERAU Worldwide Research Scholars Workshop Series. 
+	}
+	\localOrganization{%
+		\textbf{Chamberlain Jr., D.}, Faulconer, E., Terwilliger, B., \& Deters, R.,
+		(2023, November). 
+		\textit{Current Research Opportunities}. 
+		ERAU Worldwide Research Scholars Workshop Series. 
+	}
+	\localOrganization{%
+		Faulconer, E., Terwilliger, B., Deters, R., \& \textbf{Chamberlain Jr., D.},
+		(2023, October). 
+		\textit{Meet the Mentors}. 
+		ERAU Worldwide Research Scholars Workshop Series. 
+	}
 	
 	\section{Teaching Experience} 
 	\cventry{2024--present}
