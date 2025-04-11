@@ -180,6 +180,19 @@
 	}
 }
 
+% Counter for Editorial 
+\newcounter{editorialCounterReverse}
+\newtotcounter{editorialCounter}
+\setcounter{editorialCounter}{1}
+
+\newcommand{\editorial}[1]{%
+	\addtocounter{editorialCounterReverse}{-1}
+	\addtocounter{editorialCounter}{1}
+	\cvitem{[\arabic{editorialCounterReverse}]}{%
+		#1
+	}
+}
+
 % personal data
 \name{Darryl}{Chamberlain Jr.}
 \title{Curriculum Vitae}                              
@@ -268,7 +281,7 @@
 		Spencer Foundation Vision Grant, 2025-2026.}
 	{}{}
 	\cventry{
-		\$398,725\\ under review}
+		\$398,725\\ unfunded}
 	{\textbf{Principal Investigator}}
 	{Collaborative Research: Adaptive Assessments in Calculus}
 	{with Russell Jeter (Lead-PI) and Kelvin Rozier (co-PI). 
@@ -379,9 +392,9 @@
 		%}
 	\underReviewArticle{%
 		\textbf{Chamberlain Jr., D.}\footnotemark, Jeter, R.$^1$, \& Rozier, K. 
-		(under review January 2025).
+		(under review April 2025).
 		\textit{Towards an Integrated Methodology for Assessing Item Discrimination in Mathematics Assessments}.
-		Educational Assessment \newline 
+		American Educational Research Journal \newline 
 		\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis,  Investigation, Methodology, Project Administration, Software, Visualization, Writing - Original Draft.
 	}
 	\footnotetext{Co-first authors.}
@@ -1005,6 +1018,23 @@
 		\newline
 		\textit{\underline{CRediT Roles:}} Writing - Review \& Editing.
 	}
+	
+	\section{Editorials}
+	\setcounter{editorialCounterReverse}{\totvalue{editorialCounter}}
+	\editorial{%
+		Faulconer, E. \& \textbf{Chamberlain Jr., D.}, 
+		(2025).
+		\textit{Leading the Spiral: Supporting Faculty in Curriculum Innovation}.
+		The Department Chair, 35(4), DOI: \href{https://doi.org/10.1002/dch.30640}{https://doi.org/10.1002/dch.30640}
+	}
+
+	\editorial{%
+		Wood, B., Faulconer, E., \& \textbf{Chamberlain Jr., D.},
+		(2025).
+		\textit{Lessons from Professional Development for Remote STEM Faculty}. 
+		The Department Chair, 35(3), DOI: \href{https://doi.org/10.1002/dch.30625}{https://doi.org/10.1002/dch.30625}
+	}
+
 	\section{Pre-Prints}
 	\setcounter{preprintCounterReverse}{\totvalue{preprintCounter}}
 	
