@@ -1,7 +1,8 @@
 #!/bin/zsh
 # Bash script for converting all markdown files to pdf
 BASE_DIR=$(pwd)
-pandoc $BASE_DIR'/1_Introduction/1_1_Executive_Summary/Executive Summary.md' -o $BASE_DIR'/1_Introduction/1_1_Executive_Summary/Executive Summary.pdf' -V geometry:margin=1in
+cd $BASE_DIR
+pandoc $BASE_DIR/1_Introduction/1_1_Executive_Summary/Executive Summary.md -o $BASE_DIR/1_Introduction/1_1_Executive_Summary/Executive Summary.pdf -V geometry:margin=1in
 pandoc $BASE_DIR'/1_Introduction/1_2_Brief_Statement/Brief Statement.md' -o $BASE_DIR'/1_Introduction/1_2_Brief_Statement/Brief Statement.pdf' -V geometry:margin=1in
 pandoc $BASE_DIR'/2_Teaching_Effectiveness/summary_teaching_effectiveness.md' -o $BASE_DIR'/2_Teaching_Effectiveness/summary_teaching_effectiveness.pdf' -V geometry:margin=1in
 pandoc $BASE_DIR'/2_Teaching_Effectiveness/2b_Student_Course_Evaluations/student_course_evaluation_narrative.md' -o $BASE_DIR'/2_Teaching_Effectiveness/2b_Student_Course_Evaluations/student_course_evaluation_narrative.pdf' -V geometry:margin=1in
