@@ -12,13 +12,26 @@ ERAU-W COAS expects Associate Professors to demonstrate excellence in teaching. 
 
 I hold exceptional subject matter expertise in the courses I teach. As part of my Ph.D. in Mathematics and Statistics, I compeleted 33 graduate-level credit hours of mathematics courses **[CV, Notable Coursework, pg 7]**, including Ph.D. qualifying exams in Matrix Analysis and Abstract Algebra. This high-level coursework allows me to contextualize undergraduate mathematics in a way that allows for productive abstraction and transfer to related topics of study. Abstract Algebra provides foundational mathematics for cryptography, programming, and physics while Matrix Analysis is critical to data analysis, machine learning, and 3D movement of objects (like a flying plane). For example, a common task in a Precalulus course is to solve a System of Equations. I can contextualize this task within aeronautics as 2-dimensional balance of forces (gravity, drag, thrust, etc), then use technology to show students how these calculations might be made by a computer for the "real" 3-dimensional version. For students more interested in machine learning, this same task of solving a System of Equations can be contextualized as computer image recognition. This allows me to spark student curiosity that can drive their engagement with mathematics. 
 
-As I learned completing 15 graduate-level credit hours focused specifically on teaching college mathematics **[CV, Notable Coursework, pg 7]**, teaching well is more than just subject knowledge. Research in Collegiate Mathematics (and Education in general) suggests subject knowledge acts in unison with pedagogical knowledge to deliver educational experiences. Thus it is critical to not only know the subject well, but also to know how to communicate these ideas at the level the student understands the concept. My continued research on how students develop mathematical ideas fuels my continued improvement as an instructor.
+As I learned completing 15 graduate-level credit hours focused specifically on teaching college mathematics **[CV, Notable Coursework, pg 7]**, teaching well is more than just subject knowledge expertise. Research in Collegiate Mathematics (and Education in general) suggests subject knowledge acts in unison with pedagogical and social knowledge to deliver educational experiences. Thus it is critical to not only know the subject well, but also to know how to communicate these ideas at the level the student understands the concept. My continued research on how students develop mathematical ideas fuels my continued improvement as an instructor.
 
-The union of my subject matter and pedagogical expertise allows me to provide exceptional teaching in ERAU-W courses. This is evidenced by my overwhelmingly positive student evaluations **[2.1 Student Course Evaluation Narrative]** that explicitly mention how my knowledge and enthusiasm create an effective learning environment. My research also affords me the opportunity to constantly incorporate new methods and materials. I am part of two active external grants from the National Science Foundation (NSF) Improving Undergraduate STEM Education (IUSE) program, received a mini-grant from an NSF IUSE grant, and received two ERAU-W Faculty SEED grants that target improving specific Embry-Riddle math courses **[CV, External/Internal Research Funding Experience, pg 1]**. These research projects provide tangiable improvements to student learning at Embry-Riddle, such as the Doenet mini-grant to develop autonomous discovery-based learning online **[3.2 Record of Activities, External Grant 2]**. I have also incorporated traditional active learning when teaching EagleVision sections, as noted by Zackery Reed's peer observation of my October 2022 Math 111 section. From his review:
+The union of my subject matter and pedagogical expertise allows me to provide exceptional teaching in ERAU-W courses. This is evidenced by my overwhelmingly positive student evaluations **[2.1 Student Course Evaluation Narrative]** that explicitly mention how my knowledge and enthusiasm create an effective learning environment. My research also affords me the opportunity to constantly incorporate new methods and materials. I have been part of two external grants from the National Science Foundation (NSF) Improving Undergraduate STEM Education (IUSE) program, received a mini-grant from a separate NSF IUSE grant, another ERAU FIRST grant, and received two ERAU-W Faculty SEED grants that target improving specific Embry-Riddle courses **[CV, External/Internal Research Funding Experience, pg 1]**. These research projects provide tangiable improvements to student learning at Embry-Riddle, such as the Doenet mini-grant to develop autonomous discovery-based learning online **[3.2 Record of Activities, External Grant 2]**. I have also incorporated traditional active learning when teaching EagleVision sections, as noted by Zackery Reed's peer observation of my October 2022 Math 111 section. From his review:
 
 >Dr. Chamberlain demonstrates a productive balance of direct instruction (i.e., lecture) and active learning activities. This suggests an intentional awareness of student attention span needs, and more importantly an implementation of currently known best practices for mathematics pedagogy. 
 
-As for course maintenance and redevelopments, I have been involved in updating Math 111 Pre-Calculus for Aviation twice now. In the first update, I rewrote the majority of discussions to improve students' metaskills as well as encourage students to engage with content beyond drilling skills **[2.1 Annual Performance Evaluation, Year 2 Chair Performance Review, Work Beyond Teaching Responsibilities, pg 2]**. By metaskills, I mean students' ability to reflect on their study skills and evaluate mathematical work. Early discussions were designed to improve how students study for mathematics: both in study habits and with actually creating study materials. Later discussions focus on difficult mathematical concepts such as vector movement. One discussion in particular has received both hate and love by adjuncts. The question requires students to reason how to compensate for wind when flying between two cities. The question is written so that there are numerous ways students can reason through and "solve" for the specific correction in the problem. This led to a spike in students asking instructors questions and time to grade student responses as the process of reasoning through the task was not unique. This led to instructor comments such as:
+## Program Development
+BS in DSCI
+
+## Course Developments
+**CSCI 251 - Introduction to Programming for Data Science** This new course, part of the new Minor in Applied Data Science, is the first course in the minor sequence as students learn how to program to manage and analyze large data sets. The courses does not use any paid third party platform -- all learning resources and assignments were created for the ERAU-W course specifically. Some of these are traditional assignments, such as open-response Canvas quizzes, while others encourage active groupwork, such as groups developing documentation specific to the course. This allows students to get genuine feedback before they write entire programs on their own. 
+
+**DSCI 411 - Applied Data Science Capstone** ##ADD MORE HERE##
+
+**DSCI 413 - Statistics for Data Science** ##ADD MORE HERE##
+
+## Course Redevelopments 
+I have been involved in several course 
+
+**Math 111 - Pre-Calculus for Aviation** twice now. In the first update, I rewrote the majority of discussions to improve students' metaskills as well as encourage students to engage with content beyond drilling skills **[2.1 Annual Performance Evaluation, Year 2 Chair Performance Review, Work Beyond Teaching Responsibilities, pg 2]**. By metaskills, I mean students' ability to reflect on their study skills and evaluate mathematical work. Early discussions were designed to improve how students study for mathematics: both in study habits and with actually creating study materials. Later discussions focus on difficult mathematical concepts such as vector movement. One discussion in particular has received both hate and love by adjuncts. The question requires students to reason how to compensate for wind when flying between two cities. The question is written so that there are numerous ways students can reason through and "solve" for the specific correction in the problem. This led to a spike in students asking instructors questions and time to grade student responses as the process of reasoning through the task was not unique. This led to instructor comments such as:
 
 > I have a feeling that this problem could be too complicated in an introductory level course. Admittedly, even I had a hard time figuring out how to tackle this problem until I looked at the solution guide.  I have never seen such an applied vector problem before this one.
 
@@ -30,37 +43,64 @@ As for course maintenance and redevelopments, I have been involved in updating M
 
 All of these comments point to an increased cognitive demand for the discussion post. While difficulty can be argued, many students were and are able to reason through the discussion post by the end of the week. This suggests the question is not too complicated, but IS a spike in difficulty from what they might see on the homework and exams. The second comment in particular highlights how there is no one way to reason through the task, which was precisely the point. The third comment points to the need for instructors to engage with the task beyond "correct" or "incorrect" and provides a genuine opportunity for teacher-to-student learning. The fourth comment shows how the discussion works when the instructor has the subject matter expertise to engage with students. While I believe this discussion needs more materials for instructor support (numerous examples of productive thinking, a more clear rubric that tells instructors to grade on the process over the final answer) and student support (interactive elements that let students experimentally test their answers), the discussion is a positive step toward active math engagement in an online course within an aeronautics context. 
 
-Moreover, I developed CSCI 251 - Introduction to Programming for Data Science. This new course, part of the new Minor in Applied Data Science, is the first course in the minor sequence as students learn how to program to manage and analyze large data sets. The courses does not use any paid third party platform -- all learning resources and assignments were created for the ERAU-W course specifically. Some of these are traditional assignments, such as open-response Canvas quizzes, while others encourage active groupwork, such as groups developing documentation specific to the course. This allows students to get genuine feedback before they write entire programs on their own. CSCI 251 will run for the first time in October 2023 (pending enrollment numbers). 
+**RSCH 395 - Publication-Ready STEM Research** 
 
+## Course Updates
+**MATH 502 - Boundary Value Problems**
+I also was asked to step in to MATH 502 - Boundary Value Problems - due to several student complaints starting in August 2024. Students were generally frustrated with the course structure and overly challenged by the material itself. After numerous complaints about the time spent on tasks in the first week (30 hours average). I made several small changes to the course to address student complaints, including: (a) shifting all content back a week and creating a review of Ordinary Differential Equations for Module 1, (b) creating reflective discussion posts that encouraged students to understand how the course topics related to one another, and (c) replacing synchronous oral exams with asynchronous oral exams. Students generally praise the changes made to the course **[2.1 Student Course Evaluation Narrative]**. 
+
+**DSCI 201 - Introduction to Data Science**
+
+## Pedagogical Development Opportunities
 I have also regularly participated in pedagogical development opportunties both within and beyond ERAU-W. In no particular order, I have:
 
 - Participated in a one year fellowship from the Mathematical Association of America Project NExT (New Experiences in Teaching) that included various sessions on innovative and effective teaching **[2.4 Additional Evidence, Project NExT Certificate]**.
 - Attended several live professional development sessions hosted by ERAU-W's RCTLE **[2.4 Additional Evidence, RCTLE PD Certificate]**.
-- Attended and presented at teaching-focused national conferences **[3.2 Record of Activities, Presentations 2, 8, 9]**.
+- Attended and presented at teaching-focused national conferences **[3.2 Record of Activities]**.
 
 # Scholarly and Professional Activity
-ERAU-W COAS also expects Associate Professors to demonstrate excellence in scholarly activity. This is described in the Guidelines and Criteria document as meeting the following metrics:
+My scholarly activity, compared to total expectations outlined in the COAS ERAU-W Academic Guidelines and Criteria for Tenure and Promotion to Associate Professor, is provided in a summary chart below. 
 
-- Minimum of five (5) peer-reviewed publications (or equivalent).
-- Presented original work at a minimum of five (5) refereed regional, national, or international conferences.
-- Submitted a minimum of one (1) proposal for internal or external funding (grant or fellowship).
+|                       | Peer-Reviewed <br>Publications | Conference <br>Presentations | Internal/External <br>Funding Proposals |
+|-----------------------|:--------------:|:-------------:|:--------------------:|
+| **Year 1: AY21-22**   |       3        |       5       |         2            |
+| **Year 2: AY22-23**   |       3        |       2       |         2            |
+| **Year 3: AY23-24**   |       1        |       4       |         3            |
+| **Year 4: AY24-25**   |       6        |       9       |         3            |
+| **Year 5: AY25-26**   |       3        |       4       |         4            |
+|                       |                |               |                      |
+| **Total Activity**    |      16        |      24       |        14            | 
+| **Expectation**       |       5        |       5       |         1            |
 
-In my first three years at ERAU-W, I have: 
 
-- Eight (8) peer-reviewed publications: 3 journal, 1 book chapter, 4 peer-reviewed conference proceedings.
-- Seven (7) refeered regional or national conference presentations.
-- Five (5) grant proposals: 2 internal and 3 external. 
-
-Note that four of the grant proposals have been accepted, one is being prepared for submission in July 2024, and I was brought on as a co-PI after another National Science Foundation proposal was accepted. Thus as I am co-PI for two active National Science Foundation grants, have plans to submit as PI for another National Science Foundation grant in July 2024, and have previously secured internal funding with another exceptional ERAU-W tenure-track faculty member (Dr. Zackery Reed), it is likely that the peer-reviewed publications and conference presentations rate will only increase in the future. 
+Peer-reviewed publications were submitted to a variety of well-respected locations: national conference proceedings (9), peer-reviewed education journals (6), and as a book chapter (1). Presentations primiarly took place at national or international conferences (19), though I also presented at ERAU-hosted local and regional events (5) and was invited to talk about my research at 3 other universities as part of seminar series on 4 different occasions. I have had moderate success with external funding: I have been a co-PI on successful NSF grants (2) and subawards attached to NSF grants (1) while also being PI (2) and co-PI (1) on unsuccessful external grants. [UPDATE when 4 pending grants are set] I have had stellar success with internal funding: I have been PI (2) and co-PI (2) on successful college-level (3) and university-level (1) internal grants. My Research Agenda provides a short description of how my active research projects contribute to my overarching research agenda on utilizing machine learning and hypothetical learning trajectories to model student thinking and learning **[Research Agenda]**.
 
 # Service
 Finally, ERAU-W COAS expects Associate Professors to provide service both to ERAU-W and beyond. Specifically, the Guidelines and Criteria document call for:
 
 >Appropriate service to their department, college, campus, university, and professional community. Service commitments for a candidate will be determined annually in collaboration with the Department Chair. Candidates’ portfolio should include evidence of varied, sustained and, typically, progressive levels of service.
 
-My service commitments have been annually deemed exceptional by my Department Chairs. In year 1, my service was described as "extraordinary for someone this early in their career" **[2.1 Annual Performance Evaluation, Year 1 Chair Performance Review]** and in year 2 as "yet another area in which he exceed the expectation for an assistant professor only two years into the tenure track" **[2.1 Annual Performance Evaluation, Year 2 Chair Performance Review]**. At the University level, I have chaired the Faculty Senate committee on Academic Technology, reviewed internal grants, and have contributed to the ERAU-W Quality Enhancement Plan committee. At the College level, I served on the COAS Faculty Council as well as grade appeal committees. At the Department level, I'm currently the Associate Department Chair, am the current coordinator for the Applied Mathematics Minor and past coordinator for the Applied Data Science minor, have served as the Course Mentor for CSCI 251, MATH 111, STAT 412, GNED 103, and MATH 106, and was an active member in the hiring committee for a new tenure-track candidate in Data Science.
+## Department Service
+- Associate Department Chair
+- Acting Department Chair
+- Program Chair, BSDS
+- 4 separate candidate searches (chair of 1 search)
+- Committee Member department standing committees
 
+## College Service
+- Faculty Council member
+- Hiring committee HSS
+- Faculty Activity Reporting
+
+## University Service
+- Senate Academic Technology Committee, chair
+- Grant Reviewer
+- Contributions to ERAU-WW QEP committee
+- Hiring Committee, member, Director of IT Service Management & Worldwide IT Services
+- End-of-Course Faculty Survey committee, member
+
+## Professional Community Service
 I am also an active learder in my overarching professional community, Mathematical Association of America (MAA), as well as the smaller research community Research in Undergraduate Mathematics Education (RUME). As part of the MAA, I have chaired the subcommittee on Technology in Undergraduate Education, served on the MAA Council for Teaching and Learning, and served on the committee for Teaching of Undergraduate Mathematics. As part of RUME, I have served on committees dedicated to leadership nomination and annual conference programming as well as run for leadership positions (Treasurer and Secretary). Beyond my professional communities, I have served twice as a National Science Foundation Grant Reviewer and am a frequent journal reviewer. 
 
 # Promise for Sustained Future Development and Scholarly Activity
-I have a few ways I plan to sustain my professional development and scholarly activity. The largest is through the National Science Foundation Faculty Early Career Development (CAREER) program. This program "Supports early-career faculty who have the potential to serve as academic role models in research and education and to lead advances in the mission of their department or organization" [(NSF Funding Opportunity)](https://new.nsf.gov/funding/opportunities/faculty-early-career-development-program-career). This grant supports both research and teaching for five years and is only available to Assistant Professors. This significant grant would provide financial and organizational support well into my Associate Professor years and establish me as a premier mathematics educational researcher nation-wide. I have spoken with multiple NSF Program Officers about my proposal, discussed my grant with premier mathematics education researchers, and have offers from past CAREER grant awardees to review my proposal before submitting. Outside of the CAREER grant, I am an active co-PI on two large NSF grants. These projects will be active until at least 2027 and thus will provide opportunity for continued scholarly activity. Moreover, these projects provide financial support for traveling to conferences and meeting potential future collaborators. 
+##ANSWER HERE

@@ -5,22 +5,44 @@ At the macro learning-level, I can study how different types of educational acti
 
 My scholarly products, compared to total expectations outlined in the COAS ERAU-W Academic Guidelines and Criteria for Tenure and Promotion to Associate Professor, are provided in a summary chart below. 
 
-|          | Peer-Reviewed <br>Publications | Conference <br>Presentations | Internal/External <br>Funding Proposals |
-|----------|:--------------:|:---------------:|:-------------------:|
-| **Year 1**   |       3      |       5       |         1         |
-| **Year 2**   |       3      |       1       |         1         |
-| **Year 3**   |       2      |       2       |         3         |
-| **Year 4**   |      NA      |      NA       |        NA         |
-| **Year 5**   |      NA      |      NA       |        NA         |
-| **Expected** |       5      |       5       |         1         |
-| **Actual**   |       8      |       8       |         5         | 
+|                       | Peer-Reviewed <br>Publications | Conference <br>Presentations | Internal/External <br>Funding Proposals |
+|-----------------------|:--------------:|:-------------:|:--------------------:|
+| **Year 1: AY21-22**   |       3        |       5       |         2            |
+| **Year 2: AY22-23**   |       3        |       2       |         2            |
+| **Year 3: AY23-24**   |       1        |       4       |         3            |
+| **Year 4: AY24-25**   |       6        |       9       |         3            |
+| **Year 5: AY25-26**   |       3        |       4       |         4            |
+|                       |                |               |                      |
+| **Total Activity**    |      16        |      24       |        14            | 
+| **Expectation**       |       5        |       5       |         1            |
 
-Peer-reviewed publications were submitted to a variety of well-respected locations: national conference proceedings (4), peer-reviewed mathematics education journals (3), and as a book chapter (1). Presentations primiarly took place at national and regional conferences (8), though I also presented at ERAU-hosted local and regional events (3) and was invited to talk about my research at another university as part of a seminar series (1). All funding proposals I was a part of were successful: I was PI on internal funding (2), PI on external funding (1), co-PI on an NSF grant (1), and will have an additional funding proposal submitted by the end of year 3. Note that while my Record of Activities lists 6 grants, I was brought in as a co-PI on grant **[4]** after it was submitted and am not counting it in the funding proposal list.
+Peer-reviewed publications were submitted to a variety of well-respected locations: national conference proceedings (9), peer-reviewed education journals (6), and as a book chapter (1). Presentations primiarly took place at national or international conferences (19), though I also presented at ERAU-hosted local and regional events (5) and was invited to talk about my research at 3 other universities as part of seminar series on 4 different occasions. I have had moderate success with external funding: I have been a co-PI on successful NSF grants (2) and subawards attached to NSF grants (1) while also being PI (2) and co-PI (1) on unsuccessful external grants. [UPDATE when 4 pending grants are set] I have had stellar success with internal funding: I have been PI (2) and co-PI (2) on successful college-level (3) and university-level (1) internal grants. 
 
-Given the numerous successful funding proposals I have been a part of, I have organized my various research projects below by their funding source and summarized how they fit within my research agenda. 
+Given the numerous successful funding proposals I have been a part of, I have organized my various research projects below by topic and summarized how they fit within my research agenda. 
 
+## Generative AI in Education
+- MAA AI Convening Project
+- GenWrite Internal Grant
+- GenWrite External Grant
+
+## Adaptive Assessments in Mathematics
+- Adaptive Assessments in Calculus
+- Autonomous evaluation of assessments in mathematics
+- Initial SEED grant
+
+## Data Analysis for Engineering Education Projects [supporting ERAU signature fields]
+- Undergraduate Research grant
+- New NSF grant submission
+
+## Discussions in Online STEM Education
+- SEED grant with Zack and Karen
+- CoI and CL Grant
+
+
+
+### USE AND THEN DELETE BELOW
 ## Externally-Funded Research Projects
-- **PI**: ***Machine Learning Affordances in Collegiate Mathematics Education Research***
+- **PI**: ***Adaptive Assessments in Calculus***
     - **What:** This solo project focuses on the ways Machine Learning can enhance the teaching and research of college-level math. Methods to enhance teaching include developing: models for levels of understanding certain mathematical concepts, automatic targeted feedback, asynchronous discovery-based learning activity, mastery-based large-scale mastery-based grading. Methods to enhance research include: data management, machine classification of qualitative coding, and machine classification of question responses. 
     - **My Role(s):** All aspects.
     - **How this fits my research agenda** Machine learning provides opportunities to scale up traditional qualitative and quantitative research to improve research results. Moreover, it provides opportunities for asynchronous student-expert engagement that is critical to improving student learning. The skills and experiences I build in this project are used throughout my various other research collaborations.
@@ -45,10 +67,3 @@ Given the numerous successful funding proposals I have been a part of, I have or
     - **What:** This project was the result of mentoring an undergraduate student, Teegan Bailey, for three years. After a year of informal discussion on collegiate mathematics education theoretical frameworks and prominent topics, he chose to investigate calculus students' reasoning on how two different quantities change with respect to one another. Teegan created an applet that showed a bird flying in a helix pattern around a tower in 3d and completed a study investigating a student's thinking while answering questions about the bird's flight.
     - **My Role(s):** Research mentor.
     - **How this fits my research agenda:** Encouraging undergraduate research is an important avenue for enhancing student learning. The student created a program as part of his study that has stand-alone value as an educational tool and fits my agenda of enhancing student learning through technology.
-
-## Scholarly Products not Associated to an Active Research Project
-- ***Project NExT Activities***
-Project NExT (New Experiences in Teaching) is a one-year professional development program designed for early-career faculty to learn about best practices in teaching and research. As part of this program, I organized three special sessions that brought in tenured faculty to speak to research in particular. 
-
-- ***Presentations as an Expert in the Field***
-As an expert in mixed-methods data analysis, collegiate mathematics education, and technology in education, I have spoke locally at ERAU, at a regional conference hosted by ERAU, and at national mathematics conferences. While this talks may mention parts of other research projects, they primarily focus on speaking to a non-research audience to impart generalized wisdom based on one of my expertise.

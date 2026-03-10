@@ -16,5 +16,12 @@ In October 2022 I taught my first EagleVision course. Unlike many other Math Eag
 
 January 2023 and March 2023 sections went similarly well. All 13 comments on the instructor were positive. Like previous terms, students highlighted the welcoming and encouraging teaching environment I cultivated with comments such as *"Dr. Chamberlain is very approachable with his students. Chamberlain's approachability with his students is a key aspect of his teaching style. He creates a welcoming and inclusive environment in his classroom where students feel comfortable asking questions and sharing their thoughts."* and *"Professor Chamberlain is very supportive with a student's efforts, very clear when explaining difficult topics, and (most importantly) very patient with students who are 'slower' than the schedule. I can imagine him as enlightening and effective in the classroom. I would take another course with him given the opportunity."*
 
-# Year 3: AY23-24 Student Comments [8/8 positive]
+# Year 3: AY23-24 Student Comments [13/13 positive]
+##EXPAND as before by course: Aug 23 MATH 111, Oct 23 MATH 111, Jan 24 CSCI 251
 Similar to previous terms, all student comments (8) were positive. Students commented on how I was particularly helpful through extensive feedback and communicated in a way that students understood. An exemplary student comment was *"Excellent Instructor and very helpful when needed. Engaged in the instruction and provided feedback and extra time when necessary to ensure the success of the class. It was apparent that he put the students first and made sure to guide the class when direction was not entirely understood."*
+
+# Year 4: AY24-25 Student Comments []
+##EXPAND as before by course: Aug 24 CSCI 251 & MATH 502, Jan 25 MATH 502
+
+# Year 5: AY25-26 Student Comments []
+##EXPAND as before by course: Aug 25 STAT 412 & MATH 502, Oct 25 DSCI 201 & STAT 412, Jan 26 CSCI 251 & MATH 502, Mar 26 DSCI 411

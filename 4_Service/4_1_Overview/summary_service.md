@@ -1,5 +1,9 @@
 # Overview
-I have actively served at all levels of ERAU-W as well as in my professional community. In just my first two years at ERAU-W, I participated in the College of Arts & Science's Faculty Council as well as chaired the ERAU-W Faculty Senate Academic Technology committee. After the sudden passing of Dr. Karen Keene in February 2023, I stepped up to serve as Associate Chair of the department of Mathematics, Science, and Technology in addition to the various service I perform for my department. Outside of Embry-Riddle, I am involved in the Mathematical Association of America (MAA) and the Special Interest Group on Research in Undergraduate Mathematics Education (RUME). The MAA is the largest national association of American and Canadian mathematicians with a membership of over 24,000. RUME was the first Special Interest Group of the MAA and is the largest national association of collegiate mathematics education researchers in the United States. I serve on the MAA Council on Teaching and Learning as well as the chair for the Subcommittee on Technology in Mathematics Education. These groups allow for interaction and influence of college educators, especially with relation to technology. I also serve small committees in RUME as a stepping stone toward running for a leadership role within the research community. Outside of ERAU and my professional communities, I serve as a frequent journal reviewer and grant reviewer for the National Science Foundation. For journals, I am commonly called on to review papers on APOS Theory, a theoretical framework I have published on, as well as student learning through technology. For grants, I commonly review for the NSF Improving Undergraduate STEM Education (IUSE) initative. 
+I have actively served at all levels of ERAU-W as well as in my professional community. In just my first two years at ERAU-W, I participated in the College of Arts & Science's Faculty Council as well as chaired the ERAU-W Faculty Senate Academic Technology committee. After the sudden passing of Dr. Karen Keene in February 2023, I stepped up to serve as Associate Chair of the department of Mathematics, Science, and Technology in addition to the various service I perform for my department. 
+
+Outside of Embry-Riddle, I am involved in the Mathematical Association of America (MAA) and the Special Interest Group on Research in Undergraduate Mathematics Education (RUME). The MAA is the largest national association of American and Canadian mathematicians with a membership of over 24,000. RUME was the first Special Interest Group of the MAA and is the largest national association of collegiate mathematics education researchers in the United States. I serve on the MAA Council on Teaching and Learning as well as the chair for the Subcommittee on Technology in Mathematics Education. These groups allow for interaction and influence of college educators, especially with relation to technology. I also serve small committees in RUME as a stepping stone toward running for a leadership role within the research community. 
+
+Outside of ERAU and my professional communities, I serve as a frequent journal reviewer and grant reviewer for the National Science Foundation. For journals, I am commonly called on to review papers on APOS Theory, a theoretical framework I have published on, as well as student learning through technology. For grants, I commonly review for the NSF Improving Undergraduate STEM Education (IUSE) initative. 
 
 I have itemized my service by category and provided a brief explanation for each below. 
 
@@ -17,11 +21,11 @@ I have itemized my service by category and provided a brief explanation for each
 *Participated in the systematic review of various end-of-course evaluation vendors.*
 
 ## College 
-- **Appeal Committee Member** for ERAU College of Arts and Sciences, 2023--present.
+- **Appeal Committee Member** for ERAU College of Arts and Sciences, 2023--2025.
 
 *Negotiated grade appeal process for appeals that arose from instructors in the department of Mathematics, Science, and Technology.*
 
-- **Faculty Council Member** for ERAU-W College of Arts and Sciences, 2022-2023. Note: Term ended after one year due to accepting role as department of Mathematics, Science, and Technology Associate Chair.
+- **Faculty Council Member** for ERAU-W College of Arts and Sciences, 2022-2023. Note: Term ended after one year due to accepting role as Associate Department Chair for Mathematics, Science, and Technology.
 
 *Discussed issues brought up by faculty, co-led efforts to establish an ERAU-W COAS Faculty Council award, and provided COAS leadership feedback on proposals.*
 

@@ -8,7 +8,7 @@ I have received stellar student evaluations for all courses I have taught at ERA
 
 My peer observations are equally as positive. When designing courses (such as the new Programming for Data Science course CSCI 251) I attend to varying levels of conception as well as student affect (attitudes, emotions, and values). Assignments are designed to both intellectucally challenge students as well as provide supports for a safe environment to learn without fear of judgement. Students are provided significant content feedback along with encouragement to continue their strong work. My teaching philosophy in the Summary of Teaching Effectiveness section expands on this focus of both teaching and fostering students as people who can excel at mathematics. 
 
-I have participated in numerous teaching development opportunties both within and outside of ERAU-W. The most significant was my one-year fellowship New Experiences in Teaching (NExT) with the Mathematics Association of America. This program is designed for new tenure-track mathematics faculty to learn about teaching innovations and expectations. 
+I have participated in numerous teaching development opportunties both within and outside of ERAU-W. The most significant was my one-year fellowship New Experiences in Teaching (NExT) with the Mathematical Association of America. This program is designed for new tenure-track mathematics faculty to learn about teaching innovations and expectations. 
 
 ## Research
 
@@ -20,13 +20,13 @@ My scholarly activity, compared to total expectations outlined in the COAS ERAU-
 | **Year 2: AY22-23**   |       3        |       2       |         2            |
 | **Year 3: AY23-24**   |       1        |       4       |         3            |
 | **Year 4: AY24-25**   |       6        |       9       |         3            |
-| **Year 5: AY25-26**   |       3        |       3       |         4            |
+| **Year 5: AY25-26**   |       3        |       4       |         4            |
 |                       |                |               |                      |
-| **Total Activity**    |      16        |      23       |        14            | 
+| **Total Activity**    |      16        |      24       |        14            | 
 | **Expectation**       |       5        |       5       |         1            |
 
 
-Peer-reviewed publications were submitted to a variety of well-respected locations: national conference proceedings (9), peer-reviewed education journals (6), and as a book chapter (1). Presentations primiarly took place at national conferences (18), though I also presented at ERAU-hosted local and regional events (5) and was invited to talk about my research at 3 other universities as part of seminar series on 4 different occasions. I have had moderate success with external funding: I have been a co-PI on successful NSF grants (2) and subawards attached to NSF grants (1) while also being PI (2) and co-PI (1) on unsuccessful external grants. [UPDATE when 4 pending grants are set] I have had stellar success with internal funding: I have been PI (2) and co-PI (2) on successful college-level (3) and university-level (1) internal grants. My Research Agenda provides a short description of how my active research projects contribute to my overarching research agenda on utilizing machine learning and hypothetical learning trajectories to model student thinking and learning.
+Peer-reviewed publications were submitted to a variety of well-respected locations: national conference proceedings (9), peer-reviewed education journals (6), and as a book chapter (1). Presentations primiarly took place at national or international conferences (19), though I also presented at ERAU-hosted local and regional events (5) and was invited to talk about my research at 3 other universities as part of seminar series on 4 different occasions. I have had moderate success with external funding: I have been a co-PI on successful NSF grants (2) and subawards attached to NSF grants (1) while also being PI (2) and co-PI (1) on unsuccessful external grants. [UPDATE when 4 pending grants are set] I have had stellar success with internal funding: I have been PI (2) and co-PI (2) on successful college-level (3) and university-level (1) internal grants. My Research Agenda provides a short description of how my active research projects contribute to my overarching research agenda on utilizing machine learning and hypothetical learning trajectories to model student thinking and learning.
 
 ## Service
 
