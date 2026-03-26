@@ -1,5 +1,3 @@
-<!-- Likely a 1 page summary of everything. Leave for end. -->
-
 This packet contains the details of my activity since starting at Embry-Riddle Aeronautical University -- Worldwide in August 2021. Below is a brief overview of my activity versus expectation on each tenure-track faculty pillar of teaching, research, and service.
 
 ## Teaching
@@ -20,13 +18,13 @@ My scholarly activity, compared to total expectations outlined in the COAS ERAU-
 | **Year 2: AY22-23**   |       3        |       2       |         2            |
 | **Year 3: AY23-24**   |       1        |       4       |         3            |
 | **Year 4: AY24-25**   |       6        |       9       |         3            |
-| **Year 5: AY25-26**   |       3        |       4       |         4            |
+| **Year 5: AY25-26**   |       3        |       5       |         4            |
 |                       |                |               |                      |
-| **Total Activity**    |      16        |      24       |        14            | 
+| **Total Activity**    |      16        |      25       |        14            | 
 | **Expectation**       |       5        |       5       |         1            |
 
 
-Peer-reviewed publications were submitted to a variety of well-respected locations: national conference proceedings (9), peer-reviewed education journals (6), and as a book chapter (1). Presentations primiarly took place at national or international conferences (19), though I also presented at ERAU-hosted local and regional events (5) and was invited to talk about my research at 3 other universities as part of seminar series on 4 different occasions. I have had moderate success with external funding: I have been a co-PI on successful NSF grants (2) and subawards attached to NSF grants (1) while also being PI (2) and co-PI (1) on unsuccessful external grants. [UPDATE when 4 pending grants are set] I have had stellar success with internal funding: I have been PI (2) and co-PI (2) on successful college-level (3) and university-level (1) internal grants. My Research Agenda provides a short description of how my active research projects contribute to my overarching research agenda on utilizing machine learning and hypothetical learning trajectories to model student thinking and learning.
+Peer-reviewed publications were submitted to a variety of well-respected locations: national conference proceedings (9), peer-reviewed education journals (6), and as a book chapter (1). Presentations primiarly took place at national or international conferences (19), though I also presented at ERAU-hosted local and regional events (6) and was invited to talk about my research at 3 other universities as part of seminar series on 4 different occasions. I have had moderate success with external funding: I have been a co-PI on successful NSF grants (2) and subawards attached to NSF grants (1) while also being PI (2) and co-PI (1) on unsuccessful external grants. [UPDATE when 4 pending grants are set] I have had stellar success with internal funding: I have been PI (2) and co-PI (2) on successful college-level (3) and university-level (1) internal grants. My Research Agenda provides a short description of how my active research projects contribute to my overarching research agenda on utilizing machine learning and hypothetical learning trajectories to model student thinking and learning.
 
 ## Service
 
