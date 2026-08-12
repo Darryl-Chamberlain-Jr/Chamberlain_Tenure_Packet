@@ -12,6 +12,90 @@
 \usepackage{lmodern} 
 
 \usepackage{totcount}
+\usepackage{siunitx}
+
+\makeatletter
+\RenewDocumentCommand{\subsection}{sm}{%
+	\par\addvspace{1ex}%
+	\phantomsection{}% reset the anchor for hyperrefs
+	\addcontentsline{toc}{subsection}{#2}%
+	{\strut\raggedleft\raisebox{\baseletterheight}{\color{black}\rule{0.5\hintscolumnwidth}{0.95ex}}\quad}{\strut\subsectionstyle{#2}}%
+	\par\nobreak\addvspace{.5ex}\@afterheading}% to avoid a pagebreak after the heading
+\makeatother
+
+% Counter for Funded External Grants
+\newtotcounter{countFundedExGrants}
+\setcounter{countFundedExGrants}{0}
+
+\newtotcounter{sumFundedExGrants}
+\setcounter{sumFundedExGrants}{0}
+
+\newcommand{\addFundedExTotal}[1]{%
+	\setcounter{sumFundedExGrants}{\number \numexpr \value{sumFundedExGrants}+#1\relax}
+	\addtocounter{countFundedExGrants}{1}
+}
+
+% Counter for Unfunded External Grants
+\newtotcounter{countUnfundedExGrants}
+\setcounter{countUnfundedExGrants}{0}
+
+\newtotcounter{sumUnfundedExGrants}
+\setcounter{sumUnfundedExGrants}{0}
+
+\newcommand{\addUnfundedExTotal}[1]{%
+	\setcounter{sumUnfundedExGrants}{\number \numexpr \value{sumUnfundedExGrants}+#1\relax}
+	\addtocounter{countUnfundedExGrants}{1}
+}
+
+
+% Counter for Under Review External Grants
+\newtotcounter{countReviewExGrants}
+\setcounter{countReviewExGrants}{0}
+
+\newtotcounter{sumReviewExGrants}
+\setcounter{sumReviewExGrants}{0}
+
+\newcommand{\addReviewExTotal}[1]{%
+	\setcounter{sumReviewExGrants}{\number \numexpr \value{sumReviewExGrants}+#1\relax}
+	\addtocounter{countReviewExGrants}{1}
+}
+
+% Counter for Funded Internal Grants
+\newtotcounter{countFundedInGrants}
+\setcounter{countFundedInGrants}{0}
+
+\newtotcounter{sumFundedInGrants}
+\setcounter{sumFundedInGrants}{0}
+
+\newcommand{\addFundedInTotal}[1]{%
+	\setcounter{sumFundedInGrants}{\number \numexpr \value{sumFundedInGrants}+#1\relax}
+	\addtocounter{countFundedInGrants}{1}
+}
+
+% Counter for Unfunded Internal Grants
+\newtotcounter{countUnfundedInGrants}
+\setcounter{countUnfundedInGrants}{0}
+
+\newtotcounter{sumUnfundedInGrants}
+\setcounter{sumUnfundedInGrants}{0}
+
+\newcommand{\addUnfundedInTotal}[1]{%
+	\setcounter{sumUnfundedInGrants}{\number \numexpr \value{sumUnfundedInGrants}+#1\relax}
+	\addtocounter{countUnfundedGrants}{1}
+}
+
+% Counter for Under Review Internal Grants
+\newtotcounter{countReviewInGrants}
+\setcounter{countReviewInGrants}{0}
+
+\newtotcounter{sumReviewInGrants}
+\setcounter{sumReviewInGrants}{0}
+
+\newcommand{\addReviewInTotal}[1]{%
+	\setcounter{sumReviewInGrants}{\number \numexpr \value{sumReviewInGrants}+#1\relax}
+	\addtocounter{countReviewInGrants}{1}
+}
+
 
 % Counter for Under Review Journal Articles
 \newcounter{underReviewArticleCounterReverse}
@@ -104,6 +188,19 @@
 	}
 }
 
+% Counter for Open-Source Contributions
+\newcounter{openSourceCounterReverse}
+\newtotcounter{openSourceCounter}
+\setcounter{openSourceCounter}{1}
+
+\newcommand{\openSource}[1]{%
+	\addtocounter{openSourceCounterReverse}{-1}
+	\addtocounter{openSourceCounter}{1}
+	\cvitem{[\arabic{openSourceCounterReverse}]}{%
+		#1
+	}
+}
+
 % Counter for Research Summary Documents
 \newcounter{ResearchSummaryCounterReverse}
 \newtotcounter{ResearchSummaryCounter}
@@ -155,6 +252,19 @@
 		#1
 	}
 }
+% Counter for Conference Organizations
+\newcounter{conferenceCounterReverse}
+\newtotcounter{conferenceCounter}
+\setcounter{conferenceCounter}{1}
+
+\newcommand{\conferenceOrganization}[1]{%
+	\addtocounter{conferenceCounterReverse}{-1}
+	\addtocounter{conferenceCounter}{1}
+	\cvitem{[\arabic{conferenceCounterReverse}]}{%
+		#1
+	}
+}
+
 % Counter for Conference Session Organizations
 \newcounter{sessionOrganizationCounterReverse}
 \newtotcounter{sessionOrganizationCounter}
@@ -167,6 +277,20 @@
 		#1
 	}
 }
+
+% Counter for Conference Workshop Organizations
+\newcounter{workshopCounterReverse}
+\newtotcounter{workshopCounter}
+\setcounter{workshopCounter}{1}
+
+\newcommand{\workshopOrganization}[1]{%
+	\addtocounter{workshopCounterReverse}{-1}
+	\addtocounter{workshopCounter}{1}
+	\cvitem{[\arabic{workshopCounterReverse}]}{%
+		#1
+	}
+}
+
 % Counter for Local Session Organizations
 \newcounter{localOrganizationCounterReverse}
 \newtotcounter{localOrganizationCounter}
@@ -205,6 +329,7 @@
 \begin{document}
 	\makecvtitle
 	\vspace*{-1cm}
+	
 	\section{Education}
 	\cventry{2023}
 	{Certificate, Applied Data Science with Python}
@@ -273,24 +398,33 @@
 	{Georgia State University}
 	{}
 	\section{External Research Funding Experience}
+
+	\cvitem{}{
+		\total{countFundedExGrants} funded external grants at \$\num[group-separator={,}, group-minimum-digits=3]{\arabic{sumFundedExGrants@totc}}. 
+		\total{countUnfundedExGrants} unfunded external grants at \$\num[group-separator={,}, group-minimum-digits=3]{\arabic{sumUnfundedExGrants@totc}}.
+		\total{countReviewExGrants} under review external grant at \$\num[group-separator={,}, group-minimum-digits=3]{\arabic{sumReviewExGrants@totc}}.
+		}
+
 	\cventry{
+	\addFundedExTotal{99570}
 	\$99,570\\ funded}
 	{\textbf{Co-Principal Investigator}}
 	{Convening to Investigate the Impact of AI-Powered Pedagogies in Postsecondary Mathematics Education}
 	{with Audrey Malagon (PI) and Gizem Karaali (co-PI). 
 		NSF Improving Undergraduate STEM Education (IUSE), 2026-2027.}
 	{}{}
-
+	
 	\cventry{
+	\addUnfundedExTotal{737508}
 	\$737,508\\ unfunded}
 	{\textbf{Co-Principal Investigator}}
 	{Collaborative Research: Responding to "Metacognitive Laziness": A Longitudinal Study of Human-AI Writing Processes}
 	{with Emily Dux Speltz (ERAU PI), Kara Taczak (UCF Lead PI), Meghan Velez (UCF co-PI), Michelle Taub (UCF co-PI), Joel Scheneier (UCF co-PI), and Anuj Gupta (USF PI). 
 		NSF Science of Learning and Augmented Intelligence, 2026-2029.}
 	{}{}
-
 	\cventry{
-		\$391,510\\ unfunded}
+	\addUnfundedExTotal{391510}
+	\$391,510\\ unfunded}
 	{\textbf{Principal Investigator}}
 	{Collaborative Research: Adaptive Assessments in Calculus}
 	{with Russell Jeter (GSU Lead PI) and Kelvin Rozier (GSU co-PI). 
@@ -298,6 +432,7 @@
 	{}{}
 
 	\cventry{
+	\addReviewExTotal{900000}
 	\$900,000\\ under review}
 	{\textbf{Co-Principal Investigator}}
 	{Investigating Algorithm-Mediated Career Information and Human-AI Collaboration in Adaptive STEM Curriculum: Effects on Student Learning and Faculty Decision-Making}
@@ -306,6 +441,7 @@
 	{}{}
 
 	\cventry{
+		\addUnfundedExTotal{71856}
 		\$71,856\\ unfunded}
 	{\textbf{Principal Investigator}}
 	{Investigating the Development and Impact of Culturally Relevant, AI-Powered Pedagogies in Postsecondary Mathematics Education}
@@ -314,56 +450,73 @@
 	{}{}
 	
 	\cventry{
+		\addUnfundedExTotal{398725}
 		\$398,725\\ unfunded}
 	{\textbf{Principal Investigator}}
 	{Collaborative Research: Adaptive Assessments in Calculus}
 	{with Russell Jeter (GSU Lead PI) and Kelvin Rozier (GSU co-PI). 
 		NSF Improving Undergraduate STEM Education (IUSE), 2025-2029.}
 	{}{}
+	
 	\cventry{
+		\addUnfundedExTotal{26962}
 		\$26,962\\ unfunded}
 	{\textbf{Co-Principal Investigator}}
 	{EXCELing in STEM: The Impact of Empowering Student Engagement with the Public}
 	{with Emily Faulconer (PI), Amy Gruss (KSU supporting researcher), Effie Kartsonaki (Queensland supporting researcher), and Dong Jun Kim (New South Wales supporting researcher). 
 		Spencer Foundation Small Grants Program, 2025-2026.}
 	{}{}
+	
 	\cventry{
+		\addFundedExTotal{500}
 		\$500\\ funded}
 	{\textbf{Principal Investigator}}
 	{Asycnchronous Discovery Activity - Learning to Fly with the Wind}
 	{Doenet (DUE-1915294, DUE-1915363, DUE-1915438) Learning Experiment Mini-Grant, 2023-2024.}
 	{}{}
+	
 	\cventry{
+		\addFundedExTotal{399183}
 		\$399,183\\ funded}
 	{\textbf{Co-Principal Investigator}}
 	{Undergraduate Research for Fully Online STEM Students: Impact of Expanded Curricular Options on STEM Attitudes, Identity, \& Career Ambitions}
 	{with Robert Deters (PI), Emily Faulconer (co-PI), Brent Terwilliger (co-PI). NSF Improving Undergraduate STEM Education (IUSE), 2023-2026.}
 	{}{}
+	
 	\cventry{
+		\addFundedExTotal{237298}
 		\$237,298\\ funded}
 	{\textbf{Co-Principal Investigator}}
 	{Community of Inquiry and Cognitive Load in Online STEM: Persistence, Performance, and Perspectives}
 	{with Emily Faulconer (PI) and Beverly Wood (co-PI). NSF Improving Undergraduate STEM Education (IUSE), 2021-2024.}
 	{}{}
+	
 	\cventry{
+		\addUnfundedExTotal{271543}
 		\$271,543\\ unfunded}
 	{\textbf{Principal Investigator}}
 	{Drilling Down into Concepts with Automatic and Diagnostic Item Generation (Auto-DIG)}
 	{with Annie Burns-Childers (co-PI), Catherine Paolucci (co-PI), and Russell Jeter (consult). NSF Improving Undergraduate STEM Education (IUSE), Submitted October 2020.}
 	{}{}
+	
 	\cventry{
+		\addUnfundedExTotal{202184}
 		\$202,184\\ unfunded}
 	{\textbf{Co-Principal Investigator}}
 	{Using Video to Expand Communication of Mathematical Sciences Research}
 	{with Catherine Paolucci (PI). National Science Foundation, Submitted October 2020.}
 	{}{}
+	
 	\cventry{
+		\addUnfundedExTotal{99960}
 		\$99,960\\ unfunded}
 	{\textbf{Principal Investigator}}
 	{Analyzing a Novel College Algebra Curriculum and Implementation}
 	{with Russell Jeter (consult). NSF Directorate for STEM Education Core Research (ECR: Core), Submitted October 2019.}
 	{}{}
+	
 	\cventry{
+		\addFundedExTotal{340764}
 		\$340,764 \\ funded}
 	{Graduate Research Assistant (2016--2017); Other Professional (2017--2021)}
 	{Promoting Reasoning in Undergraduate Mathematics (PRIUM)}
@@ -371,7 +524,16 @@
 	{}{}
 	
 	\section{Internal Research Funding Experience}
+	
+	\cvitem{}{
+		\total{countFundedInGrants} funded internal grants at \$\num[group-separator={,}, group-minimum-digits=3]{\arabic{sumFundedInGrants@totc}}. 
+		No unfunded nor under review internal grants.
+	%	\total{countUnfundedInGrants} unfunded internal grants at \$\num[group-separator={,}, group-minimum-digits=3]{\arabic{sumUnfundedInGrants@totc}}.
+	%	\total{countReviewInGrants} under review internal grant at \$\num[group-separator={,}, group-minimum-digits=3]{\arabic{sumReviewInGrants@totc}}.
+	}
+	
 	\cventry{
+		\addFundedInTotal{26000}
 		\$26,000\\ funded}
 	{Co-Principal Investigator}
 	{Developing AI-Assisted Writing Technologies to Enhance College Writers’ Processes}
@@ -379,6 +541,7 @@
 		ERAU Faculty Innovative Research in Science and Technology (FIRST) Grant, 2025-2026.}
 	{}{}
 	\cventry{
+		\addFundedInTotal{2000}
 		\$2,000\\ funded}
 	{Co-Principal Investigator}
 	{Generative AI Feedback Across the Disciplines: A College of Arts and Sciences Pilot Study}
@@ -386,6 +549,7 @@
 		ERAU-WW COAS Start-Up Funding, 2024.}
 	{}{}
 	\cventry{
+		\addFundedInTotal{6000}
 		\$6,000\\ funded}
 	{Principal Investigator}
 	{Collective Knowledge Progression and Proliferation in Asynchronous Calculus Discussion Boards}
@@ -393,12 +557,14 @@
 		ERAU-WW Faculty Seed Grant, 2023.}
 	{}{}
 	\cventry{
+		\addFundedInTotal{4069}
 		\$4,069\\ funded}
 	{Principal Investigator}
 	{Developing Autonomous, Targeted Feedback in Precalculus}
 	{ERAU-WW Faculty Seed Grant, 2021-2022.}
 	{}{}
 	\cventry{
+		\addFundedInTotal{29923}
 		\$29,923\\ funded}
 	{Co-Principal Investigator}
 	{Examining and addressing the content knowledge development needs of Florida's aspiring and newly-qualified mathematics teachers}
@@ -406,21 +572,31 @@
 		UF Internal Grant, 2020-2021.}
 	{}{}
 	
-%	\section{Grant Advisory Board Experience}
-%	\cventry{2027-2030}
-%		{NSF IUSE}
-%		{Humanizing and Enhancing the Learning of Proofs at Scale (AI-HELPS)}
-%		{}
-%		{PI Vince Vatter (University of Florida), Co-PI Sarah Sword (Education Development Center), Co-PI Ryota Matsuura (St. Olaf College), and Co-PI Jay Pantone (Marquette University).}
-%		{}
-%	\cventry{2027-2030}
-%		{NSF STEM K-12}
-%		{Collaborative Proposal: Building AI Literacy and Epistemic Agency in Secondary Mathematics Teachers through Agentic AI Co-Creation of Curriculum}
-%		{}
-%		{PI Ruthmae Sears (University of South Florida) and PI Orly Buchbinder (University of New Hampshire).}
-%		{}	
-			
-	\section{Manuscripts Under Review}
+	\section{Grant Advisory Board Experience}
+	\cventry{2027-2030 \\ under review}
+		{NSF IUSE}
+		{Humanizing and Enhancing the Learning of Proofs at Scale (AI-HELPS)}
+		{}
+		{PI Vince Vatter (University of Florida), Co-PI Sarah Sword (Education Development Center), Co-PI Ryota Matsuura (St. Olaf College), and Co-PI Jay Pantone (Marquette University).}
+		{}
+	\cventry{2027-2030 \\ under review} 
+		{NSF STEM K-12}
+		{Collaborative Proposal: Building AI Literacy and Epistemic Agency in Secondary Mathematics Teachers through Agentic AI Co-Creation of Curriculum}
+		{}
+		{PI Ruthmae Sears (University of South Florida) and PI Orly Buchbinder (University of New Hampshire).}
+		{}	
+		
+	\section{Publications}
+	\cvitem{}{
+		Under Review: \the\numexpr\totvalue{underReviewArticleCounter}-1\relax, 
+		Journal Articles: \the\numexpr\totvalue{peerReviewedArticleCounter}-1\relax,
+		Book Chapters: \the\numexpr\totvalue{bookChapterCounter}-1\relax,
+		Conference Proceedings: \the\numexpr\totvalue{peerReviewedConferenceCounter}-1\relax,
+		White Papers: \the\numexpr\totvalue{whitePaperCounter}-1\relax,
+		Editorials: \the\numexpr\totvalue{editorialCounter}-1\relax
+	}
+	
+	\subsection{Manuscripts Under Review}
 	\setcounter{underReviewArticleCounterReverse}{\totvalue{underReviewArticleCounter}}
 	\underReviewArticle{%
 		Faulconer, E., Terwilliger, B., \textbf{Chamberlain Jr., D.}, Deters. R., \& Kam, C. (revise and resubmit July 2026). 
@@ -461,17 +637,8 @@
 		%   \textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Methodology, Visualization, Writing - Original Draft.
 		%}
 	
-%	\section{Peer-Reviewed Book Chapters}
-%	\setcounter{bookChapterCounterReverse}{\totvalue{bookChapterCounter}}
-%	\bookChapter{%
-%		Reed, Z., \textbf{Chamberlain Jr., D.}, \& Ramirez, L.
-%		(2025).
-%		\emph{A Framework for Analyzing Asynchronous Discussion Activities.} 
-%		Teaching and Learning Mathematics Online 2e, CRC Press, FL.  \newline
-%		\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Project Administration, Software, Visualization, Writing - Original Draft, Writing - Review \& Editing.
-%	}
+	\subsection{Peer-Reviewed Journal Articles}
 	
-	\section{Peer-Reviewed Journal Articles and Book Chapters}
 	\setcounter{peerReviewedArticleCounterReverse}{\totvalue{peerReviewedArticleCounter}}
 
 	\peerReviewedArticle{%
@@ -505,13 +672,6 @@
 		https://academyforeducationalstudies.org/wp-content/uploads/2025/04/velez-et-al-final.pdf \newline
 		\textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Methodology, Writing - Original Draft.
 	}
-	\peerReviewedArticle{%
-		Reed, Z., \textbf{Chamberlain Jr., D.}, \& Ramirez, L.
-		(2025).
-		\emph{A Framework for Analyzing Asynchronous Discussion Activities.} 
-		Teaching and Learning Mathematics Online 2e, CRC Press, FL.  \newline
-		\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Project Administration, Software, Visualization, Writing - Original Draft, Writing - Review \& Editing.
-	}
 	
 	\peerReviewedArticle{%
 		\textbf{Chamberlain Jr., D.} 
@@ -519,6 +679,7 @@
 		\emph{How one instructor can teach a large-scale, mastery-based College Algebra course online.} 
 		Problems, Resources, and Issues in Mathematics Undergraduate Studies. DOI: 10.1080/10511970.2023.2190183.
 	}
+	
 	\peerReviewedArticle{%
 		Faulconer, E., \textbf{Chamberlain Jr., D.}, \& Wood, B. 
 		(2022). 
@@ -526,6 +687,7 @@
 		Online Learning Journal. DOI: http://dx.doi.org/10.24059/olj.v26i3.3386. \newline
 		\textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Methodology, Software, Visualization, Writing - Original Draft, Writing - Review \& Editing.
 	}
+	
 	\peerReviewedArticle{%
 		\textbf{Chamberlain Jr., D.} \& Vidakovic, D. 
 		(2021).
@@ -534,6 +696,7 @@
 		DOI: 10.1016/j.jmathb.2021.100849. \newline
 		\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Project Administration, Writing - Original Draft, Writing - Review \& Editing.
 	}
+	
 	\peerReviewedArticle{%
 		\textbf{Chamberlain Jr., D.} \& Jeter, R.
 		(2020). 
@@ -551,6 +714,7 @@
 		DOI: 10.1080/10511970.2020.1769235. \newline
 		\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Methodology, Writing - Original Draft, Writing - Review \& Editing.
 	}
+	
 	\peerReviewedArticle{
 		Stalvey, H., Burns, A., \textbf{Chamberlain Jr., D.}, Kemp, A., Meadows, L., \& Vidakovic, D. 
 		(2019). 
@@ -560,12 +724,21 @@
 		\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Writing - Original Draft, Writing - Review \& Editing.
 	}
 	
-
+	\subsection{Book Chapters}
+	\setcounter{bookChapterCounterReverse}{\totvalue{bookChapterCounter}}
 	
-	\section{Peer-Reviewed Conference Proceedings {\footnotesize [asterisk denotes presenter]}}
+	\bookChapter{%
+		Reed, Z., \textbf{Chamberlain Jr., D.}, \& Ramirez, L.
+		(2025).
+		\emph{A Framework for Analyzing Asynchronous Discussion Activities.} 
+		Teaching and Learning Mathematics Online 2e, CRC Press, FL.  \newline
+		\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Project Administration, Software, Visualization, Writing - Original Draft, Writing - Review \& Editing.
+	}
+
+	\subsection{Peer-Reviewed Conference Proceedings {\footnotesize [asterisk denotes presenter]}}
 	\setcounter{peerReviewedConferenceCounterReverse}{\totvalue{peerReviewedConferenceCounter}}
 	\peerReviewedConference{
-		Deters. R.*, \textbf{Chamberlain Jr., D.}, Terwilliger, B., \& Faulconer, E.
+		\textbf{Chamberlain Jr., D.}, Deters. R.*, Terwilliger, B., \& Faulconer, E.
 		(2026, Jun 21).
 		\textit{Measuring College Students' Identity, Attitude, and Career Ambition: Sponsored Through NSF IUSE}.
 		American Society for Engineering Education (ASEE) 2026 Annual Conference and Exposition, Charlotte, NC. \newline 
@@ -686,9 +859,100 @@
 		\newline
 		\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Project Administration, Writing - Original Draft, Writing - Review \& Editing.
 	}	
-
+	\subsection{White Papers}
+	\setcounter{whitePaperCounterReverse}{\totvalue{whitePaperCounter}}
+	\whitePaper{
+		\textbf{Chamberlain Jr., D.}, Rittby, K., Gaines, B., \& Slagel, J.T. 
+		(2025).
+		The Fear-Opportunity Spectrum of Generative AI in the Mathematics Classroom. 
+		\textit{MAA FOCUS, 17(3)}, 
+		16-19.
+		\href{http://digitaleditions.walsworthprintgroup.com/publication/?m=7656&l=1}{http://digitaleditions.walsworthprintgroup.com/publication/?m=7656\&l=1}
+		\newline
+		\textit{\underline{CRediT Roles:}} Writing - Original Draft, Writing - Review \& Editing.
+	}
+	\whitePaper{%
+		Reid et al.
+		(2024). 
+		Voices from the field: How did you come to engage in students-as-partners work?
+		\textit{International Journal for Students as Partners, 8(2)},
+		241-259. 
+		\href{https://doi.org/10.15173/ijsap.v8i2.5872}{https://doi.org/10.15173/ijsap.v8i2.5872}
+		\newline
+		\textit{\underline{CRediT Roles:}} Writing - Original Draft, Writing - Review \& Editing.
+	}
+	\whitePaper{%
+		Faulconer, E., \textbf{Chamberlain Jr., D.}, \& Wood, B. (2024). \textit{Community of Inquiry and Cognitive Load: Research Summary Document.} Zenodo. \href{https://zenodo.org/doi/10.5281/zenodo.7951445}{https://doi.org/10.5281/zenodo.11398144} \newline
+		\textit{\underline{CRediT Roles:}} Data Analysis, Writing - Review \& Editing.
+	}
+	\whitePaper{%
+		Faulconer, E., \textbf{Chamberlain Jr., D.}, \& Wood, B.
+		(2024).
+		\textit{Community of Inquiry and Cognitive Load in online STEM: Transferability plan}.
+		Zenodo. DOI: \href{https://doi.org/10.5281/zenodo.11203344}{https://doi.org/10.5281/zenodo.11203344}
+		\newline
+		\textit{\underline{CRediT Roles:}} Data Analysis, Writing - Review \& Editing.
+	}
 	
-	\section{National/International Conference Presentations {\footnotesize [asterisk denotes presenter]}}
+	\whitePaper{%
+		Wood, B., Faulconer, E., \& \textbf{Chamberlain Jr., D.},
+		(2024).
+		\textit{Gathering Nuanced Data for Understanding Student Withdrawals}.
+		Zenodo. DOI: \href{https://doi.org/10.5281/zenodo.11094757}{10.5281/zenodo.11094757}
+		\newline
+		\textit{\underline{CRediT Roles:}} Writing - Review \& Editing.
+	}
+	
+	\subsection{Editorials}
+	\setcounter{editorialCounterReverse}{\totvalue{editorialCounter}}
+	\editorial{%
+		Faulconer, E. \& \textbf{Chamberlain Jr., D.} 
+		(2025).
+		\textit{Leading the Spiral: Supporting Faculty in Curriculum Innovation}.
+		The Department Chair, 35(4), DOI: \href{https://doi.org/10.1002/dch.30640}{https://doi.org/10.1002/dch.30640}
+	}
+	
+	\editorial{%
+		Wood, B., Faulconer, E., \& \textbf{Chamberlain Jr., D.}
+		(2025).
+		\textit{Lessons from Professional Development for Remote STEM Faculty}. 
+		The Department Chair, 35(3), DOI: \href{https://doi.org/10.1002/dch.30625}{https://doi.org/10.1002/dch.30625}
+	}
+	
+	\subsection{Pre-Prints}
+	\setcounter{preprintCounterReverse}{\totvalue{preprintCounter}}
+	
+	\preprint{%
+		\textbf{Chamberlain Jr., D.}, Jeter, R., \& Rozier, K. 
+		(2024, December 27).
+		\textit{An Integrated Methodology for Assessing Item Discrimination in Mathematics Assessments}.
+		https://doi.org/10.31235/osf.io/xvh7y
+	}
+	
+	\preprint{%
+		\textbf{Chamberlain Jr., D.}, \& Jeter, R. 
+		(2024, August 9). 
+		\textit{Utilizing Theoretically-Driven Distractors to Make Diagnostic Multiple-Choice Assessments Possible}. 
+		https://doi.org/10.31235/osf.io/vzhm7
+	}
+	
+	\preprint{%
+		\textbf{Chamberlain Jr., D.}, \& Faulconer, E. 
+		(2024, July 3). 
+		\textit{Structural Framework for Interactions Between Community of Inquiry Presences, Cognitive Load, Demographics, and Grades. }
+		https://doi.org/10.31235/osf.io/7ay4t
+	}
+	
+	\section{Presentations}
+	\cvitem{}{
+		National/International Conference with Proceedings: \the\numexpr\totvalue{peerReviewedConferenceCounter}-1\relax, 
+		National/International Conference without Proceedings: \the\numexpr\totvalue{presentationCounter}-1\relax,
+		Regional Conference: \the\numexpr\totvalue{regionalPresentationCounter}-1\relax,
+		Local Conference: \the\numexpr\totvalue{internalConferenceCounter}-1\relax,
+		Invited Talks: \the\numexpr\totvalue{invitedTalksCounter}-1\relax.
+	}
+
+	\subsection{National/International Conference Presentations {\footnotesize [asterisk denotes presenter]}}
 	\setcounter{presentationCounterReverse}{\totvalue{presentationCounter}}
 
 	\presentations{
@@ -806,7 +1070,7 @@
 		Joint Mathematics Meeting, Atlanta, GA.
 	}	
 	
-	\section{Regional Conference Presentations {\footnotesize [asterisk denotes presenter]}}
+	\subsection{Regional Conference Presentations {\footnotesize [asterisk denotes presenter]}}
 	\setcounter{regionalPresentationCounterReverse}{\totvalue{regionalPresentationCounter}}
 	
 	\regionalPresentations{%
@@ -851,7 +1115,7 @@
 		AMS Southeastern Spring Sectional Meeting, Athens, GA.
 	}	
 	
-	\section{Local Conference Presentations {\footnotesize [asterisk denotes presenter]}}
+	\subsection{Local Conference Presentations {\footnotesize [asterisk denotes presenter]}}
 	\setcounter{internalConferenceCounterReverse}{\totvalue{internalConferenceCounter}}
 	\internalConference{
 		T. Singh*, K. Rozier, \textbf{D. Chamberlain, Jr.}, and R. Jeter.
@@ -914,64 +1178,7 @@
 		\emph{Teaching Proofs with APOS Theory}. 
 		Mathematics Graduate Student Miniconference, Atlanta, Ga.
 	}
-	
-	\section{Conference Session or Workshop Organization}
-	\setcounter{sessionOrganizationCounterReverse}{\totvalue{sessionOrganizationCounter}}
-	\sessionOrganization{
-		Rittby, K., \textbf{Chamberlain Jr., D.}, Edwards, A., Gaines, B., Jahangiri, J., Nucci, D., Oxman, V.,  Slagel, T., \& Weisbrod, J. (2026, Aug 5-8). Session \textit{Innovation, Evidence, and Applications of AI in Teaching and Learning Mathematics}. 2026 MAA MathFest, 
-		Boston, MA.
-	}
-	\sessionOrganization{
-		Rittby, K., Gaines, B., \& \textbf{Chamberlain Jr., D.} (2026, Apr 10-11). Session \textit{AI in the Classroom: What's Working (and What's Not)}. 2026 MAA Virtual AI Conference, 
-		Virtual.
-	}
-	\sessionOrganization{
-		\textbf{Chamberlain Jr., D.}, Reed, Z., \& Margolis, C. (2025, Feb 27). Workshop: \textit{Research on Technology in Undergraduate Mathematics Education}. 27th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME,
-		Alexandria, VA. 
-	}
-	\sessionOrganization{
-		\textbf{Chamberlain Jr., D.} \& Reed, Z. (2024, Feb 22). Workshop: \textit{Research on Technology in Undergraduate Mathematics Education}. 26th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME,
-		Omaha, NE. 
-	}
-	\sessionOrganization{
-		\textbf{Chamberlain Jr., D.} \& Barber, R. (2023, Aug 2). Session: \textit{Unspoken Research Components}. 
-		2023 MAA MathFest, 
-		Tampa, FL.
-	}
-	\sessionOrganization{
-		\textbf{Chamberlain Jr., D.} \& Barber, R. (2023, Aug 2). Session: \textit{Building a Research Program}. 
-		2023 MAA MathFest, 
-		Tampa, FL.
-	}
-	\sessionOrganization{
-		\textbf{Chamberlain Jr., D.}, Reed, Z., \& Keene, K. (2023, Feb 23). Workshop: \textit{Research on Technology in Undergraduate Mathematics Education}. 25th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME,
-		Omaha, NE. 
-	}
-	\sessionOrganization{
-		\textbf{Chamberlain Jr., D.}, Acu, B., \& Gasiorek, S. (2023, Jan 3). Session: \textit{Navigating the Early Years of the Faculty Experience}. 
-		2023 Joint Mathematics Meeting, 
-		Boston, MA.
-	}
-	\sessionOrganization{%
-		Vidakovic, D., Stalvey, H., \textbf{Chamberlain Jr., D.}, Kemp, A., Meadows, L., \& Kellam, A. (2018, Mar 23-24).
-		Session: \textit{Active Learning in Undergraduate Mathematics}. 
-		MAA Spring 2018 Southeastern Section Conference, 
-		Clemson, SC.
-	}
-	\sessionOrganization{%
-		Vidakovic, D., Stalvey, H., \textbf{Chamberlain Jr., D.}, Kemp, A., \& Meadows, L. (2017, Mar 10-12).
-		Session: \textit{Active Learning in Undergraduate Mathematics}. 
-		AMS Spring 2017 Southeastern Regional Conference, 
-		Charleston, SC.
-	}
-	\sessionOrganization{%
-		Vidakovic, D., Stalvey, H., \textbf{Chamberlain Jr., D.}, Kemp, A., \& Meadows, L. (2016, Mar 5-6). 
-		Session: \textit{Active Learning in Undergraduate Mathematics}. 
-		AMS Spring 2016 Southeastern Regional Conference, 
-		Athens, GA.
-	}
-	
-	\section{Invited Talks}
+	\subsection{Invited Talks}
 	\setcounter{invitedTalksCounterReverse}{\totvalue{invitedTalksCounter}}
 	
 	\invitedTalks{%
@@ -1028,6 +1235,79 @@
 		\textit{Automatic and Diagnostic Item Generation}. 
 		Invited by the University of Florida Lastinger Center.
 	}
+	
+	\section{Conference Organization}
+	\subsection{Conference}
+	\setcounter{conferenceCounterReverse}{\totvalue{conferenceCounter}}
+	
+	\conferenceOrganization{
+		\textbf{Chamberlain Jr., D.}, Malagon, A., \& Karaali, G. (2026, Jun 15-16). \textit{Generative AI and Mathematics Education}, 2026 Generative AI Convening, Washington, DC.
+	}
+	
+	\conferenceOrganization{
+		Rittby, K., Gaines, B., \& \textbf{Chamberlain Jr., D.} (2026, Apr 10-11). \textit{AI in the Classroom: What's Working (and What's Not)}. 2026 MAA Virtual AI Conference, 
+		Virtual.
+	}
+	
+	\subsection{Conference Session}
+	\setcounter{sessionOrganizationCounterReverse}{\totvalue{sessionOrganizationCounter}}
+	\sessionOrganization{
+		Rittby, K., \textbf{Chamberlain Jr., D.}, Edwards, A., Gaines, B., Jahangiri, J., Nucci, D., Oxman, V.,  Slagel, T., \& Weisbrod, J. (2026, Aug 5-8). Contributed Paper Session: \textit{Innovation, Evidence, and Applications of AI in Teaching and Learning Mathematics}. 2026 MAA MathFest, 
+		Boston, MA.
+	}
+
+	\sessionOrganization{
+		\textbf{Chamberlain Jr., D.} \& Barber, R. (2023, Aug 2). Special Session: \textit{Unspoken Research Components}. 
+		2023 MAA MathFest, 
+		Tampa, FL.
+	}
+	
+	\sessionOrganization{
+		\textbf{Chamberlain Jr., D.} \& Barber, R. (2023, Aug 2). Special Session: \textit{Building a Research Program}. 
+		2023 MAA MathFest, 
+		Tampa, FL.
+	}
+
+	\sessionOrganization{
+		\textbf{Chamberlain Jr., D.}, Acu, B., \& Gasiorek, S. (2023, Jan 3). Special Session: \textit{Navigating the Early Years of the Faculty Experience}. 
+		2023 Joint Mathematics Meeting, 
+		Boston, MA.
+	}
+	\sessionOrganization{%
+		Vidakovic, D., Stalvey, H., \textbf{Chamberlain Jr., D.}, Kemp, A., Meadows, L., \& Kellam, A. (2018, Mar 23-24).
+		Contributed Paper Session: \textit{Active Learning in Undergraduate Mathematics}. 
+		MAA Spring 2018 Southeastern Section Conference, 
+		Clemson, SC.
+	}
+	\sessionOrganization{%
+		Vidakovic, D., Stalvey, H., \textbf{Chamberlain Jr., D.}, Kemp, A., \& Meadows, L. (2017, Mar 10-12).
+		Contributed Paper Session: \textit{Active Learning in Undergraduate Mathematics}. 
+		AMS Spring 2017 Southeastern Regional Conference, 
+		Charleston, SC.
+	}
+	\sessionOrganization{%
+		Vidakovic, D., Stalvey, H., \textbf{Chamberlain Jr., D.}, Kemp, A., \& Meadows, L. (2016, Mar 5-6). 
+		Contributed Paper Session: \textit{Active Learning in Undergraduate Mathematics}. 
+		AMS Spring 2016 Southeastern Regional Conference, 
+		Athens, GA.
+	}
+	\subsection{Conference Workshop}
+	\setcounter{workshopCounterReverse}{\totvalue{workshopCounter}}
+	\workshopOrganization{
+		\textbf{Chamberlain Jr., D.}, Reed, Z., \& Margolis, C. (2025, Feb 27). Workshop: \textit{Research on Technology in Undergraduate Mathematics Education}. 27th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME,
+		Alexandria, VA. 
+	}
+	
+	\workshopOrganization{
+		\textbf{Chamberlain Jr., D.} \& Reed, Z. (2024, Feb 22). Workshop: \textit{Research on Technology in Undergraduate Mathematics Education}. 26th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME,
+		Omaha, NE. 
+	}
+	
+	\workshopOrganization{
+		\textbf{Chamberlain Jr., D.}, Reed, Z., \& Keene, K. (2023, Feb 23). Workshop: \textit{Research on Technology in Undergraduate Mathematics Education}. 25th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME,
+		Omaha, NE. 
+	}
+	
 	\section{Local Session or Workshop Organization}
 	\setcounter{localOrganizationCounterReverse}{\totvalue{localOrganizationCounter}}
 	\localOrganization{%
@@ -1185,95 +1465,20 @@
 		ERAU Worldwide Research Scholars Workshop Series. 
 	}
 	
-	\section{White Papers}
-	\setcounter{whitePaperCounterReverse}{\totvalue{whitePaperCounter}}
-	\whitePaper{
-		\textbf{Chamberlain Jr., D.}, Rittby, K., Gaines, B., \& Slagel, J.T. 
-		(2025).
-		The Fear-Opportunity Spectrum of Generative AI in the Mathematics Classroom. 
-		\textit{MAA FOCUS, 17(3)}, 
-		16-19.
-		\href{http://digitaleditions.walsworthprintgroup.com/publication/?m=7656&l=1}{http://digitaleditions.walsworthprintgroup.com/publication/?m=7656\&l=1}
-		\newline
-		\textit{\underline{CRediT Roles:}} Writing - Original Draft, Writing - Review \& Editing.
-	}
-	\whitePaper{%
-		Reid et al.
-		(2024). 
-		Voices from the field: How did you come to engage in students-as-partners work?
-		\textit{International Journal for Students as Partners, 8(2)},
-		241-259. 
-		\href{https://doi.org/10.15173/ijsap.v8i2.5872}{https://doi.org/10.15173/ijsap.v8i2.5872}
-		\newline
-		\textit{\underline{CRediT Roles:}} Writing - Original Draft, Writing - Review \& Editing.
-	}
-	\whitePaper{%
-		Faulconer, E., \textbf{Chamberlain Jr., D.}, \& Wood, B. (2024). \textit{Community of Inquiry and Cognitive Load: Research Summary Document.} Zenodo. \href{https://zenodo.org/doi/10.5281/zenodo.7951445}{https://doi.org/10.5281/zenodo.11398144} \newline
-		\textit{\underline{CRediT Roles:}} Data Analysis, Writing - Review \& Editing.
-	}
-	\whitePaper{%
-		Faulconer, E., \textbf{Chamberlain Jr., D.}, \& Wood, B.
-		(2024).
-		\textit{Community of Inquiry and Cognitive Load in online STEM: Transferability plan}.
-		Zenodo. DOI: \href{https://doi.org/10.5281/zenodo.11203344}{https://doi.org/10.5281/zenodo.11203344}
-		\newline
-		\textit{\underline{CRediT Roles:}} Data Analysis, Writing - Review \& Editing.
-	}
-	
-	\whitePaper{%
-		Wood, B., Faulconer, E., \& \textbf{Chamberlain Jr., D.},
-		(2024).
-		\textit{Gathering Nuanced Data for Understanding Student Withdrawals}.
-		Zenodo. DOI: \href{https://doi.org/10.5281/zenodo.11094757}{10.5281/zenodo.11094757}
-		\newline
-		\textit{\underline{CRediT Roles:}} Writing - Review \& Editing.
-	}
-	
-	\section{Editorials}
-	\setcounter{editorialCounterReverse}{\totvalue{editorialCounter}}
-	\editorial{%
-		Faulconer, E. \& \textbf{Chamberlain Jr., D.} 
-		(2025).
-		\textit{Leading the Spiral: Supporting Faculty in Curriculum Innovation}.
-		The Department Chair, 35(4), DOI: \href{https://doi.org/10.1002/dch.30640}{https://doi.org/10.1002/dch.30640}
-	}
 
-	\editorial{%
-		Wood, B., Faulconer, E., \& \textbf{Chamberlain Jr., D.}
-		(2025).
-		\textit{Lessons from Professional Development for Remote STEM Faculty}. 
-		The Department Chair, 35(3), DOI: \href{https://doi.org/10.1002/dch.30625}{https://doi.org/10.1002/dch.30625}
-	}
-
-	\section{Pre-Prints}
-	\setcounter{preprintCounterReverse}{\totvalue{preprintCounter}}
-	
-	\preprint{%
-		\textbf{Chamberlain Jr., D.}, Jeter, R., \& Rozier, K. 
-		(2024, December 27).
-		\textit{An Integrated Methodology for Assessing Item Discrimination in Mathematics Assessments}.
-		https://doi.org/10.31235/osf.io/xvh7y
-	}
-
-	\preprint{%
-		\textbf{Chamberlain Jr., D.}, \& Jeter, R. 
-		(2024, August 9). 
-		\textit{Utilizing Theoretically-Driven Distractors to Make Diagnostic Multiple-Choice Assessments Possible}. 
-		https://doi.org/10.31235/osf.io/vzhm7
-	}
-	
-	\preprint{%
-		\textbf{Chamberlain Jr., D.}, \& Faulconer, E. 
-		(2024, July 3). 
-		\textit{Structural Framework for Interactions Between Community of Inquiry Presences, Cognitive Load, Demographics, and Grades. }
-		https://doi.org/10.31235/osf.io/7ay4t
-	}
 	
 	%\section{Research Summary Documents}
 	%\setcounter{researchSummaryCounterReverse}{\totvalue{researchSummaryCounter}}
 	%\researchSummary{%
 		%	Faulconer, E., \textbf{Chamberlain Jr., D.}, \& Wood, B. (2024). \textit{Community of Inquiry and Cognitive Load: Research Summary Document.} Zenodo. \href{https://zenodo.org/doi/10.5281/zenodo.7951445}{https://doi.org/10.5281/zenodo.11398144}
 		%}
+		
+%	\section{Open-Source Contributions}
+%	\setcounter{openSourceCounterReverse}{\totvalue{openSourceCounter}}
+%	\openSource{
+%		Test
+%	}
+		
 	\section{Teaching Experience}
 	\cventry{Embry-Riddle}
 		{Data Science}{}{}{}
