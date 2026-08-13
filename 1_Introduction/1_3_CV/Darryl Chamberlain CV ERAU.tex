@@ -399,10 +399,10 @@
 	{}
 	\section{External Research Funding Experience}
 
-	\cvitem{}{
-		\total{countFundedExGrants} funded external grants at \$\num[group-separator={,}, group-minimum-digits=3]{\arabic{sumFundedExGrants@totc}}. 
-		\total{countUnfundedExGrants} unfunded external grants at \$\num[group-separator={,}, group-minimum-digits=3]{\arabic{sumUnfundedExGrants@totc}}.
-		\total{countReviewExGrants} under review external grant at \$\num[group-separator={,}, group-minimum-digits=3]{\arabic{sumReviewExGrants@totc}}.
+	\cvitem{}{\emph{\hspace{-1mm}
+		\total{countFundedExGrants} funded external grants at \$\num[group-separator={,}, group-minimum-digits=3]{\arabic{sumFundedExGrants@totc}}. \hfill \break
+		\total{countUnfundedExGrants} unfunded external grants at \$\num[group-separator={,}, group-minimum-digits=3]{\arabic{sumUnfundedExGrants@totc}}. \hfill \break	
+		\total{countReviewExGrants} under review external grant at \$\num[group-separator={,}, group-minimum-digits=3]{\arabic{sumReviewExGrants@totc}}.}
 		}
 
 	\cventry{
@@ -525,12 +525,12 @@
 	
 	\section{Internal Research Funding Experience}
 	
-	\cvitem{}{
-		\total{countFundedInGrants} funded internal grants at \$\num[group-separator={,}, group-minimum-digits=3]{\arabic{sumFundedInGrants@totc}}. 
+	\cvitem{}{\emph{\hspace{-1mm}
+		\total{countFundedInGrants} funded internal grants at \$\num[group-separator={,}, group-minimum-digits=3]{\arabic{sumFundedInGrants@totc}}. \hfill \break
 		No unfunded nor under review internal grants.
 	%	\total{countUnfundedInGrants} unfunded internal grants at \$\num[group-separator={,}, group-minimum-digits=3]{\arabic{sumUnfundedInGrants@totc}}.
 	%	\total{countReviewInGrants} under review internal grant at \$\num[group-separator={,}, group-minimum-digits=3]{\arabic{sumReviewInGrants@totc}}.
-	}
+	}}
 	
 	\cventry{
 		\addFundedInTotal{26000}
@@ -587,14 +587,14 @@
 		{}	
 		
 	\section{Publications}
-	\cvitem{}{
-		Under Review: \the\numexpr\totvalue{underReviewArticleCounter}-1\relax, 
-		Journal Articles: \the\numexpr\totvalue{peerReviewedArticleCounter}-1\relax,
-		Book Chapters: \the\numexpr\totvalue{bookChapterCounter}-1\relax,
-		Conference Proceedings: \the\numexpr\totvalue{peerReviewedConferenceCounter}-1\relax,
-		White Papers: \the\numexpr\totvalue{whitePaperCounter}-1\relax,
-		Editorials: \the\numexpr\totvalue{editorialCounter}-1\relax
-	}
+	\cvitem{}{\emph{\hspace{-1mm}
+		\the\numexpr\totvalue{underReviewArticleCounter}-1\relax \, Under Review, \hfill \break
+		\the\numexpr\totvalue{peerReviewedArticleCounter}-1\relax \, Journal Articles, \hfill \break
+		\the\numexpr\totvalue{bookChapterCounter}-1\relax \, Book Chapter, \hfill \break
+		\the\numexpr\totvalue{peerReviewedConferenceCounter}-1\relax \, Conference Proceedings, \hfill \break
+		\the\numexpr\totvalue{whitePaperCounter}-1\relax \, White Papers, \hfill \break
+		\the\numexpr\totvalue{editorialCounter}-1 \, Editorials\relax
+	}}
 	
 	\subsection{Manuscripts Under Review}
 	\setcounter{underReviewArticleCounterReverse}{\totvalue{underReviewArticleCounter}}
@@ -944,13 +944,13 @@
 	}
 	
 	\section{Presentations}
-	\cvitem{}{
-		National/International Conference with Proceedings: \the\numexpr\totvalue{peerReviewedConferenceCounter}-1\relax, 
-		National/International Conference without Proceedings: \the\numexpr\totvalue{presentationCounter}-1\relax,
-		Regional Conference: \the\numexpr\totvalue{regionalPresentationCounter}-1\relax,
-		Local Conference: \the\numexpr\totvalue{internalConferenceCounter}-1\relax,
-		Invited Talks: \the\numexpr\totvalue{invitedTalksCounter}-1\relax.
-	}
+	\cvitem{}{\emph{\hspace{-1mm}
+		\the\numexpr\totvalue{peerReviewedConferenceCounter}-1\relax \, National/International Conferences with Proceedings, \hfill \break
+	    \the\numexpr\totvalue{presentationCounter}-1\relax \, National/International Conferences without Proceedings, \hfill \break
+		\the\numexpr\totvalue{regionalPresentationCounter}-1\relax \, Regional Conferences, \hfill \break
+		\the\numexpr\totvalue{internalConferenceCounter}-1\relax \, Local Conferences, \hfill \break
+		\the\numexpr\totvalue{invitedTalksCounter}-1\relax \, Invited Talks.
+	}}
 
 	\subsection{National/International Conference Presentations {\footnotesize [asterisk denotes presenter]}}
 	\setcounter{presentationCounterReverse}{\totvalue{presentationCounter}}
@@ -1236,7 +1236,7 @@
 		Invited by the University of Florida Lastinger Center.
 	}
 	
-	\section{Conference Organization}
+	\section{Conference Organization Experience}
 	\subsection{Conference}
 	\setcounter{conferenceCounterReverse}{\totvalue{conferenceCounter}}
 	
