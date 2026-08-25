@@ -1,5 +1,16 @@
 <!-- 
-    Brief Statement. Should be no more than six pages from the candidate that shows how her or his record supports the change of status requested. The statement should present citations of evidence from the candidate's curriculum vitae, resume, or other sources that are specifically related to the candidate's: (a) quality and effectiveness of teaching; (b) scholarly and professional activity; (c) service; and (d) promise for sustained future development and scholarly activity.
+    Applicant must submit a statement, no more than four-pages in length, supporting the application, addressing teaching performance, scholarly activity (if required), and service (if required) over the last five (5) years or eligibility period. 
+-->
+
+<!--
+    Statements from Promotion doc
+
+    The onus is on the candidate to explain the quality/rigor of work. Although both quality and quantity of a candidate’s achievements will be examined, quality should be the primary consideration. Quality is largely defined in terms of (a) the work’s importance in the progress of a field or discipline; (b) the establishment of relationships among disciplines; (c) willing, active, collegial, and collaborative contributions to the Department’s mission and the mission of the College and the University; and (d) observable improvement of teaching practices, specifically to create impact beyond one’s own classroom.
+
+    Overall, candidates must establish productivity and quality through specialized contributions significant to their COAS discipline(s).
+
+    
+
 -->
 
 In this brief statement, I will outline my activty versus expectation for each faculty pillar of teaching, research, and service. 
