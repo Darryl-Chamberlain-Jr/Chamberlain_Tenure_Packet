@@ -47,7 +47,6 @@
 	\addtocounter{countUnfundedExGrants}{1}
 }
 
-
 % Counter for Under Review External Grants
 \newtotcounter{countReviewExGrants}
 \setcounter{countReviewExGrants}{0}
@@ -106,6 +105,19 @@
 	\addtocounter{underReviewArticleCounterReverse}{-1}
 	\addtocounter{underReviewArticleCounter}{1}
 	\cvitem{[\arabic{underReviewArticleCounterReverse}]}{%
+		#1
+	}
+}
+
+% Counter for In Progress Journal Articles
+\newcounter{inProgressArticleCounterReverse}
+\newtotcounter{inProgressArticleCounter}
+\setcounter{inProgressArticleCounter}{1}
+
+\newcommand{\inProgressArticle}[1]{%
+	\addtocounter{inProgressArticleCounterReverse}{-1}
+	\addtocounter{inProgressArticleCounter}{1}
+	\cvitem{[\arabic{inProgressArticleCounterReverse}]}{%
 		#1
 	}
 }
@@ -601,53 +613,13 @@
 		
 	\section{Publications}
 	\cvitem{}{\emph{\hspace{-1mm}
-		\the\numexpr\totvalue{underReviewArticleCounter}-1\relax \, Under Review, \hfill \break
 		\the\numexpr\totvalue{peerReviewedArticleCounter}-1\relax \, Journal Articles, \hfill \break
 		\the\numexpr\totvalue{bookChapterCounter}-1\relax \, Book Chapter, \hfill \break
 		\the\numexpr\totvalue{peerReviewedConferenceCounter}-1\relax \, Conference Proceedings, \hfill \break
 		\the\numexpr\totvalue{whitePaperCounter}-1\relax \, White Papers, \hfill \break
-		\the\numexpr\totvalue{editorialCounter}-1 \, Editorials\relax
+		\the\numexpr\totvalue{editorialCounter}-1 \, Editorials, \hfill \break
+		\the\numexpr\totvalue{underReviewArticleCounter}-1\relax \, Under Review \relax
 	}}
-	
-	\subsection{Manuscripts Under Review {\footnotesize [$\dagger$ denotes student researcher]}}
-	\setcounter{underReviewArticleCounterReverse}{\totvalue{underReviewArticleCounter}}
-	\underReviewArticle{
-		Stell, T.$^\dagger$, \textbf{Chamberlain Jr., D.}, Rozier, K., Molkov, Y., \& Jeter, R. (under review September 2026). 
-		\textit{Pedagogical Limits of LLM-Generated Distractor Analyses: An Expert-Coded Study in College Algebra}.
-		Computers and Education. \newline
-		\textit{\underline{CRediT Roles:}} Methodology, Formal Analysis, Visualization, Writing - Original Draft.
-	}
-	\underReviewArticle{%
-		Faulconer, E., Terwilliger, B., \textbf{Chamberlain Jr., D.}, Deters. R., \& Kam, C.$^\dagger$ (revise and resubmit July 2026). 
-		\textit{Virtual Mentorship for Online Undergraduate Research: Analysis of Mentors and Mentees' Perspectives}.
-		Perspectives on Undergraduate Research \& Mentoring. \newline
-		\textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Writing - Original Draft, Writing - Review \& Editing.
-	}
-
-	\underReviewArticle{
-		Faulconer, E., Hiscox, T., \textbf{Chamberlain Jr., D.}, \& Mittelstadt, K.
-		(under review Septemeber 2026).
-		\textit{Fostering Self-Regulated Learning in Asynchronous Undergraduate STEM using Interactive H5P Content}.
-		Journal of Effective Teaching in Higher Education. \newline
-		\textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Methodology, Visualization, Writing - Original Draft, Writing - Review \& Editing.
-	}
-
-
-%	\underReviewArticle{%
-%		\textbf{Chamberlain Jr., D.}, Faulconer, E., \& Wood, B.
-%		(under review June 2024).
-%		\emph{Engaging Asynchronous Discussions: Impact of an Intervention to Enhance Community and Improve Learner Outcomes}. 
-%		Active Learning in Higher Education. \newline
-%	     \textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Methodology, Visualization, Writing - Original Draft.
-%		}
-	
-	%\underReviewArticle{%
-		%	\textbf{Chamberlain Jr., D.}, Faulconer, E., \& Wood, B.
-		%	(under review June 2024).
-		%	\emph{Direct Measures of Social, Cognitive, and Teacher Presence in Asynchronous, Online Discussions}. 
-		%	International Journal of Educational Research.  \newline
-		%   \textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Methodology, Visualization, Writing - Original Draft.
-		%}
 	
 	\subsection{Peer-Reviewed Journal Articles {\footnotesize [$\dagger$ denotes student researcher]}}
 	
@@ -665,7 +637,7 @@
 		\textbf{Chamberlain Jr., D.}, Jeter, R., \& Rozier, K. 
 		(2026).
 		\textit{Towards an Integrated Methodology for Assessing Item Discrimination in Mathematics Assessments}.
-		Intersection: A Journal at the Intersection of Assessment and Learning. DOI: 10.61669/001c.158450 \newline 
+		Intersection: A Journal at the Intersection of Assessment and Learning. DOI: \href{https://doi.org/10.61669/001c.158450}{10.61669/001c.158450} \newline 
 		\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis,  Investigation, Methodology, Project Administration, Software, Visualization, Writing - Original Draft, Writing - Review \& Editing.
 	}
 
@@ -673,7 +645,7 @@
 		\textbf{Chamberlain Jr., D.} \& Faulconer, E.
 		(2025).
 		\emph{Structural Framework for Interactions Between Community of Inquiry Presences, Cognitive Load, Demographics, and Grades}.
-		Active Learning in Higher Education. DOI: 10.1177/14697874251385801 \newline
+		Active Learning in Higher Education. DOI: \href{https://doi.org/10.1177/14697874251385801}{10.1177/14697874251385801} \newline
 		\textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Methodology, Visualization, Writing - Original Draft, Writing - Review \& Editing.
 	}
 	\peerReviewedArticle{%
@@ -681,7 +653,7 @@
 		(2025).
 		\textit{Black Boxes Revisited: Understanding GenAI Responses to Students’ Written Work.} 
 		Thresholds in Education.
-		https://academyforeducationalstudies.org/wp-content/uploads/2025/04/velez-et-al-final.pdf \newline
+		\href{https://academyforeducationalstudies.org/wp-content/uploads/2025/04/velez-et-al-final.pdf}{https://academyforeducationalstudies.org/wp-content/uploads/2025/04/velez-et-al-final.pdf} \newline
 		\textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Methodology, Writing - Original Draft.
 	}
 	
@@ -689,14 +661,14 @@
 		\textbf{Chamberlain Jr., D.} 
 		(2023).
 		\emph{How one instructor can teach a large-scale, mastery-based College Algebra course online.} 
-		Problems, Resources, and Issues in Mathematics Undergraduate Studies. DOI: 10.1080/10511970.2023.2190183.
+		Problems, Resources, and Issues in Mathematics Undergraduate Studies. DOI: \href{https://doi.org/10.1080/10511970.2023.2190183}{10.1080/10511970.2023.2190183}.
 	}
 	
 	\peerReviewedArticle{%
 		Faulconer, E., \textbf{Chamberlain Jr., D.}, \& Wood, B. 
 		(2022). 
 		\textit{A Case Study of Community of Inquiry Presences and Cognitive Load in Asynchronous Online STEM Courses}.
-		Online Learning Journal. DOI: http://dx.doi.org/10.24059/olj.v26i3.3386. \newline
+		Online Learning Journal. DOI: \href{http://dx.doi.org/10.24059/olj.v26i3.3386}{10.24059/olj.v26i3.3386}. \newline
 		\textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Methodology, Software, Visualization, Writing - Original Draft, Writing - Review \& Editing.
 	}
 	
@@ -705,7 +677,7 @@
 		(2021).
 		\emph{Cognitive trajectory of proof by contradiction for Transition-to-Proof students}.
 		Journal of Mathematical Behavior.
-		DOI: 10.1016/j.jmathb.2021.100849. \newline
+		DOI: \href{https://doi.org/10.1016/j.jmathb.2021.100849}{10.1016/j.jmathb.2021.100849}. \newline
 		\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Project Administration, Writing - Original Draft, Writing - Review \& Editing.
 	}
 	
@@ -714,7 +686,7 @@
 		(2020). 
 		\emph{Creating diagnostic assessments: Automated distractor generation with integrity}. 
 		Journal of Assessment in Higher Education. 
-		DOI: 10.32473/jahe.v1i1.116892. \newline
+		DOI: \href{https://doi.org/10.32473/jahe.v1i1.116892}{10.32473/jahe.v1i1.116892}. \newline
 		\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Project Administration, Software, Visualization, Writing - Original Draft, Writing - Review \& Editing.
 	}
 
@@ -723,7 +695,7 @@
 		(2020). 
 		\textit{Transitioning to an active learning environment for calculus at the University of Florida.} 
 		Problems, Resources, and Issues in Mathematics Undergraduate Studies.
-		DOI: 10.1080/10511970.2020.1769235. \newline
+		DOI: \href{https://doi.org/10.1080/10511970.2020.1769235}{10.1080/10511970.2020.1769235}. \newline
 		\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Methodology, Writing - Original Draft, Writing - Review \& Editing.
 	}
 	
@@ -732,7 +704,7 @@
 		(2019). 
 		\emph{Students' understanding of the concepts involved in hypothesis testing for one population.} 
 		Journal of Mathematical Behavior. 
-		DOI: 10.1016/j.jmathb.2018.03.011. \newline
+		DOI: \href{https://doi.org/10.1016/j.jmathb.2018.03.011}{10.1016/j.jmathb.2018.03.011}. \newline
 		\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Writing - Original Draft, Writing - Review \& Editing.
 	}
 	
@@ -766,7 +738,7 @@
 	}
 	\peerReviewedConference{
 		Deters. R.*, Terwilliger, B., Faulconer, E., George, K., \& \textbf{Chamberlain Jr., D.}
-		(2025, Jun 22-25).
+		(2025, Jun 25).
 		\textit{Impact of the COVID-19 Pandemic on Online Student Interest and Engagement in Undergraduate Research}.
 		American Society for Engineering Education (ASEE) 2025 Annual Conference and Exposition, Montreal, Canada. \newline 
 		\textit{\underline{CRediT Roles:}} Formal Analysis, Visualization, Writing - Original Draft, Writing - Review \& Editing.
@@ -787,7 +759,7 @@
 	}
 	
 	\peerReviewedConference{
-		\textbf{Chamberlain Jr., D.}*, McGuinness, P.$^\dagger$, Faulconer, E., \& Wood, B. (2024, Feb 22-24). 
+		\textbf{Chamberlain Jr., D.}*, McGuinness, P.$^\dagger$, Faulconer, E., \& Wood, B. (2024, Feb 22). 
 		\textit{Using Trees to See a Forest: Leveraging Machine Learning to Classify Student Thinking.}
 		Poster at 26th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Omaha, NE. \newline
 		\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Writing - Original Draft, Writing - Review \& Editing.
@@ -795,70 +767,70 @@
 	
 	\peerReviewedConference{
 		\textbf{Chamberlain Jr., D.}*, Reed, Z.*, \& Keene, K.
-		(2023, Feb 23-25). 
+		(2023, Feb 23). 
 		\textit{Adapting the Argumentative Knowledge Construction Framework to Asynchronous Mathematical Discussions}.
 		25th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Omaha, NE. \newline
 		\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Project Administration, Software, Visualization, Writing - Original Draft, Writing - Review \& Editing.
 	}
 	\peerReviewedConference{%
 		Bailey, T.*$^\dagger$, \textbf{Chamberlain Jr., D.}*, \& Christodoulopoulou, K.
-		(2022, Feb 24-26). 
+		(2022, Feb 24). 
 		\textit{Undergraduate's covariational reasoning across function representations}.
 		24th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Boston, MA. \newline
 		\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Project Administration, Writing - Original Draft, Writing - Review \& Editing.
 	}
 	\peerReviewedConference{%
 		Reed, Z.*, \textbf{Chamberlain Jr., D.*}, \& Keene, K.
-		(2022, Feb 24-26).
+		(2022, Feb 24).
 		\textit{Argumentative knowledge construction in asynchronous calculus discussion boards}.
 		Poster at 24th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Boston, MA. \newline
 		\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Visualization, Writing - Original Draft.
 	}
 	\peerReviewedConference{%
 		Kemp, A.*, \textbf{Chamberlain Jr., D.}, Cooley, L., Miller, V., \& Vidakovic, D. 
-		(2020, Feb 27-29). 
+		(2020, Feb 27). 
 		\textit{Student self- and simulated peer-evaluation of proof comprehension: Tina}. 
 		23rd Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Boston, MA. \newline
 		\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Writing - Original Draft, Writing - Review \& Editing.
 	}
 	\peerReviewedConference{%
 		\textbf{Chamberlain Jr., D.*} \& Jeter, R. 
-		(2019, Feb 28-Mar 2). 
+		(2019, Feb 28). 
 		\textit{Leveraging cognitive theory to create large-scale learning tools}.
 		22nd Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, Oklahoma City, OK. \newline
 		\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Funding Acquisition, Investigation, Methodology, Project Administration, Software, Writing - Original Draft, Writing - Review \& Editing.
 	}
 	\peerReviewedConference{%
 		\textbf{Chamberlain Jr., D.*} \& Vidakovic, D. 
-		(2018, Feb 22-24). 
+		(2018, Feb 22). 
 		\emph{Developing proof comprehension and proof by contradiction through logical outlines}. 
 		21st Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, San Diego, CA. \newline
 		\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Project Administration, Writing - Original Draft, Writing - Review \& Editing.
 	}
 	\peerReviewedConference{%
 		Burns, A.*, \textbf{Chamberlain Jr., D.}, Kemp, A.*, Meadows, L., Stalvey, H., \& Vidakovic, D. 
-		(2018, Feb 22-24). 
+		(2018, Feb 24). 
 		\emph{Reasoning about one population hypothesis testing: The case of Steve}. 
 		21st Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, San Diego, CA. \newline
 		\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Writing - Original Draft, Writing - Review \& Editing.
 	}
 	\peerReviewedConference{%
 		\textbf{Chamberlain Jr., D.*} \& Vidakovic, D. 
-		(2017, Feb 23-25). 
+		(2017, Feb 25). 
 		\emph{Developing student understanding: The case of proof by contradiction}. 
 		20th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, San Diego, CA. \newline
 		\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Project Administration, Writing - Original Draft, Writing - Review \& Editing.
 	}
 	\peerReviewedConference{%
 		Burns, A.*, \textbf{Chamberlain Jr., D.}, Kemp, A.*, Meadows, L., Stalvey, H., \& Vidakovic, D. 
-		(2017, Feb 23-25). 
+		(2017, Feb 25). 
 		\emph{Students' understanding of test statistics in hypothesis testing}. 
 		20th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, San Diego, CA. \newline
 		\textit{\underline{CRediT Roles:}} Conceptualization, Data Curation, Formal Analysis, Investigation, Methodology, Writing - Original Draft, Writing - Review \& Editing.
 	}
 	\peerReviewedConference{%
 		Abel, T.*, Brazas, J.*, \textbf{Chamberlain Jr., D.}, \& Kemp, A. 
-		(2017, Feb 23-25). 
+		(2017, Feb 25). 
 		\emph{Characterizing mathematical digital literacy: A preliminary investigation}. 
 		20th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME, San Diego, CA. \newline
 		\textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Investigation, Writing - Original Draft, Writing - Review \& Editing.
@@ -925,8 +897,12 @@
 		\textit{\underline{CRediT Roles:}} Writing - Review \& Editing.
 	}
 	
-	\subsection{Editorials}
+	\subsection{Editorials and Professional Statements}
 	\setcounter{editorialCounterReverse}{\totvalue{editorialCounter}}
+	\editorial{
+		Mathematical Association of America. (2026). MAA Statement on AI in Higher Education. Zenodo. \href{https://doi.org/10.5281/zenodo.22817879}{https://doi.org/10.5281/zenodo.22817879}
+	}
+	
 	\editorial{%
 		Faulconer, E. \& \textbf{Chamberlain Jr., D.} 
 		(2025).
@@ -965,6 +941,74 @@
 		https://doi.org/10.31235/osf.io/7ay4t
 	}
 	
+	\subsection{Manuscripts Under Review {\footnotesize [$\dagger$ denotes student researcher]}}
+	\setcounter{underReviewArticleCounterReverse}{\totvalue{underReviewArticleCounter}}
+
+	\underReviewArticle{
+		\textbf{Chamberlain Jr., D.}, Faulconer, E., Deters, R., \& Terwilliger, B. (under review October 2026). 
+		\textit{Comparative Study of STEM and Non-STEM students’ STEM Attitude, Identity, and Career Ambitions}.
+		Journal for STEM Education. \newline
+		\textit{\underline{CRediT Roles:}} Methodology, Data Curation, Formal Analysis, Visualization, Writing - Original Draft.
+	}
+
+	\underReviewArticle{
+		Stell, T.$^\dagger$, \textbf{Chamberlain Jr., D.}, Rozier, K., Molkov, Y., \& Jeter, R. (under review September 2026). 
+		\textit{Pedagogical Limits of LLM-Generated Distractor Analyses: An Expert-Coded Study in College Algebra}.
+		Computers and Education. \newline
+		\textit{\underline{CRediT Roles:}} Methodology, Formal Analysis, Visualization, Writing - Original Draft.
+	}
+	\underReviewArticle{%
+		Faulconer, E., Terwilliger, B., \textbf{Chamberlain Jr., D.}, Deters. R., \& Kam, C.$^\dagger$ (revise and resubmit July 2026). 
+		\textit{Virtual Mentorship for Online Undergraduate Research: Analysis of Mentors and Mentees' Perspectives}.
+		Perspectives on Undergraduate Research \& Mentoring. \newline
+		\textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Writing - Original Draft, Writing - Review \& Editing.
+	}
+	
+	\underReviewArticle{
+		Faulconer, E., Hiscox, T., \textbf{Chamberlain Jr., D.}, \& Mittelstadt, K.
+		(under review Septemeber 2026).
+		\textit{Fostering Self-Regulated Learning in Asynchronous Undergraduate STEM using Interactive H5P Content}.
+		Journal of Effective Teaching in Higher Education. \newline
+		\textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Methodology, Visualization, Writing - Original Draft.
+	}
+	
+	\subsection{Manuscripts in Progress}
+	\setcounter{inProgressArticleCounterReverse}{\totvalue{inProgressArticleCounter}}
+	
+	\inProgressArticle{
+		% MAA GenAI Paper
+		\textbf{Chamberlain Jr., D.}, Nucci, D., Harsey, A., \& Stanhope, L. 
+		(in progress). 
+		\textit{A comprehensive review of Generative AI in mathematics education.}
+		Problems, Resources, and Issues in Mathematics Undergraduate Studies.
+		\textit{\underline{CRediT Roles:}} Formal Analysis, Writing - Original Draft.
+	}
+	
+	\inProgressArticle{
+		% Qual Paper
+		\textbf{Chamberlain Jr., D.}, Rozier, K., \& Jeter, R.
+		(in progress). 
+		\textit{Qualitative Features of Multiple-Choice Mathematics Assessment Items}.
+		Educational Studies in Mathematics. 
+		\textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Methodology, Visualization, Writing - Original Draft.
+	}
+	
+	\inProgressArticle{
+		% Quant Paper
+		Jeter, R., Singh, T.$^\dagger$, \textbf{Chamberlain Jr., D.}, \& Rozier, K.
+		\textit{Identifying Discriminative Mathematics Assessment Items: An Unsupervised Machine Learning Approach}.
+		Educational Studies in Mathematics. 
+		\textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Methodology, Visualization, Writing - Original Draft.
+	}	
+
+	\inProgressArticle{
+		% FIRST grant paper
+		Dux Speltz, E., \textbf{Chamberlain Jr., D.}, Aik, M.$^\dagger$, Blood, B.$^\dagger$, Zaldivar, Z.$^\dagger$ (in progress). 
+		\textit{From Expert Habits to Student Support: Process-Focused Guidance for GenAI-Assisted Writing}.
+		Journal of Writing Analytics.
+		\textit{\underline{CRediT Roles:}} Data Curation, Formal Analysis, Methodology, Visualization, Writing - Original Draft.
+	}	
+		
 	\section{Presentations}
 	\cvitem{}{\emph{\hspace{-1mm}
 		\the\numexpr\totvalue{peerReviewedConferenceCounter}-1\relax \, National/International Conferences with Proceedings, \hfill \break
@@ -978,19 +1022,19 @@
 	\setcounter{presentationCounterReverse}{\totvalue{presentationCounter}}
 
 	\presentations{
-		\textbf{Chamberlain Jr., D.}*, Rozier, K., \& Jeter, R. (2026, August 8). Identifying qualitative features of mathematics assessment items for validity and reliability. Mathematical Association of America MathFest, Boston, MA. 
+		\textbf{Chamberlain Jr., D.}*, Rozier, K., \& Jeter, R. (2026, Aug 8). Identifying qualitative features of mathematics assessment items for validity and reliability. Mathematical Association of America MathFest, Boston, MA. 
 	}
 	
 	\presentations{
-		Jeter, R.*, Stell, T.$^\dagger$, Singh, T.$^\dagger$, Rozier, K., \& \textbf{Chamberlain Jr., D.} (2026, August 8). Discovering latent structure in low-stakes calculus assessments via unsupervised learning. Mathematical Association of America MathFest, Boston, MA. 
+		Jeter, R.*, Stell, T.$^\dagger$, Singh, T.$^\dagger$, Rozier, K., \& \textbf{Chamberlain Jr., D.} (2026, Aug 8). Discovering latent structure in low-stakes calculus assessments via unsupervised learning. Mathematical Association of America MathFest, Boston, MA. 
 	}
 	
 	\presentations{
-		Stell, T.*$^\dagger$, \textbf{Chamberlain Jr., D.}, Rozier, K., \& Jeter, R. (2026, August 6). The distractor dilemma: Shortcomings of LLMs in Diagnosing Specific Algebraic Misconceptions. Mathematical Association of America MathFest, Boston, MA. 
+		Stell, T.*$^\dagger$, \textbf{Chamberlain Jr., D.}, Rozier, K., \& Jeter, R. (2026, Aug 6). The distractor dilemma: Shortcomings of LLMs in Diagnosing Specific Algebraic Misconceptions. Mathematical Association of America MathFest, Boston, MA. 
 	}
 
 	\presentations{
-		Dux Speltz, E.*, \textbf{Chamberlain Jr., D.}, Aik, M.$^\dagger$, Blood, B.$^\dagger$, \& Zaldivar, Z.$^\dagger$ (2026, June 2). 
+		Dux Speltz, E.*, \textbf{Chamberlain Jr., D.}, Aik, M.$^\dagger$, Blood, B.$^\dagger$, \& Zaldivar, Z.$^\dagger$ (2026, Jun 2). 
 		\textit{From expert habits to student support: Using process-tracing tools to build process-focused GenAI writing guidance}. SIG Writing Conference, Winterthur, Switzerland.
 	}
 	
@@ -1140,6 +1184,10 @@
 	\subsection{Local Conference Presentations {\footnotesize [asterisk denotes presenter, $\dagger$ denotes student researcher]}}
 	\setcounter{internalConferenceCounterReverse}{\totvalue{internalConferenceCounter}}
 	\internalConference{
+		Stell, T.*$^\dagger$, \textbf{Chamberlain Jr., D.}, Rozier, K., Molkov, Y., \& Jeter, R. (2026, Nov 18).  Identifying Potential Student Thought in College Algebra Using Gen-AI.  Graduate Conference for Research, Scholarship, and Creative Activity, Atlanta, GA.
+	}
+
+	\internalConference{
 		T. Singh*$^\dagger$, K. Rozier, \textbf{D. Chamberlain, Jr.}, and R. Jeter.
 		(2026, Feb 11)
 		\textit{Identifying Discriminative Mathematics Assessment Items: An Unsupervised Machine Learning Approach}.
@@ -1258,8 +1306,8 @@
 		Invited by the University of Florida Lastinger Center.
 	}
 	
-	\section{Conference Organization Experience}
-	\subsection{Conference}
+	\section{External Academic Organization Experience}
+	\subsection{Conference or Convening}
 	\setcounter{conferenceCounterReverse}{\totvalue{conferenceCounter}}
 	
 	\conferenceOrganization{
@@ -1271,7 +1319,7 @@
 		Virtual.
 	}
 	
-	\subsection{Conference Session}
+	\subsection{Contributed Paper Session or Special Session}
 	\setcounter{sessionOrganizationCounterReverse}{\totvalue{sessionOrganizationCounter}}
 	\sessionOrganization{
 		Rittby, K., \textbf{Chamberlain Jr., D.}, Edwards, A., Gaines, B., Jahangiri, J., Nucci, D., Oxman, V.,  Slagel, T., \& Weisbrod, J. (2026, Aug 5-8). Contributed Paper Session: \textit{Innovation, Evidence, and Applications of AI in Teaching and Learning Mathematics}. 2026 MAA MathFest, 
@@ -1313,7 +1361,7 @@
 		AMS Spring 2016 Southeastern Regional Conference, 
 		Athens, GA.
 	}
-	\subsection{Conference Workshop}
+	\subsection{Conference Workshop or Mini-Course}
 	\setcounter{workshopCounterReverse}{\totvalue{workshopCounter}}
 	\workshopOrganization{
 		\textbf{Chamberlain Jr., D.}, Margolis, C., Sly, J., \& Reed, Z. (2026, Feb 26). Workshop: \textit{Research on Technology in Undergraduate Mathematics Education}. 28th Annual Conference on Research in Undergraduate Mathematics Education: SIGMAA on RUME,
@@ -1334,7 +1382,7 @@
 		Omaha, NE. 
 	}
 	
-	\section{Local Session or Workshop Organization}
+	\section{Local Academic Organization Experience}
 	\setcounter{localOrganizationCounterReverse}{\totvalue{localOrganizationCounter}}
 	\localOrganization{%
 		\textbf{Chamberlain Jr., D.}, Deters, R., \& Terwilliger, B.
@@ -1639,7 +1687,7 @@
 	
 	\section{Professional Service}
 	\cvitem{2022--present}{
-		\textbf{Grant Reviewer} for the National Science Foundation.
+		\textbf{Grant Reviewer} for the National Science Foundation Directorate for STEM Education (NSF-EDU).
 	}
 	\cvitem{2017--present}{
 		\textbf{Journal Reviewer} for
